@@ -12,7 +12,7 @@ layout: default
     	</time>
     	{% if page.path %}
       -
-      <a class="post__edit" href="//github.com/riturajratan/tech-blog.maddyzone.com/gh-pages/{{ page.path }}">
+      <a class="post__edit" href="//github.com/riturajratan/tech-blog.maddyzone.com/blob/gh-pages/{{ page.path }}">
         Edit this page on GitHub
       </a>
       {% endif %}
@@ -208,9 +208,9 @@ JekyllRandom('.similar__posts', data);
 </div>
 <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-567a0f80a03a6fbe" async></script>
 <script>
-  var disqus_url = ({%if page.disqus %}'{{ page.disqus }}'{%else %}'http://toddmotto.com{{ page.url }}'{% endif %}).replace(/\/$/, '');
+  var disqus_url = ({%if page.disqus %}'{{ page.disqus }}'{%else %}'http://tech-blog.maddyzone.com{{ page.url }}'{% endif %}).replace(/\/$/, '');
   var disqus_title = '{{ page.title }}';
-  var disqus_shortname = 'toddmotto';
+  var disqus_shortname = 'maddyzoneTech';
   var dsq = document.createElement('script');
   dsq.async = dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   document.getElementsByTagName('head')[0].appendChild(dsq);

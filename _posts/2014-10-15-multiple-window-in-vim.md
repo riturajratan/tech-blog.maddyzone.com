@@ -3,7 +3,7 @@ title: Multiple window in vim
 author: Rituraj Ratan
 layout: post
 permalink: /multiple-window-in-vim.md
-disqus: http://www.vim4u.com/multiple-window-in-vim.md
+disqus: http://tech-blog.maddyzone.com/multiple-window-in-vim.md
 path: 2014-10-15-multiple-window-in-vim.md
 
 
