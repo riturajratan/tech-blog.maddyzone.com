@@ -78,11 +78,14 @@ So We can change the start and end interpolation tags using `$interpolateProvide
 
 **app.js(set our configuration with `$interpolateProvider`  )**
 
-    
+   
+{% highlight html %} 
     var myApp=angular.module('myApp', []);
     myApp.config(function($interpolateProvider){
         $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
     });
+
+{% endhighlight %}    
 
 
 **index.html(our html page in which we are using angular with {[{  }]} tag)**
