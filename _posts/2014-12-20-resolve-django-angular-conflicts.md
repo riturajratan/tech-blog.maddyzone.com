@@ -142,11 +142,11 @@ So We can change the start and end interpolation tags using `$interpolateProvide
 
 In Django by [verbatim](https://docs.djangoproject.com/en/dev/ref/templates/builtins/?from=olddocs#verbatim) Django template tag  we can resolve conflict. we use it following way
 
-    
-    {% verbatim %}
+    {% highlight html %} 
+      {% verbatim %}
         {{ my angular code }}Still alive.{{ hurray }}
-    {% endverbatim %}
-
+     {% endverbatim %}
+    {% endhighlight %}  
 
 
 
