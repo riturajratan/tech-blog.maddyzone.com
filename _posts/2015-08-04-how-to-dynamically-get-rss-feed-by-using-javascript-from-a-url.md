@@ -7,12 +7,16 @@ link: http://dlurratan37846/wordpress/?p=2164
 slug: how-to-dynamically-get-rss-feed-by-using-javascript-from-a-url
 title: How to dynamically get rss feed by using Javascript from a URL
 wordpress_id: 2164
+image: uploads/2015/08/banner-maddy.jpg
 categories:
 - JavaScript
 tags:
 - JavaScript
 - rss
 ---
+
+
+[![How to dynamically get rss feed by using Javascript from a URL]({{ site.url }}/uploads/2015/08/banner-maddy.jpg)]({{ site.url }}/uploads/2015/08/banner-maddy.jpg)
 
 Hi Friends, I wanna share my knowledge regarding "How to dynamically get rss feed by using Javascript from a URL" .
 
@@ -102,7 +106,6 @@ So, i am writing the result oriented html below , which will included in above h
 Did you get all the points and requirement defiend in Step-1, if you are ok will this , than i will now move to step-2 , where i will write the js code for the above.
 
 [![How to dynamically get rss feed by using Javascript from a URL 1]({{ site.url }}/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL-1.png)]({{ site.url }}/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL-1.png)
-
 
 ## Step-2: will show you and describe you most about the java script for our objective.
 
