@@ -117,9 +117,8 @@ Code for script.js is below :
     
     i++ //increment the counter
     }
+
     {% endhighlight %}
-    
-    
 
 
 The above code will do our motto in a manner , when we click on button add new , the JavaScript function `addButton` will called , as defined above this function will dynamically create all four element and append to our html blank div by id `object_data` respectively textbox, button, and two break lines , and append as much controls as much or how many times i will hit the add new button.
@@ -142,7 +141,7 @@ Code for showMessage function :
     alert(document.getElementById("txt"+currID).value);
     
     } 
-    {% highlight js %}
+    {% endhighlight %}
     
 
 
