@@ -67,7 +67,7 @@ Once , we create both of the text box element , i will create an event handler e
 
 So my first step to create an html for our requirement is as shown below :
 
-    
+    {% highlight html %}
     <div class="example">
     <h2>Get News Feed by URL and Number of Feed to Fetch</h2>
     <label>Feed URL</label>
@@ -77,6 +77,7 @@ So my first step to create an html for our requirement is as shown below :
     <input type="button" class="inputE" name="getFeed" id="getFeed" value="Get Feed" onclick="getFeed()"/> 
     </div> 
     </div>
+    {% endhighlight %}
 
 
 
@@ -87,12 +88,13 @@ As , I am thinking , when i get all feeds after placing my javascript code for t
 
 So, i am writing the result oriented html below , which will included in above html , in div element by class name `example`.
 
-    
+    {% highlight html %}    
     <div class="loading_rss" id="loading_feed" style="display:none;">
     <img alt="Loading..." src="images/loading.gif" />
     </div>
     <div class="post_results" id="post_results1">
     </div>
+    {% endhighlight %}
 
 
 
@@ -113,7 +115,7 @@ then call `rssReader.init` function by passing the `url` and `id` of the div ele
 
 Our **getFeed** function looks like:
 
-    
+    {% highlight javascript %}
     //getFeed method called when getFeed button is clicked
     function getFeed(){
     // get the value of feedURL
@@ -201,6 +203,7 @@ Our **getFeed** function looks like:
     document.getElementById("loading_feed").style.display = "none";
     }
     };
+    {% endhighlight %}
 
 
 in rssReader we define 2 function , first one is init which is called when we complete validation step , and in this step we create a script tag element in which we pass the google api service to get rss feed url , which holds the information about
@@ -235,4 +238,4 @@ or if you like my post you can also share me your valuable feedback.
 
 Please check the complete source code by clicking the below button or to download.
 
-[button type="bd_button btn_large" url="https://github.com/Maddyzone/dynamically-get-rss-feed-by-using-Javascript-from-a-URL" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ]Download Code[/button]
+<a href="https://github.com/Maddyzone/dynamically-get-rss-feed-by-using-Javascript-from-a-URL" target="_blank"> Download Code</a>
