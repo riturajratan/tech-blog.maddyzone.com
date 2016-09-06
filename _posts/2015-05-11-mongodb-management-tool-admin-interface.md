@@ -47,7 +47,7 @@ Lets Discuss One By One.
 
 **Robomongo**
 
-[![Robomongo MongoDB](http://maddyzone.com/wp-content/uploads/2015/05/Robomongo-screen-shot.png)](http://maddyzone.com/wp-content/uploads/2015/05/Robomongo-screen-shot.png)
+[![Robomongo MongoDB]({{ site.url }}/uploads/2015/05/Robomongo-screen-shot.png)]({{ site.url }}/uploads/2015/05/Robomongo-screen-shot.png)
 
 Robomongo — is a shell-centric cross-platform open source MongoDB management tool (i.e. Admin GUI). Robomongo embeds the same JavaScript engine that powers the MongoDB 2.2`mongo` shell.It provides you many features like below.
 
@@ -72,7 +72,7 @@ For more you can see here  [http://robomongo.org/](http://robomongo.org/) and u
 
 **Mongo Express**
 
-[![mongoexpress admin tool for mongoDB](http://maddyzone.com/wp-content/uploads/2015/05/mongoexpress-admin-tool-for-mongoDB-1024x577.png)](http://maddyzone.com/wp-content/uploads/2015/05/mongoexpress-admin-tool-for-mongoDB.png)
+[![mongoexpress admin tool for mongoDB]({{ site.url }}/uploads/2015/05/mongoexpress-admin-tool-for-mongoDB-1024x577.png)]({{ site.url }}/uploads/2015/05/mongoexpress-admin-tool-for-mongoDB.png)
 
 MongoExpress is Web-based MongoDB admin interface written with Node.js and express.
 

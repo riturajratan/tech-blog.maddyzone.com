@@ -76,7 +76,7 @@ Which is equivalent to calling:
 The “$” sign you see in the code is jQuery object. The first part “$(document)” selects the document and binds it with ready event using a jQuery method “.ready()”, which further calls an anonymous function “function() {}” for executing further statements.
 
 
-[![jQuery-document-ready-event-explanation-code-tricks](http://maddyzone.com/wp-content/uploads/2013/11/jQuery-document-ready-event-explanation-code-tricks-300x158.jpg)](http://maddyzone.com/wp-content/uploads/2013/11/jQuery-document-ready-event-explanation-code-tricks.jpg)
+[![jQuery-document-ready-event-explanation-code-tricks]({{ site.url }}/uploads/2013/11/jQuery-document-ready-event-explanation-code-tricks-300x158.jpg)]({{ site.url }}/uploads/2013/11/jQuery-document-ready-event-explanation-code-tricks.jpg)
 
 
 Similarly, the inner code “$(“body”).html(“<h1>Life is awesome!</h1>”);” does the same thing. Here “body” is a selector and “.html” is a method to write HTML into the body tag. However, I’m not calling any anonymous function here though I could if necessary.

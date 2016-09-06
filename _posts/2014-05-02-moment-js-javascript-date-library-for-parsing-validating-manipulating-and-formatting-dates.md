@@ -24,7 +24,7 @@ tags:
 
 This library  also handle Timezone
 
-[![moment timezone](http://maddyzone.com/wp-content/uploads/2014/05/moment-timezone.jpg)](http://maddyzone.com/wp-content/uploads/2014/05/moment-timezone.jpg)
+[![moment timezone]({{ site.url }}/uploads/2014/05/moment-timezone.jpg)]({{ site.url }}/uploads/2014/05/moment-timezone.jpg)
 
 For more see their respective
 

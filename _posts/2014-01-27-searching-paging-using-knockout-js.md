@@ -306,14 +306,14 @@ Binding Play an important role in Knockout JS and key to implement Knockout JS, 
 
 Without Search Output is as :
 
-[![knocut_witout_search](http://maddyzone.com/wp-content/uploads/2014/01/knocut_witout_search.png)](http://maddyzone.com/wp-content/uploads/2014/01/knocut_witout_search.png)
+[![knocut_witout_search]({{ site.url }}/uploads/2014/01/knocut_witout_search.png)]({{ site.url }}/uploads/2014/01/knocut_witout_search.png)
 
 After Search Output is as :
 
-[![after_search](http://maddyzone.com/wp-content/uploads/2014/01/after_search.png)](http://maddyzone.com/wp-content/uploads/2014/01/after_search.png)
+[![after_search]({{ site.url }}/uploads/2014/01/after_search.png)]({{ site.url }}/uploads/2014/01/after_search.png)
 
 
 
 With Paging Output is as:
 
-[![with_paging](http://maddyzone.com/wp-content/uploads/2014/01/with_paging.png)](http://maddyzone.com/wp-content/uploads/2014/01/with_paging.png)
+[![with_paging]({{ site.url }}/uploads/2014/01/with_paging.png)]({{ site.url }}/uploads/2014/01/with_paging.png)

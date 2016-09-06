@@ -72,7 +72,7 @@ First create our main file in which all structure set
       <div class="container">
         <!-- apply our controller RouteCtrl-->
         <div class="jumbotron" ng-controller="RouteCtrl">
-          <img src="http://maddyzone.com/wp-content/uploads/2013/10/maddyzone-logo-300x72.png">
+          <img src="{{ site.url }}/uploads/2013/10/maddyzone-logo-300x72.png">
           <br/>
           <h1>Multiple ng-view in a single template</h1>
     

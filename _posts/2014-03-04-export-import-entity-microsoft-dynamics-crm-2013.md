@@ -45,13 +45,13 @@ For export data and then import them into another server.
 
 Click on “Templates for Data Import” and  you will see a pop up, here  you can choose your record type whatever you want to import data for i.e. I selected Template record type then go to “Download” link and download it you will get a file, please open it with excel so that you can see heading column exactly.
 **See Below Screen**:
-[![Templates data import](http://maddyzone.com/wp-content/uploads/2014/03/Templates_data_import.png)](http://maddyzone.com/wp-content/uploads/2014/03/Templates_data_import.png)
+[![Templates data import]({{ site.url }}/uploads/2014/03/Templates_data_import.png)]({{ site.url }}/uploads/2014/03/Templates_data_import.png)
 **b)    ****(At Server2)** Go to Workplace->ADVANCED FIND
 **See Below Screen:**
-[![workplace advanced find](http://maddyzone.com/wp-content/uploads/2014/03/workplace_advanced_find.png)](http://maddyzone.com/wp-content/uploads/2014/03/workplace_advanced_find.png)
+[![workplace advanced find]({{ site.url }}/uploads/2014/03/workplace_advanced_find.png)]({{ site.url }}/uploads/2014/03/workplace_advanced_find.png)
 Now click this advanced find link, you will see a popup with a lot of options. Here you will see a drop down named “Look for” select any of them i. e. Templates. Now click on Edit Columns, again one more popup is there with heading Edit Columns and some links i.e. Add Columns, Remove, and two arrows for shifting header column.
 **See Below Screen:**
-[![edit advamcefind](http://maddyzone.com/wp-content/uploads/2014/03/edit_advamcefind.png)](http://maddyzone.com/wp-content/uploads/2014/03/edit_advamcefind.png)
+[![edit advamcefind]({{ site.url }}/uploads/2014/03/edit_advamcefind.png)]({{ site.url }}/uploads/2014/03/edit_advamcefind.png)
 Now most important thing is that you have to prepare Heading Columns exactly same as in “Excel” which you download previously.
 Process to make Heading Columns:
 
@@ -68,11 +68,11 @@ Process to make Heading Columns:
 
 
 **See Below Screen:**
-[![Edit advancefind add btn](http://maddyzone.com/wp-content/uploads/2014/03/Edit_advancefind_add_btn.png)](http://maddyzone.com/wp-content/uploads/2014/03/Edit_advancefind_add_btn.png)
+[![Edit advancefind add btn]({{ site.url }}/uploads/2014/03/Edit_advancefind_add_btn.png)]({{ site.url }}/uploads/2014/03/Edit_advancefind_add_btn.png)
 Now once you have done click on “Ok” button. Current popup will get closed. Now you are on First popup, here you will see a link “result“  click on it. It will show you a list with all templates.
 Now go to “Export Templates” link and click as well. Please save exported file as CSV file type.
 **See Below Screen:**
-[![Advance export templates](http://maddyzone.com/wp-content/uploads/2014/03/Advance_export_templates.png)](http://maddyzone.com/wp-content/uploads/2014/03/Advance_export_templates.png)
+[![Advance export templates]({{ site.url }}/uploads/2014/03/Advance_export_templates.png)]({{ site.url }}/uploads/2014/03/Advance_export_templates.png)
 
 
 
@@ -81,7 +81,7 @@ Now go to “Export Templates” link and click as well. Please save exported fi
 
 
 **             See Below Screen:**
-[![Advance Export data excel](http://maddyzone.com/wp-content/uploads/2014/03/Advance_Export_data_excel.png)](http://maddyzone.com/wp-content/uploads/2014/03/Advance_Export_data_excel.png)
+[![Advance Export data excel]({{ site.url }}/uploads/2014/03/Advance_Export_data_excel.png)]({{ site.url }}/uploads/2014/03/Advance_Export_data_excel.png)
 **c)    ****(At  Server1)** Now go to again at the server on which you want to import Data.
 
 
@@ -91,9 +91,9 @@ Now go to “Export Templates” link and click as well. Please save exported fi
 
 
 **See Below Screen:**
-[![Setting Dm import](http://maddyzone.com/wp-content/uploads/2014/03/Setting_Dm_import.png)](http://maddyzone.com/wp-content/uploads/2014/03/Setting_Dm_import.png)
+[![Setting Dm import]({{ site.url }}/uploads/2014/03/Setting_Dm_import.png)]({{ site.url }}/uploads/2014/03/Setting_Dm_import.png)
 
-[![Setting Dm import blue](http://maddyzone.com/wp-content/uploads/2014/03/Setting_Dm_import_blue.png)](http://maddyzone.com/wp-content/uploads/2014/03/Setting_Dm_import_blue.png)
+[![Setting Dm import blue]({{ site.url }}/uploads/2014/03/Setting_Dm_import_blue.png)]({{ site.url }}/uploads/2014/03/Setting_Dm_import_blue.png)
 
 
 

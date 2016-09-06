@@ -38,18 +38,18 @@ For Installing Ubuntu with Windows,
 Go to "Windows Installer for Ubuntu Desktop" ==> [http://www.ubuntu.com/download/desktop/windows-installer](http://www.ubuntu.com/download/desktop/windows-installer)
 
 
-[![download-ubuntu-windows-installer](http://maddyzone.com/wp-content/uploads/2013/12/download-ubuntu-windows-installer.png)](http://maddyzone.com/wp-content/uploads/2013/12/download-ubuntu-windows-installer.png)
+[![download-ubuntu-windows-installer]({{ site.url }}/uploads/2013/12/download-ubuntu-windows-installer.png)]({{ site.url }}/uploads/2013/12/download-ubuntu-windows-installer.png)
 
 
 
 
-[![download-ubuntu-windows-installer-step-2](http://maddyzone.com/wp-content/uploads/2013/12/download-ubuntu-windows-installer-step-2.png)](http://maddyzone.com/wp-content/uploads/2013/12/download-ubuntu-windows-installer-step-2.png)
+[![download-ubuntu-windows-installer-step-2]({{ site.url }}/uploads/2013/12/download-ubuntu-windows-installer-step-2.png)]({{ site.url }}/uploads/2013/12/download-ubuntu-windows-installer-step-2.png)
 
 
                                                      Click to "Get the Installer" and download the Installer.
 
 
-[![firefox-ubuntu-windows-installer-download](http://maddyzone.com/wp-content/uploads/2013/12/firefox-ubuntu-windows-installer-download.jpg)](http://maddyzone.com/wp-content/uploads/2013/12/firefox-ubuntu-windows-installer-download.jpg)
+[![firefox-ubuntu-windows-installer-download]({{ site.url }}/uploads/2013/12/firefox-ubuntu-windows-installer-download.jpg)]({{ site.url }}/uploads/2013/12/firefox-ubuntu-windows-installer-download.jpg)
 
 
 Click on **Save**.
@@ -58,13 +58,13 @@ Go to the directory where you have downloaded the Ubuntu windows installer.
 Double click the "wubi.exe" (Probably name of file and may be differing if Ubuntu Community has changed this name).
 
 
-[![ubuntu-windows-installer-second-step](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-second-step.jpg)](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-second-step.jpg)
+[![ubuntu-windows-installer-second-step]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-second-step.jpg)]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-second-step.jpg)
 
 
 Click to **Continue**.
 
 
-[![ubuntu-windows-installer-third-step](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-third-step.png)](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-third-step.png)
+[![ubuntu-windows-installer-third-step]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-third-step.png)]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-third-step.png)
 
 
 It will prompt you some details to be filled
@@ -76,13 +76,13 @@ It will prompt you some details to be filled
 "Password" ==> "Enter a secure and complex password."
 
 
-[![ubuntu-windows-installer-fourth-step](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-fourth-step.png)](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-fourth-step.png)
+[![ubuntu-windows-installer-fourth-step]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-fourth-step.png)]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-fourth-step.png)
 
 
 Click to "Install" and the Ubuntu installation will start, the installer automatically downloads the Ubuntu latest LTS version and install it.
 
 
-[![ubuntu-windows-installer-installation-complete](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-installation-complete.jpg)](http://maddyzone.com/wp-content/uploads/2013/12/ubuntu-windows-installer-installation-complete.jpg)
+[![ubuntu-windows-installer-installation-complete]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-installation-complete.jpg)]({{ site.url }}/uploads/2013/12/ubuntu-windows-installer-installation-complete.jpg)
 
 
 After installation system ask you to reboot the system, when you reboot your system and your system will prompt you to select the OS.

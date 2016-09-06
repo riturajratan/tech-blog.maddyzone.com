@@ -36,7 +36,7 @@ Folders you have to create are :
   * Find the Directory where you have placed tinyMCE Editor's files, you will see a folder structure like as follows:
 
 
-[![tiny-mce-javascript-folder-structure](http://maddyzone.com/wp-content/uploads/2014/01/tiny-mce-javascript-folder-structure.png)](http://maddyzone.com/wp-content/uploads/2014/01/tiny-mce-javascript-folder-structure.png)
+[![tiny-mce-javascript-folder-structure]({{ site.url }}/uploads/2014/01/tiny-mce-javascript-folder-structure.png)]({{ site.url }}/uploads/2014/01/tiny-mce-javascript-folder-structure.png)
 
 
 

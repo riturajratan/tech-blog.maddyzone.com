@@ -60,7 +60,7 @@ as in AngularJS $scope are two type
 
 $when $scope not find in a controller then it see in parent controller and if again not find then it see in $rootScope so it is the parent to all $scope variables in AngularJS.
 
-[caption id="attachment_893" align="aligncenter" width="300"][![scope and rootscope](http://maddyzone.com/wp-content/uploads/2014/08/scope-and-rootscope1-300x300.png)](http://maddyzone.com/wp-content/uploads/2014/08/scope-and-rootscope1.png) scope and rootscope[/caption]
+[caption id="attachment_893" align="aligncenter" width="300"][![scope and rootscope]({{ site.url }}/uploads/2014/08/scope-and-rootscope1-300x300.png)]({{ site.url }}/uploads/2014/08/scope-and-rootscope1.png) scope and rootscope[/caption]
 
 **ng-Controller__**
 

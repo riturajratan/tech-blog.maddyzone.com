@@ -18,23 +18,23 @@ Normally when we work with Linux type operating system(like in Ubuntu,Xubuntu,Ku
 
 **1)** First go to **Ubuntu Main Search Icon **and search **System Setting then **screen come like below
 
-[![How to update driver in Ubantu part 1](http://maddyzone.com/wp-content/uploads/2014/09/1.png)](http://maddyzone.com/wp-content/uploads/2014/09/1.png)
+[![How to update driver in Ubantu part 1]({{ site.url }}/uploads/2014/09/1.png)]({{ site.url }}/uploads/2014/09/1.png)
 
 
 
 **2)**After click on **System Setting **click on **Software & Updates **then below window appear
 
-[![How to update driver in Ubantu part 2](http://maddyzone.com/wp-content/uploads/2014/09/2.png)](http://maddyzone.com/wp-content/uploads/2014/09/2.png)
+[![How to update driver in Ubantu part 2]({{ site.url }}/uploads/2014/09/2.png)]({{ site.url }}/uploads/2014/09/2.png)
 
 
 
 **3)**Then go to **Additional Drivers Tab **then here additional drivers load (**make sure you are connect to internet otherwise driver names are not load)**
 
-[![How to update driver in Ubantu part 3](http://maddyzone.com/wp-content/uploads/2014/09/3.png)](http://maddyzone.com/wp-content/uploads/2014/09/3.png)
+[![How to update driver in Ubantu part 3]({{ site.url }}/uploads/2014/09/3.png)]({{ site.url }}/uploads/2014/09/3.png)
 
 **4) **Then select drivers and apply changes
 
-[![How to update driver in Ubantu part 4](http://maddyzone.com/wp-content/uploads/2014/09/4.png)](http://maddyzone.com/wp-content/uploads/2014/09/4.png)
+[![How to update driver in Ubantu part 4]({{ site.url }}/uploads/2014/09/4.png)]({{ site.url }}/uploads/2014/09/4.png)
 
 **5)** Then after all process restart your computer then your changes will apply.
 

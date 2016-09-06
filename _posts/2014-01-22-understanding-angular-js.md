@@ -79,7 +79,7 @@ Here we are going to showing you some basic examples of angular js
 Output for the above will be as :
 
 
-[![angular_basic](http://maddyzone.com/wp-content/uploads/2014/01/angular_basic1.png)](http://maddyzone.com/wp-content/uploads/2014/01/angular_basic1.png)
+[![angular_basic]({{ site.url }}/uploads/2014/01/angular_basic1.png)]({{ site.url }}/uploads/2014/01/angular_basic1.png)
 
 
 
@@ -262,7 +262,7 @@ Controller.js file have followinig
 Before Search Output is as :
 
 
-[![angular_table](http://maddyzone.com/wp-content/uploads/2014/01/angular_table.jpg)](http://maddyzone.com/wp-content/uploads/2014/01/angular_table.jpg)
+[![angular_table]({{ site.url }}/uploads/2014/01/angular_table.jpg)]({{ site.url }}/uploads/2014/01/angular_table.jpg)
 
 
 
@@ -270,4 +270,4 @@ Before Search Output is as :
 After Search Output is as :
 
 
-[![angular_table_search](http://maddyzone.com/wp-content/uploads/2014/01/angular_table_search.png)](http://maddyzone.com/wp-content/uploads/2014/01/angular_table_search.png)
+[![angular_table_search]({{ site.url }}/uploads/2014/01/angular_table_search.png)]({{ site.url }}/uploads/2014/01/angular_table_search.png)

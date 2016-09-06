@@ -149,7 +149,7 @@ Now Lets create a demo in which we add ,remove and toggle class in angular for s
     
       <div class="container" ng-controller="HomeCtrl">
         <div class="jumbotron">
-          <img src="http://maddyzone.com/wp-content/uploads/2013/10/maddyzone-logo-300x72.png">
+          <img src="{{ site.url }}/uploads/2013/10/maddyzone-logo-300x72.png">
           <br/>
           <h1>Add , Remove and Toggle classes in Angular JS</h1>
           <br/>

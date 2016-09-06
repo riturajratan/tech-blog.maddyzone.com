@@ -47,7 +47,7 @@ so, here i am trying to explore about Android for you :
 
 - Please check below the layered architecture.
 
-[![android_architecture](http://maddyzone.com/wp-content/uploads/2014/10/android_architecture.jpg)](http://maddyzone.com/wp-content/uploads/2014/10/android_architecture.jpg)
+[![android_architecture]({{ site.url }}/uploads/2014/10/android_architecture.jpg)]({{ site.url }}/uploads/2014/10/android_architecture.jpg)
 
 As you can see in the snapshot , there are four layers by name from top to bottom respectively :
 

@@ -36,13 +36,13 @@ From last 2 Year i am Using **Go Daddy** Hosting but now i am making a site us
 
 After Login when you come on this link then it will look like below then click on EC2 tab in this we will set our virtual server in the cloud.
 
-[![EC2 select at Amazon Web Service](http://maddyzone.com/wp-content/uploads/2014/11/EC2-select-at-Amazon-Web-Service.png)](http://maddyzone.com/wp-content/uploads/2014/11/EC2-select-at-Amazon-Web-Service.png)
+[![EC2 select at Amazon Web Service]({{ site.url }}/uploads/2014/11/EC2-select-at-Amazon-Web-Service.png)]({{ site.url }}/uploads/2014/11/EC2-select-at-Amazon-Web-Service.png)
 
 Then After click on EC2 you will see below screen.In this click on Instances
 
-[![Instance in AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/Instance-in-AWS-EC2.png)](http://maddyzone.com/wp-content/uploads/2014/11/Instance-in-AWS-EC2.png)Then you will see below screen to Launch Instance
+[![Instance in AWS EC2]({{ site.url }}/uploads/2014/11/Instance-in-AWS-EC2.png)]({{ site.url }}/uploads/2014/11/Instance-in-AWS-EC2.png)Then you will see below screen to Launch Instance
 
-[![Launch Instance in AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/Launch-Instance-in-AWS-EC2.png)](http://maddyzone.com/wp-content/uploads/2014/11/Launch-Instance-in-AWS-EC2.png)
+[![Launch Instance in AWS EC2]({{ site.url }}/uploads/2014/11/Launch-Instance-in-AWS-EC2.png)]({{ site.url }}/uploads/2014/11/Launch-Instance-in-AWS-EC2.png)
 
 
 ### Choose An Amazon Machine Image (AMI)
@@ -54,7 +54,7 @@ Then after click on _**Launch Instance**_ _**Button**_ you will see below scree
 <blockquote>_**In Short we set a computer in cloud in which our all configuration set**__**By the Amazon machine Image (AMI)**_</blockquote>
 
 
-[![Choose an Amazon Machine](http://maddyzone.com/wp-content/uploads/2014/11/Choose-an-Amazon-Machine.png)](http://maddyzone.com/wp-content/uploads/2014/11/Choose-an-Amazon-Machine.png)
+[![Choose an Amazon Machine]({{ site.url }}/uploads/2014/11/Choose-an-Amazon-Machine.png)]({{ site.url }}/uploads/2014/11/Choose-an-Amazon-Machine.png)
 
 In this i have choose _**Amazon Linux AMI 2014.09.1 (HVM)**  First option _with 64 bit due to  some compatibility issues between the 32bit version and some versions of Node.
 
@@ -64,7 +64,7 @@ In this i have choose _**Amazon Linux AMI 2014.09.1 (HVM)**  First option _wi
 
 Then After Select AMI you will see next screen to choose _**Instance Type**_ like below
 
-[![Choose an Instance Type](http://maddyzone.com/wp-content/uploads/2014/11/Choose-an-Instance-Type.png)](http://maddyzone.com/wp-content/uploads/2014/11/Choose-an-Instance-Type.png)
+[![Choose an Instance Type]({{ site.url }}/uploads/2014/11/Choose-an-Instance-Type.png)]({{ site.url }}/uploads/2014/11/Choose-an-Instance-Type.png)
 
 In this you can choose any instance Type in this i have choose First and click on next  to configure Instance. But you can choose any type as per your requirement here i am just showing that how i setup Node.js.Any Way come to the point Now next screen will look like below
 
@@ -74,7 +74,7 @@ In this you can choose any instance Type in this i have choose First and click o
 
 In this i didn't change any setting and click on next screen for Add Storage
 
-[![Configure Instance Details](http://maddyzone.com/wp-content/uploads/2014/11/Configure-Instance-Details.png)](http://maddyzone.com/wp-content/uploads/2014/11/Configure-Instance-Details.png)
+[![Configure Instance Details]({{ site.url }}/uploads/2014/11/Configure-Instance-Details.png)]({{ site.url }}/uploads/2014/11/Configure-Instance-Details.png)
 
 
 ###  Add Storage
@@ -82,7 +82,7 @@ In this i didn't change any setting and click on next screen for Add Storage
 
 The Add Storage screen look like below  in this i didn't change in any setting and click on next
 
-[![Add Storage IN AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/Add-Storage-IN-AWS-EC2.png)](http://maddyzone.com/wp-content/uploads/2014/11/Add-Storage-IN-AWS-EC2.png)
+[![Add Storage IN AWS EC2]({{ site.url }}/uploads/2014/11/Add-Storage-IN-AWS-EC2.png)]({{ site.url }}/uploads/2014/11/Add-Storage-IN-AWS-EC2.png)
 
 
 
@@ -92,7 +92,7 @@ The Add Storage screen look like below  in this i didn't change in any setting 
 
 In this Section we made key value pair For tagging  .this is useful when we make more then 1 instance and we want to search by tag then it will helpful to search Instance . But this is not necessary to create tag but useful  when more then one instance exist.
 
-[![create key value in AWS](http://maddyzone.com/wp-content/uploads/2014/11/create-key-value-in-AWS.png)](http://maddyzone.com/wp-content/uploads/2014/11/create-key-value-in-AWS.png)
+[![create key value in AWS]({{ site.url }}/uploads/2014/11/create-key-value-in-AWS.png)]({{ site.url }}/uploads/2014/11/create-key-value-in-AWS.png)
 
 
 ### 
@@ -105,13 +105,13 @@ In this Section we made key value pair For tagging  .this is useful when we mak
 
 Now on next step we see  below screen in this we select inbound tab to see which ports are open. By default only the SSH port (22) is open.
 
-[![Configure Security Group](http://maddyzone.com/wp-content/uploads/2014/11/Configure-Security-Group1.png)](http://maddyzone.com/wp-content/uploads/2014/11/Configure-Security-Group1.png)
+[![Configure Security Group]({{ site.url }}/uploads/2014/11/Configure-Security-Group1.png)]({{ site.url }}/uploads/2014/11/Configure-Security-Group1.png)
 
 Now we enable  **HTTP port 80 **and** HTTPS **to** **allow access from the web. and save all rules and apply then come to next screen which is review screen which we have all done in above  with this steps.
 
 
 
-[![Configure Security Group with inbound rules](http://maddyzone.com/wp-content/uploads/2014/11/Configure-Security-Group.png)](http://maddyzone.com/wp-content/uploads/2014/11/Configure-Security-Group.png)
+[![Configure Security Group with inbound rules]({{ site.url }}/uploads/2014/11/Configure-Security-Group.png)]({{ site.url }}/uploads/2014/11/Configure-Security-Group.png)
 
 
 ### Review and Launch Instance
@@ -119,7 +119,7 @@ Now we enable  **HTTP port 80 **and** HTTPS **to** **allow access from the we
 
 Now in this screen our all details come then click on Launch button as shown in below screen
 
-[![review and launch AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/review.png)](http://maddyzone.com/wp-content/uploads/2014/11/review.png)
+[![review and launch AWS EC2]({{ site.url }}/uploads/2014/11/review.png)]({{ site.url }}/uploads/2014/11/review.png)
 
 
 <blockquote>_**Note : When you click  on Launch screen then at last step below screen come to set key value pair**_</blockquote>
@@ -127,17 +127,17 @@ Now in this screen our all details come then click on Launch button as shown in 
 
 This is use in _**AWS  **_to establish a trusted, authenticated connection between our computer(client side)  and the server side during an SSH operation. So make key value pair  like mention below screen you can choose any name for key value pair  which you like Here i am giving name _**nodedemo**_. then a file will download  with _**.pem**_ Extension with key pair name so here in my case file name will _**nodedemo.pem**_. after download this file please keep it safe because it will use when we do ssh connection with AWS EC2 and Now click on  launch instance._** **_
 
-[![key pair download in AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/key-download.png)](http://maddyzone.com/wp-content/uploads/2014/11/key-download.png)
+[![key pair download in AWS EC2]({{ site.url }}/uploads/2014/11/key-download.png)]({{ site.url }}/uploads/2014/11/key-download.png)
 
 
 
 After click on Launch Instances below screen come . Congrats your instances is launch successfully .Now you will see below screen with the successful message then after this click on view instance button to see it .
 
-[![launch instance done in AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/launch-done.png)](http://maddyzone.com/wp-content/uploads/2014/11/launch-done.png)
+[![launch instance done in AWS EC2]({{ site.url }}/uploads/2014/11/launch-done.png)]({{ site.url }}/uploads/2014/11/launch-done.png)
 
 When we click on view instance then all instance list come which we can filter by their name and tag which we made above on _**Tag Instance **_section.we can edit our all setting by the left side menu as mention in below screen and in this screen we see _** Public DNS  .**_Copy the public DNS value this is use when we  do SSH into the machine.Amazon does not provide a username and password for ssh connections. Amazon use the key pair which we made above.
 
-[![view instance in AWS EC2](http://maddyzone.com/wp-content/uploads/2014/11/view-instance-in-AWS-EC2.png)](http://maddyzone.com/wp-content/uploads/2014/11/view-instance-in-AWS-EC2.png)
+[![view instance in AWS EC2]({{ site.url }}/uploads/2014/11/view-instance-in-AWS-EC2.png)]({{ site.url }}/uploads/2014/11/view-instance-in-AWS-EC2.png)
 
 
 
@@ -147,7 +147,7 @@ When we click on view instance then all instance list come which we can filter b
 
 i am using Ubuntu so i am connecting with SSH. Window user can connect with Putty .In above screen shot you can see _**Connect**_ button when you click on that you will see amazon provide all the details that _**how to connect to your instance**_. details will look like below
 
-[![connect to your instance](http://maddyzone.com/wp-content/uploads/2014/11/connect-to-your-instance.png)](http://maddyzone.com/wp-content/uploads/2014/11/connect-to-your-instance.png)
+[![connect to your instance]({{ site.url }}/uploads/2014/11/connect-to-your-instance.png)]({{ site.url }}/uploads/2014/11/connect-to-your-instance.png)
 
 
 

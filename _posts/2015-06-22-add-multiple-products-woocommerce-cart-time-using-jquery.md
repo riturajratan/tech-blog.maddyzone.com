@@ -99,7 +99,7 @@ When we get all categories , now we have to get all products listing for each of
 
 To achieve this , we can use the below code snippet in our template file after the code of get all products categories array.First we will create a button to add all dragged products into cart by using the below html snippet.
 
-[![screenshot_1](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_1.png)](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_1.png)
+[![screenshot_1]({{ site.url }}/uploads/2015/06/screenshot_1.png)]({{ site.url }}/uploads/2015/06/screenshot_1.png)
 
 
 
@@ -189,7 +189,7 @@ Secondly we will create a division or section of page in left side in which we h
 
 The above code will returns you , the list of all products with their details like product image , product name , price etc. in response to each of the category.
 
-[![screenshot_2](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_2.png)](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_2.png)
+[![screenshot_2]({{ site.url }}/uploads/2015/06/screenshot_2.png)]({{ site.url }}/uploads/2015/06/screenshot_2.png)
 
 
 
@@ -207,7 +207,7 @@ so i am going to write the below html code snippet for `Cart Area` which will ad
     
 
 
-[![screenshot_3](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_3.png)](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_3.png)
+[![screenshot_3]({{ site.url }}/uploads/2015/06/screenshot_3.png)]({{ site.url }}/uploads/2015/06/screenshot_3.png)
 
 Now if you get all understanding of :
 
@@ -414,13 +414,13 @@ By click on the `Proceed to Cart` button after adding product to `Cart Area` bel
 
 
 
-[![screenshot_4](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_4.png)](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_4.png)
+[![screenshot_4]({{ site.url }}/uploads/2015/06/screenshot_4.png)]({{ site.url }}/uploads/2015/06/screenshot_4.png)
 
 As you are now redirecting to your cart page, as you get cart page you will see your added product there in cart as shown in below screen.
 
 
 
-[![screenshot_5](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_5.png)](http://maddyzone.com/wp-content/uploads/2015/06/screenshot_5.png)
+[![screenshot_5]({{ site.url }}/uploads/2015/06/screenshot_5.png)]({{ site.url }}/uploads/2015/06/screenshot_5.png)
 
 
 

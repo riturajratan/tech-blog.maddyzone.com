@@ -44,7 +44,7 @@ To Interact Angular JS with PHP We have to follow following Steps:
 
 **Database Structure**
 
-[![add edit delete db in angular](http://maddyzone.com/wp-content/uploads/2014/01/shopping_db.png)](http://maddyzone.com/wp-content/uploads/2014/01/shopping_db.png)
+[![add edit delete db in angular]({{ site.url }}/uploads/2014/01/shopping_db.png)]({{ site.url }}/uploads/2014/01/shopping_db.png)
 
 Snapshot showing a table name as "product", having fields like :
 
@@ -330,7 +330,7 @@ So complete add product function now is as :
     }
 
 
-[![Product Add](http://maddyzone.com/wp-content/uploads/2014/01/Product-Add.png)](http://maddyzone.com/wp-content/uploads/2014/01/Product-Add.png)
+[![Product Add]({{ site.url }}/uploads/2014/01/Product-Add.png)]({{ site.url }}/uploads/2014/01/Product-Add.png)
 
 In the same way you can work for update / delete form data by creating function for update and delete in db.php and controller.js.
 Now Next Step is how to show data to html which we save in database using db.php using angular js to complete our motto of this example.
@@ -762,11 +762,11 @@ You can check the Edit and Delete function in action by below snapshots:
 
 **Edit Product**
 
-[![Product Edit](http://maddyzone.com/wp-content/uploads/2014/01/Product-Edit.png)](http://maddyzone.com/wp-content/uploads/2014/01/Product-Edit.png)
+[![Product Edit]({{ site.url }}/uploads/2014/01/Product-Edit.png)]({{ site.url }}/uploads/2014/01/Product-Edit.png)
 
 **Delete Product**
 
-[![Product Delete](http://maddyzone.com/wp-content/uploads/2014/01/Product-Delete.png)](http://maddyzone.com/wp-content/uploads/2014/01/Product-Delete.png)
+[![Product Delete]({{ site.url }}/uploads/2014/01/Product-Delete.png)]({{ site.url }}/uploads/2014/01/Product-Delete.png)
 
 
 

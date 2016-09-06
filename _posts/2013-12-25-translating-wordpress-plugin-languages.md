@@ -25,18 +25,18 @@ tags:
 
 2. Install poedit on your local computer. after sucessful insallation open your poeditor.
 
-[![poedit1](http://maddyzone.com/wp-content/uploads/2013/12/poedit1-300x225.png)](http://maddyzone.com/wp-content/uploads/2013/12/poedit1.png)
+[![poedit1]({{ site.url }}/uploads/2013/12/poedit1-300x225.png)]({{ site.url }}/uploads/2013/12/poedit1.png)
 3. Go to file menu click on "New Catalog". then a other popup window will be opened.
 
-[![poedit2](http://maddyzone.com/wp-content/uploads/2013/12/poedit2-300x225.png)](http://maddyzone.com/wp-content/uploads/2013/12/poedit2.png)
+[![poedit2]({{ site.url }}/uploads/2013/12/poedit2-300x225.png)]({{ site.url }}/uploads/2013/12/poedit2.png)
 4. Insert project and charset utf-8 and click on path tab and click new item and fill "../" for plugin folder
 i.e( if your folder name rakesh and all the php files is in then give path "../").
 
-[![poedit3](http://maddyzone.com/wp-content/uploads/2013/12/poedit3-300x224.jpg)](http://maddyzone.com/wp-content/uploads/2013/12/poedit3.jpg)
+[![poedit3]({{ site.url }}/uploads/2013/12/poedit3-300x224.jpg)]({{ site.url }}/uploads/2013/12/poedit3.jpg)
 5. and after that click on keywords wordpress translate only two function( _e , __ )keywords for every language. if your code is in those two functions then it will be taransable code. and then click on "ok"
 Note:- Click ok when you finished all three step.
 
-[![poedit4](http://maddyzone.com/wp-content/uploads/2013/12/poedit4-300x225.png)](http://maddyzone.com/wp-content/uploads/2013/12/poedit4.png)
+[![poedit4]({{ site.url }}/uploads/2013/12/poedit4-300x225.png)]({{ site.url }}/uploads/2013/12/poedit4.png)
 6. After that save your default.po in the folder then it's search code for translate and then transable code will be appear in the poedit.
 
 7. For translate code click on line by line in original string block and write your code in last section. then after write all code. click on file menu save as file like(yourpluginname-fr_FR)for franch.

@@ -32,7 +32,7 @@ Go to "Project->Save project", this will save two file project_name.sublime-proj
 
 2.) Quick preview and open file - To open file , just hit Ctrl+p, and start typing file name it will preview selected file content, after pressing enter file will be opened. So now no need to crawl or scroll project for file you are looking for.
 
-[![ctrl+p](http://maddyzone.com/wp-content/uploads/2013/12/ctrl+p.png)](http://maddyzone.com/wp-content/uploads/2013/12/ctrl+p.png)
+[![ctrl+p]({{ site.url }}/uploads/2013/12/ctrl+p.png)]({{ site.url }}/uploads/2013/12/ctrl+p.png)
 
 3.) Go to line - Press Ctrl+g, then line number to jump on line. Ex. To jump on line number 20, press Ctrl+g , 20 enter simple :)
 
@@ -41,11 +41,11 @@ Go to "Project->Save project", this will save two file project_name.sublime-proj
 5.) Search & replace - Ctrl+f, will work to search inside current file and Ctrl+h will to replace text in current file. To search and replace in multiple file you can use Ctrl+shift+f, now you can select files, folder, include or exclude during file patter and you can also use regular expression and case sensitive searching.
 
 6.) Toggle - you can toggle minimal, status bar, tabs, toggle menu, open command pallate using Ctrl+p, then "Toggle", select option it will toggle selected portion inside your sublime.
-[![toggle](http://maddyzone.com/wp-content/uploads/2013/12/toggle.png)](http://maddyzone.com/wp-content/uploads/2013/12/toggle.png)
+[![toggle]({{ site.url }}/uploads/2013/12/toggle.png)]({{ site.url }}/uploads/2013/12/toggle.png)
 
 7.) Auto complete - One of developers necessity is auto-completion of code. Sublime CodeIntel package will auto complete code for many languages like Php, JavaScript, python, Node.js etc. it starts suggesting as soon as key is pressed. Ex. For JavaScript, it will find all methods inside a object and suggest you out.
 
-[![sublime-codeintel](http://maddyzone.com/wp-content/uploads/2013/12/sublime-codeintel.png)](http://maddyzone.com/wp-content/uploads/2013/12/sublime-codeintel.png)
+[![sublime-codeintel]({{ site.url }}/uploads/2013/12/sublime-codeintel.png)]({{ site.url }}/uploads/2013/12/sublime-codeintel.png)
 
 8.) Full screen and distraction free modes - To work in full screen mode press F11 and shift+F11 for distraction free mode.
 
@@ -62,7 +62,7 @@ Go to "Project->Save project", this will save two file project_name.sublime-proj
 
 10.) Split window - Sublime provides split window, you can find it under "View->layout", most of time I use two columns side by side by using alt+shift+2, now you can drag & drop tabs between them and also open same or different file in splited window.
 
-[![splited_window](http://maddyzone.com/wp-content/uploads/2013/12/splited_window.png)](http://maddyzone.com/wp-content/uploads/2013/12/splited_window.png)
+[![splited_window]({{ site.url }}/uploads/2013/12/splited_window.png)]({{ site.url }}/uploads/2013/12/splited_window.png)
 
 11.) Vintage Mode - Sublime come with vintage mode disabled by default, after unable it you are able to run Vi/Vim editor commands.
 

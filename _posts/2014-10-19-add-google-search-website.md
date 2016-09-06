@@ -44,7 +44,7 @@ Recentally i have added Custom Google search in my website, you can see on right
 
 
 
-[caption id="attachment_1673" align="alignnone" width="788"][![How to add Google search in your website ](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-1.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-1.png) How to add Google search in your website Step 1[/caption]
+[caption id="attachment_1673" align="alignnone" width="788"][![How to add Google search in your website ]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-1.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-1.png) How to add Google search in your website Step 1[/caption]
 
 Now you can see above i have put my Sub-domain name **[maddyzone.com](http://maddyzone.com) **and you will see Search Engine Name Set According to your Domain Name .
 
@@ -56,7 +56,7 @@ Now you can see above i have put my Sub-domain name **[maddyzone.com](http://mad
 
 
 
-[caption id="attachment_1675" align="alignnone" width="788"][![How to add Google search in our website step 2](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-2.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-2.png) How to add Google search in our website step 2[/caption]
+[caption id="attachment_1675" align="alignnone" width="788"][![How to add Google search in our website step 2]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-2.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-2.png) How to add Google search in our website step 2[/caption]
 
 you see above your Custom Google Search code has set Hurray :) and you will see screen like below
 
@@ -66,7 +66,7 @@ you see above your Custom Google Search code has set Hurray :) and you will see 
 
 
 
-[caption id="attachment_1676" align="alignnone" width="788"][![add custom Google search step 3](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-3.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-3.png) How to add Google search in our website step 3[/caption]
+[caption id="attachment_1676" align="alignnone" width="788"][![add custom Google search step 3]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-3.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-3.png) How to add Google search in our website step 3[/caption]
 
 
 ## **Step-4** Look And Feel in Custom Google Search Box and Result
@@ -76,7 +76,7 @@ Now click on Look and feel Tab on left side then you will see below screen
 
 
 
-[caption id="attachment_1679" align="alignnone" width="779"][![How to add Google search in our website step 4](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-4-left.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-4-left.png) How to add Google search in our website step 4[/caption]
+[caption id="attachment_1679" align="alignnone" width="779"][![How to add Google search in our website step 4]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-4-left.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-4-left.png) How to add Google search in our website step 4[/caption]
 
 
 
@@ -84,7 +84,7 @@ here we decide That How our Google search will see in our website in right side 
 
 
 
-[![add custom google search step 4-right](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-4-right.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-4-right.png)
+[![add custom google search step 4-right]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-4-right.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-4-right.png)
 
 
 
@@ -96,7 +96,7 @@ Now  you can set theme in _Google Search Box and results_ .For this click on *
 
 
 
-[caption id="attachment_1684" align="alignnone" width="784"][![set theme in google search button and results](http://maddyzone.com/wp-content/uploads/2014/10/set-theme-in-google-search-button-and-results.png)](http://maddyzone.com/wp-content/uploads/2014/10/set-theme-in-google-search-button-and-results.png) set theme in google search button and results[/caption]
+[caption id="attachment_1684" align="alignnone" width="784"][![set theme in google search button and results]({{ site.url }}/uploads/2014/10/set-theme-in-google-search-button-and-results.png)]({{ site.url }}/uploads/2014/10/set-theme-in-google-search-button-and-results.png) set theme in google search button and results[/caption]
 
 
 
@@ -108,7 +108,7 @@ Now click on **Customise **Tab and you will see below screen
 
 
 
-[caption id="attachment_1687" align="alignnone" width="778"][![Customisation in Custom Google Search Box and Result](http://maddyzone.com/wp-content/uploads/2014/10/customise-google-search-box.png)](http://maddyzone.com/wp-content/uploads/2014/10/customise-google-search-box.png) Customisation in Custom Google Search Box and Result[/caption]
+[caption id="attachment_1687" align="alignnone" width="778"][![Customisation in Custom Google Search Box and Result]({{ site.url }}/uploads/2014/10/customise-google-search-box.png)]({{ site.url }}/uploads/2014/10/customise-google-search-box.png) Customisation in Custom Google Search Box and Result[/caption]
 
 In this we can customise many more things like
 
@@ -150,19 +150,19 @@ Play with above things and see changes on Custom Google search.
 
 For two-column layout click on look and feel on left end side then choose two-column layout then below screen will come like below
 
-[caption id="attachment_1691" align="alignnone" width="779"][![add custom google search  two-column type pattern](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern.png) add custom google search two-column type pattern[/caption]
+[caption id="attachment_1691" align="alignnone" width="779"][![add custom google search  two-column type pattern]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern.png) add custom google search two-column type pattern[/caption]
 
 
 
 Now click on _**Save & Code **_then below screen will come for Search Box code apply this code where you want to add only **search box**
 
-[caption id="attachment_1692" align="alignnone" width="782"][![add custom google search step 5 two-column type pattern for search box](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-box.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-box.png) add custom google search two-column type pattern for search box[/caption]
+[caption id="attachment_1692" align="alignnone" width="782"][![add custom google search step 5 two-column type pattern for search box]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-box.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-box.png) add custom google search two-column type pattern for search box[/caption]
 
 
 
 Then click on **Obtain Code for Search results  **for google result view.In this code result will show.Apply that code on that part where you want to show result. code look like below when you click on button
 
-[caption id="attachment_1693" align="alignnone" width="780"][![add custom google search two-column type pattern for search results](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-result.png)](http://maddyzone.com/wp-content/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-result.png) add custom google search two-column type pattern for search results[/caption]
+[caption id="attachment_1693" align="alignnone" width="780"][![add custom google search two-column type pattern for search results]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-result.png)]({{ site.url }}/uploads/2014/10/add-custom-google-search-step-5-two-column-type-pattern-for-search-result.png) add custom google search two-column type pattern for search results[/caption]
 
 
 

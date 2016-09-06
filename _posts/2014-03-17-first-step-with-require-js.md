@@ -27,7 +27,7 @@ tags:
 then it give error below in console(press F12 to see console in browser)
 
 
-[![jQuery not defined](http://maddyzone.com/wp-content/uploads/2014/03/jQuery-not-defined.png)](http://maddyzone.com/wp-content/uploads/2014/03/jQuery-not-defined.png) [button type="bd_button btn_middle" url="http://demo.maddyzone.com/javascript/requirejs/first-step-with-require-js/error-with-unorder-js-script-file-loading.html" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ]See In Action[/button]
+[![jQuery not defined]({{ site.url }}/uploads/2014/03/jQuery-not-defined.png)]({{ site.url }}/uploads/2014/03/jQuery-not-defined.png) [button type="bd_button btn_middle" url="http://demo.maddyzone.com/javascript/requirejs/first-step-with-require-js/error-with-unorder-js-script-file-loading.html" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ]See In Action[/button]
 
 
 [dropcap]N[/dropcap]ow we set in order like below
@@ -40,7 +40,7 @@ then it give error below in console(press F12 to see console in browser)
 Then error not coming and a alert box appear that show "[jQuery](http://jquery.com/) and [jQuery UI](http://jqueryui.com/) Loaded" like below
 
 
-[![error remove by order js files](http://maddyzone.com/wp-content/uploads/2014/03/error-remove-by-order-js-files.png)](http://maddyzone.com/wp-content/uploads/2014/03/error-remove-by-order-js-files.png)
+[![error remove by order js files]({{ site.url }}/uploads/2014/03/error-remove-by-order-js-files.png)]({{ site.url }}/uploads/2014/03/error-remove-by-order-js-files.png)
 
 
 
@@ -63,7 +63,7 @@ Opera 10+ …… compatible ✔ By [Require.Js](http://requirejs.org/)
 In a Simple Manner Require Js By which we make our  code moduler and can configure to the dependency of files(which file load at (after or before) which specific file)</blockquote>
 
 
-So Start with Require Js First [**Download**](http://requirejs.org/docs/download.html) [Require.Js](http://requirejs.org/) then put in a js folder then it look like below [![Require js demo folder](http://maddyzone.com/wp-content/uploads/2014/03/Require-js-demo-folde.png)](http://maddyzone.com/wp-content/uploads/2014/03/Require-js-demo-folde.png) Now we comment [jQuery UI](http://jqueryui.com/) then [jQuery](http://jquery.com/) file in head and add require js like below
+So Start with Require Js First [**Download**](http://requirejs.org/docs/download.html) [Require.Js](http://requirejs.org/) then put in a js folder then it look like below [![Require js demo folder]({{ site.url }}/uploads/2014/03/Require-js-demo-folde.png)]({{ site.url }}/uploads/2014/03/Require-js-demo-folde.png) Now we comment [jQuery UI](http://jqueryui.com/) then [jQuery](http://jquery.com/) file in head and add require js like below
 
     
     <script src="js/require.js" data-main="js/main" type="text/javascript"></script>
@@ -102,7 +102,7 @@ By above code we load all files with  [Require.Js](http://requirejs.org/). Abo
 Now when we load   [jQuery UI](http://jqueryui.com/) then [jQuery](http://jquery.com/)  load first because we set dependency of [jQuery UI](http://jqueryui.com/) with [jQuery](http://jquery.com/) with the use of [Require.Js](http://requirejs.org/). in console in HTML section you will see file js file load like below
 
 
-[![loading file structure with require js](http://maddyzone.com/wp-content/uploads/2014/03/loading-file-structure-with-require-js.png)](http://maddyzone.com/wp-content/uploads/2014/03/loading-file-structure-with-require-js.png)
+[![loading file structure with require js]({{ site.url }}/uploads/2014/03/loading-file-structure-with-require-js.png)]({{ site.url }}/uploads/2014/03/loading-file-structure-with-require-js.png)
 
 
 **Management of js files order**

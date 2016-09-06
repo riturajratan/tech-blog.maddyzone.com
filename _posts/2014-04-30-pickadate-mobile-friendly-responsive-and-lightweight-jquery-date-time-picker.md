@@ -23,13 +23,13 @@ tags:
 
 [pickadate js](http://amsul.ca/pickadate.js/)** **Datepicker is look  like below
 
-[![pickadate datepicker](http://maddyzone.com/wp-content/uploads/2014/04/pickadate-datepicker.jpg)](http://maddyzone.com/wp-content/uploads/2014/04/pickadate-datepicker.jpg)
+[![pickadate datepicker]({{ site.url }}/uploads/2014/04/pickadate-datepicker.jpg)]({{ site.url }}/uploads/2014/04/pickadate-datepicker.jpg)
 
 
 
 and [pickadate js](http://amsul.ca/pickadate.js/)** **Timepicker look like below
 
-[![pickadate timepicker](http://maddyzone.com/wp-content/uploads/2014/04/pickadate-timepicker.jpg)](http://maddyzone.com/wp-content/uploads/2014/04/pickadate-timepicker.jpg)
+[![pickadate timepicker]({{ site.url }}/uploads/2014/04/pickadate-timepicker.jpg)]({{ site.url }}/uploads/2014/04/pickadate-timepicker.jpg)
 
 
 

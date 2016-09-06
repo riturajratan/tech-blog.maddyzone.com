@@ -27,7 +27,7 @@ First we go to Developer section of Facebook then click on App Button then click
 
 
 
-[![create a new app in facebook](http://maddyzone.com/wp-content/uploads/2014/11/create-a-new-app-in-facebook.png)](http://maddyzone.com/wp-content/uploads/2014/11/create-a-new-app-in-facebook.png)
+[![create a new app in facebook]({{ site.url }}/uploads/2014/11/create-a-new-app-in-facebook.png)]({{ site.url }}/uploads/2014/11/create-a-new-app-in-facebook.png)
 
 
 
@@ -37,11 +37,11 @@ First we go to Developer section of Facebook then click on App Button then click
 
 Then  a New Popup will open like below In this Insert **Display Name**  and Choose **Category **
 
-[![Create APP ID In Facebook](http://maddyzone.com/wp-content/uploads/2014/11/Create-APP-ID.png)](http://maddyzone.com/wp-content/uploads/2014/11/Create-APP-ID.png)
+[![Create APP ID In Facebook]({{ site.url }}/uploads/2014/11/Create-APP-ID.png)]({{ site.url }}/uploads/2014/11/Create-APP-ID.png)
 
 Then After Click On **Create App ID **a popup will open to fill correct captcha image for security purpose  like below
 
-[![security captcha in facebook App](http://maddyzone.com/wp-content/uploads/2014/11/security-captcha-in-facebook-App.png)](http://maddyzone.com/wp-content/uploads/2014/11/security-captcha-in-facebook-App.png)
+[![security captcha in facebook App]({{ site.url }}/uploads/2014/11/security-captcha-in-facebook-App.png)]({{ site.url }}/uploads/2014/11/security-captcha-in-facebook-App.png)
 
 
 ##  App Interface** **
@@ -49,13 +49,13 @@ Then After Click On **Create App ID **a popup will open to fill correct captcha�
 
 After this, App Interface will open like below in this by default **setting** Tab selected in this we need to add a Platform like below
 
-[![App Interface for facebook App](http://maddyzone.com/wp-content/uploads/2014/11/App-Interface-fo-facebook-App.png)](http://maddyzone.com/wp-content/uploads/2014/11/App-Interface-fo-facebook-App.png)
+[![App Interface for facebook App]({{ site.url }}/uploads/2014/11/App-Interface-fo-facebook-App.png)]({{ site.url }}/uploads/2014/11/App-Interface-fo-facebook-App.png)
 
 
 
 Now a popup will open.In this click on **Website** as shown below because we are making app for website.You can choose any platform to your requirements.
 
-[![choose platform in facebook App](http://maddyzone.com/wp-content/uploads/2014/11/choose-platform-in-facebook-App.png)](http://maddyzone.com/wp-content/uploads/2014/11/choose-platform-in-facebook-App.png)
+[![choose platform in facebook App]({{ site.url }}/uploads/2014/11/choose-platform-in-facebook-App.png)]({{ site.url }}/uploads/2014/11/choose-platform-in-facebook-App.png)
 
 
 ## Fill Platform Details
@@ -71,7 +71,7 @@ _**Contact Email **_= your email id _(abc@xyz.com)_
 _**Site URL**_ =http://example.com  (in this _**http** _must be necessary)</blockquote>
 
 
-[![Enter Details on facebook App](http://maddyzone.com/wp-content/uploads/2014/11/Enter-Details-on-facebook-App.png)](http://maddyzone.com/wp-content/uploads/2014/11/Enter-Details-on-facebook-App.png)
+[![Enter Details on facebook App]({{ site.url }}/uploads/2014/11/Enter-Details-on-facebook-App.png)]({{ site.url }}/uploads/2014/11/Enter-Details-on-facebook-App.png)
 
 
 
@@ -83,7 +83,7 @@ Then click on save button .
 
 Now click on **Status and Review **then after click  on **yes** **button** as shown right side see  below ,Then a popup will come to confirm to live the app .
 
-[![status and review of facebook app and do it live](http://maddyzone.com/wp-content/uploads/2014/11/status-and-review-of-facebook-app-and-do-it-live.png)](http://maddyzone.com/wp-content/uploads/2014/11/status-and-review-of-facebook-app-and-do-it-live.png)
+[![status and review of facebook app and do it live]({{ site.url }}/uploads/2014/11/status-and-review-of-facebook-app-and-do-it-live.png)]({{ site.url }}/uploads/2014/11/status-and-review-of-facebook-app-and-do-it-live.png)
 
 
 <blockquote>_**Hooray...... Our app is live now use anywhere **_</blockquote>
@@ -97,7 +97,7 @@ Now click on **Status and Review **then after click  on **yes** **button** as s
 
 Now Our APP is live. Now click on Dashboard and use App ID in Facebook plugins and many more.
 
-[![Use your app id in dashboard section](http://maddyzone.com/wp-content/uploads/2014/11/Use-your-app-id-in-dashboard-section.png)](http://maddyzone.com/wp-content/uploads/2014/11/Use-your-app-id-in-dashboard-section.png)
+[![Use your app id in dashboard section]({{ site.url }}/uploads/2014/11/Use-your-app-id-in-dashboard-section.png)]({{ site.url }}/uploads/2014/11/Use-your-app-id-in-dashboard-section.png)
 
 Hope it is useful for you guys but if you feel anything, Please feel free to  give your comments and suggestion.
 

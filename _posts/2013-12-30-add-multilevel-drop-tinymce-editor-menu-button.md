@@ -29,13 +29,13 @@ I have done googling 2-3 hours and implemented the suggested solution by others 
 I have found only the way how to add single level drop-down menu button everywhere but my requirement is little bit different, What i wanting to do is a menu button like :
 
 
-[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)
+[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)
 
 
 Firstly, i am going to tell you how to add a single level drop-down menu button,
 
 
-[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-1](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-1.png)](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-1.png)
+[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-1]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-1.png)]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-1.png)
 
 
 Code for adding button on toolbar:
@@ -60,7 +60,7 @@ This code will adds a button on the toolbar of tinymce editor.
 For adding menu items to the button, you have to use the following code:
 
 
-[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-2](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-2.png)](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-2.png)
+[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-2]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-2.png)]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-2.png)
 
 
 
@@ -101,7 +101,7 @@ The above code will adds a menu button with two menu items.
 Now the point comes, How to add submenu items to these menu items ?
 
 
-[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)](http://maddyzone.com/wp-content/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)
+[![tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)]({{ site.url }}/uploads/2013/12/tinymce-custom-menu-button-with-milti-level-drop-down-menus-screen-3.png)
 
 
 No need to worry its quite simple, you can use the following code for this:

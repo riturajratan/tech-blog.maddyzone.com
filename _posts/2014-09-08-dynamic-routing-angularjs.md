@@ -64,7 +64,7 @@ First make a main file it will like our [previous article](http://maddyzone.com/
         <!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on body tag ) -->
         <div class="container">
           <div class="jumbotron">
-            <img src="http://maddyzone.com/wp-content/uploads/2013/10/maddyzone-logo-300x72.png" />
+            <img src="{{ site.url }}/uploads/2013/10/maddyzone-logo-300x72.png" />
             <br />
             <h1>Dynamic Routing Example</h1>
             <br />

@@ -46,7 +46,7 @@ in both of the method we pass `$event` and use in our controller see JS file cod
       <!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on body tag ) -->
       <div class="container">
         <div class="jumbotron" ng-controller="ThisCtrl">
-          <img src="http://maddyzone.com/wp-content/uploads/2013/10/maddyzone-logo-300x72.png" />
+          <img src="{{ site.url }}/uploads/2013/10/maddyzone-logo-300x72.png" />
           <br />
           <h1>Get this in angular js</h1>
           <br />

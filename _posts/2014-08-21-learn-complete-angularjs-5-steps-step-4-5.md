@@ -124,7 +124,7 @@ Ok  for an example we will look in ** [highlight] $http [/highlight] ** service
 
 we are taking a example of [highlight] **$http** [/highlight] service.so we use service in angular like below
 
-[![how to use service in angular](http://maddyzone.com/wp-content/uploads/2014/08/service-use1.png)](http://maddyzone.com/wp-content/uploads/2014/08/service-use1.png)
+[![how to use service in angular]({{ site.url }}/uploads/2014/08/service-use1.png)]({{ site.url }}/uploads/2014/08/service-use1.png)
 
 
 

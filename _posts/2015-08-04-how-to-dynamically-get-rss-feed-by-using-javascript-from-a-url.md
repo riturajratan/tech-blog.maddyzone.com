@@ -99,7 +99,7 @@ So, i am writing the result oriented html below , which will included in above h
 
 Did you get all the points and requirement defiend in Step-1, if you are ok will this , than i will now move to step-2 , where i will write the js code for the above.
 
-[![How to dynamically get rss feed by using Javascript from a URL 1](http://maddyzone.com/wp-content/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL-1.png)](http://maddyzone.com/wp-content/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL-1.png)
+[![How to dynamically get rss feed by using Javascript from a URL 1]({{ site.url }}/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL-1.png)]({{ site.url }}/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL-1.png)
 
 
 ## Step-2: will show you and describe you most about the java script for our objective.
@@ -218,7 +218,7 @@ after initialization we parse the required output to out `post_result1` div elem
 
 and append it, after append we hide the loading feed image which was loaded earlier on button click until we didn't get the result, as we got the result, we will hide this element.
 
-[![How to dynamically get rss feed by using Javascript from a URL2](http://maddyzone.com/wp-content/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL2.png)](http://maddyzone.com/wp-content/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL2.png)
+[![How to dynamically get rss feed by using Javascript from a URL2]({{ site.url }}/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL2.png)]({{ site.url }}/uploads/2015/08/How-to-dynamically-get-rss-feed-by-using-Javascript-from-a-URL2.png)
 
 
 

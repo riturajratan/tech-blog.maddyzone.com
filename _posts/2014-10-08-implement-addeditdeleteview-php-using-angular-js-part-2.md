@@ -564,7 +564,7 @@ Hey , You are now able to perform all add/edit/delete/view/search/paging action 
 
 please check the below snapshot with required output .
 
-[![Angular With PHP Filter Paging](http://maddyzone.com/wp-content/uploads/2014/10/Angular-With-PHP-Filter-Paging.png)](http://maddyzone.com/wp-content/uploads/2014/10/Angular-With-PHP-Filter-Paging.png)
+[![Angular With PHP Filter Paging]({{ site.url }}/uploads/2014/10/Angular-With-PHP-Filter-Paging.png)]({{ site.url }}/uploads/2014/10/Angular-With-PHP-Filter-Paging.png)
 
 
 

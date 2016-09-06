@@ -291,7 +291,7 @@ To Download JDK , Please check below link :
 
 - As you open the link , you will see page looks like as shown in snapshot below :
 
-[![step1](http://maddyzone.com/wp-content/uploads/2014/10/step1.png)](http://maddyzone.com/wp-content/uploads/2014/10/step1.png)
+[![step1]({{ site.url }}/uploads/2014/10/step1.png)]({{ site.url }}/uploads/2014/10/step1.png)
 
 - Here you got JDK , Server JRE , JRE from among three option, you have to only choose JDK link to download.
 
@@ -301,7 +301,7 @@ To Download JDK , Please check below link :
 
 - As you can check it is same as shown in snapshot below :
 
-[![step2](http://maddyzone.com/wp-content/uploads/2014/10/step2.png)](http://maddyzone.com/wp-content/uploads/2014/10/step2.png)
+[![step2]({{ site.url }}/uploads/2014/10/step2.png)]({{ site.url }}/uploads/2014/10/step2.png)
 
 - Here you got lots of options of JDK version for different-different platform like : Linux , Mac OS , Windows.
 
@@ -317,31 +317,31 @@ Windows x86 or  Windows x64 as per your system configuration,after selecting " 
 As you start the installation first screen will show you the welcome message to installation wizard and guide you to complete
 installation as below snapshot
 
-[![step3](http://maddyzone.com/wp-content/uploads/2014/10/step3.png)](http://maddyzone.com/wp-content/uploads/2014/10/step3.png)
+[![step3]({{ site.url }}/uploads/2014/10/step3.png)]({{ site.url }}/uploads/2014/10/step3.png)
 
 When you click on next button from here , you will move to next screen shown as below :
 
-[![step4](http://maddyzone.com/wp-content/uploads/2014/10/step4.png)](http://maddyzone.com/wp-content/uploads/2014/10/step4.png)
+[![step4]({{ site.url }}/uploads/2014/10/step4.png)]({{ site.url }}/uploads/2014/10/step4.png)
 
 Here you can choose the mode of installation and where do you want to install Java SDK in your system (way to choose location)
 by default development tools are selected as option , and you can move to next screen by clicking next button directly or by changing location path of installation.
 
 As you click on next button you will move to next screen shown as below :
 
-[![step5](http://maddyzone.com/wp-content/uploads/2014/10/step5.png)](http://maddyzone.com/wp-content/uploads/2014/10/step5.png)
+[![step5]({{ site.url }}/uploads/2014/10/step5.png)]({{ site.url }}/uploads/2014/10/step5.png)
 
 Here you can see the progress of installation, as progress bar reached to completion point , next sreen will popup looks like
 below  :
 
-[![step6](http://maddyzone.com/wp-content/uploads/2014/10/step6.png)](http://maddyzone.com/wp-content/uploads/2014/10/step6.png)
+[![step6]({{ site.url }}/uploads/2014/10/step6.png)]({{ site.url }}/uploads/2014/10/step6.png)
 
 On this screen , you can change the destination folder for installation , otherwise click to next button for complete installation of Java SDK as shown below :
 
-[![step7](http://maddyzone.com/wp-content/uploads/2014/10/step7.png)](http://maddyzone.com/wp-content/uploads/2014/10/step7.png)
+[![step7]({{ site.url }}/uploads/2014/10/step7.png)]({{ site.url }}/uploads/2014/10/step7.png)
 
 After Successful completion of progress bar on this stage , you will move to next screen showing with message  like "Java SE Development Kit version number successfully installed" looks in screen below :
 
-[![step8](http://maddyzone.com/wp-content/uploads/2014/10/step8.png)](http://maddyzone.com/wp-content/uploads/2014/10/step8.png)
+[![step8]({{ site.url }}/uploads/2014/10/step8.png)]({{ site.url }}/uploads/2014/10/step8.png)
 
 
 
@@ -371,7 +371,7 @@ As we successfully complete Java SDK we now move to our next step of Android Ins
 
 - After hitting this url you will get the webpage looks like below snapshot
 
-[![Android SDK Location to Download](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Location-to-Download.png)](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Location-to-Download.png)
+[![Android SDK Location to Download]({{ site.url }}/uploads/2014/10/Android-SDK-Location-to-Download.png)]({{ site.url }}/uploads/2014/10/Android-SDK-Location-to-Download.png)
 
 
 
@@ -379,7 +379,7 @@ As we successfully complete Java SDK we now move to our next step of Android Ins
 
 
 
-[![Android SDK  Agreement and Window Version](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Agreement-and-Window-Version.png)](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Agreement-and-Window-Version.png)
+[![Android SDK  Agreement and Window Version]({{ site.url }}/uploads/2014/10/Android-SDK-Agreement-and-Window-Version.png)]({{ site.url }}/uploads/2014/10/Android-SDK-Agreement-and-Window-Version.png)
 
 - On this screen you have to check the checkbox for mention terms and condition to agree with, and than choose one of the option for your window version like 32 bit or 64 bit.
 
@@ -387,7 +387,7 @@ As we successfully complete Java SDK we now move to our next step of Android Ins
 
 - Once click on this button downloading start and save the zip file to specific directory of your system drives , where you want to save or in drive d:
 
-[![download](http://maddyzone.com/wp-content/uploads/2014/10/download.png)](http://maddyzone.com/wp-content/uploads/2014/10/download.png)
+[![download]({{ site.url }}/uploads/2014/10/download.png)]({{ site.url }}/uploads/2014/10/download.png)
 
 - When downloading is successful or file successfully downloaded to sepecific directory, now unzip the zip bundle and move to
 our next step "Installing the Eclipse ADT Bundle with the Android SDK".
@@ -405,13 +405,13 @@ To set up the Eclipse ADT Bundle with the Android SDK:
 
 - When you launch Eclipse , you will see the screen looks in snapshot below to create workspace(a folder name where your android apps code will placed what you will develop later on of this blog) on your system.
 
-[![eclipse workspace](http://maddyzone.com/wp-content/uploads/2014/10/eclipse-workspace.png)](http://maddyzone.com/wp-content/uploads/2014/10/eclipse-workspace.png)
+[![eclipse workspace]({{ site.url }}/uploads/2014/10/eclipse-workspace.png)]({{ site.url }}/uploads/2014/10/eclipse-workspace.png)
 
 - You can change the location of workspace, by browsing particular location, you want to save your develop apps in future.
 
 - After Clicking on "OK" button , you will get screen looks like below in snapshot
 
-[![Eclipse IDE](http://maddyzone.com/wp-content/uploads/2014/10/Eclipse-IDE1.png)](http://maddyzone.com/wp-content/uploads/2014/10/Eclipse-IDE1.png)
+[![Eclipse IDE]({{ site.url }}/uploads/2014/10/Eclipse-IDE1.png)]({{ site.url }}/uploads/2014/10/Eclipse-IDE1.png)
 
 - Eclipse IDE provides you way to create Android application by choosing the following option from file menu from Eclipse IDE
 as :
@@ -422,11 +422,11 @@ as :
 
 Please check below snapshot
 
-[![Android application project](http://maddyzone.com/wp-content/uploads/2014/10/Android-application-project1.png)](http://maddyzone.com/wp-content/uploads/2014/10/Android-application-project1.png)
+[![Android application project]({{ site.url }}/uploads/2014/10/Android-application-project1.png)]({{ site.url }}/uploads/2014/10/Android-application-project1.png)
 
 - After choosing option "Android Application Project" you will get a screen looks like below:
 
-[![Andriod Application Creation](http://maddyzone.com/wp-content/uploads/2014/10/Andriod-Application-Creation1.png)](http://maddyzone.com/wp-content/uploads/2014/10/Andriod-Application-Creation1.png)
+[![Andriod Application Creation]({{ site.url }}/uploads/2014/10/Andriod-Application-Creation1.png)]({{ site.url }}/uploads/2014/10/Andriod-Application-Creation1.png)
 
 - Here you can put your application name, you want to create and choose :
 
@@ -455,22 +455,22 @@ Please check below snapshot
 
 See the snapshot below :
 
-[![Android SDK Manager](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Manager.png)](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Manager.png)
+[![Android SDK Manager]({{ site.url }}/uploads/2014/10/Android-SDK-Manager.png)]({{ site.url }}/uploads/2014/10/Android-SDK-Manager.png)
 
 - Once you click on Android SDK Manager a screen will popup showing all the packages for android to install with respect to
 Android Vesions available with this bundle.
 
 See the snapshot below :
 
-[![Android SDK Package](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Package2.png)](http://maddyzone.com/wp-content/uploads/2014/10/Android-SDK-Package2.png)
+[![Android SDK Package]({{ site.url }}/uploads/2014/10/Android-SDK-Package2.png)]({{ site.url }}/uploads/2014/10/Android-SDK-Package2.png)
 
 - You have to choose required package or if you want to install all packages select all and click on Install Packages button.
 
-[![Choose Package to Install](http://maddyzone.com/wp-content/uploads/2014/10/Choose-Package-to-Install1.png)](http://maddyzone.com/wp-content/uploads/2014/10/Choose-Package-to-Install1.png)
+[![Choose Package to Install]({{ site.url }}/uploads/2014/10/Choose-Package-to-Install1.png)]({{ site.url }}/uploads/2014/10/Choose-Package-to-Install1.png)
 
 - Here you can choose packages to install by accepting the agreement license as shown in below snapshot.
 
-[![Choose Package to Install Agreement](http://maddyzone.com/wp-content/uploads/2014/10/Choose-Package-to-Install-Agreement-1.png)](http://maddyzone.com/wp-content/uploads/2014/10/Choose-Package-to-Install-Agreement-1.png)
+[![Choose Package to Install Agreement]({{ site.url }}/uploads/2014/10/Choose-Package-to-Install-Agreement-1.png)]({{ site.url }}/uploads/2014/10/Choose-Package-to-Install-Agreement-1.png)
 
 - After Accepting the Agreement downloading of selected packages will start and time depends on the number of packages you choose for installation or its took about 3-4 hrs. minimum for installation.
 

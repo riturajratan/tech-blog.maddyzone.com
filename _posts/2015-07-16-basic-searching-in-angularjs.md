@@ -89,7 +89,7 @@ Now talk about our HTML file `index.html`
     <body>
       <div class="container" ng-controller="SearchingCtrl">
         <div class="jumbotron">
-          <img src="http://maddyzone.com/wp-content/uploads/2013/10/maddyzone-logo-300x72.png">
+          <img src="{{ site.url }}/uploads/2013/10/maddyzone-logo-300x72.png">
           <br/>
           <h1>Basic Searching With AngularJS</h1>
           <br/>
