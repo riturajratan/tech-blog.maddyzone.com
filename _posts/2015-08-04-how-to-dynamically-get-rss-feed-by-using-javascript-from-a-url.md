@@ -230,8 +230,7 @@ Now , i would like to move to step-3 , where i will show you the complete code f
 
 ## step-3 : will show the output and the complete code for this.
 
-
-
+<iframe src="http://embed.plnkr.co/VxLzwN/preview" width="100%" height="680px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 So , all of this i have done here to complete the requirement, i hope you all got very well my blog, if you got any question regarding this, you can send me comments on this
 or if you like my post you can also share me your valuable feedback.
