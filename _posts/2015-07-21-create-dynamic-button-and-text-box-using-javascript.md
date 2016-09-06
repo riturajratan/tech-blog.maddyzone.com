@@ -23,11 +23,11 @@ As a Backend End Developer, you may required dynamic creation of button and text
 
 So my friends i am presenting you the way of creation of buttons and textbox simultaneously using `JavaScipt` which is well known scripting language in our industry (IT) and this is also fast to process and provide results quickly.Now i am going to present the basic steps to achieve our goal , lets start with step first.
 
-`**Step -1**`
+##Step -1
 
 In step-1 , i am going to create an `index.html` file where i will define a basic html for our goal as mention below the code presentation of my `index.html` :
 
-    
+    {% highlight html %}
     <html>
     <title>Create dynamic button and text box creations using javascript</title>
     <head>
@@ -39,6 +39,7 @@ In step-1 , i am going to create an `index.html` file where i will define a basi
     <button name="add_button" value="Add New" id="add_button" onclick="addButton()"> Add New </button>
     </body>
     </html>
+    {% endhighlight %}
     
     
 
@@ -59,7 +60,7 @@ In the above code
   3. Now , i will discuss about both of the file what these will do , so first move on `index.html`
 
 
-`**index.html**`
+###index.html
 
 index.html , file basically present the view of our example, when we hit this file in our browser whatever just like in chrome , in body part of this html
 i create a button control which call a java script function `addButton` when we click on it , this function i will later define on our `script.js` file in `js` folder of this `example_1` folder and a blank div where all our dynamic control will appear after script called as a button and text box control.
@@ -68,15 +69,15 @@ Are you ok till now, is everything clear now, If it is fine than i will move to 
 
 So lets start with next step by name step-2
 
-`**Step -2**`
+##Step -2
 
 In step-2 , i will define the function `addButton` in `script.js` file , which will dynamically add controls to our html blank div , having id attribute `object_data`.
 
 Code for script.js is below :
 
-`**script.js**`
+###script.js
 
-    
+    {% highlight js %}
     var i = 1; // define global variable i to loop the button click event as much as we want
     
     function addButton(){
@@ -116,6 +117,7 @@ Code for script.js is below :
     
     i++ //increment the counter
     }
+    {% endhighlight %}
     
     
 
@@ -126,11 +128,11 @@ So, how you feel now my friends ,is its easier for you all to create all this st
 
 so as you know , as i write earlier in above code a `showMessage` function will call as you click on dynamically created button , this function will do the rest of the work for step-3
 
-`**Step -3**`
+###Step -3
 
 Code for showMessage function :
 
-    
+    {% highlight js %}
     function showMessage(){
     var currID = showMessage.caller.arguments[0].target.id;
     
@@ -140,6 +142,7 @@ Code for showMessage function :
     alert(document.getElementById("txt"+currID).value);
     
     } 
+    {% highlight js %}
     
 
 
@@ -147,4 +150,4 @@ So, now using all the above code and below url for complete code, you can create
 
 for any query , please comment me or feedback me for this blog , how do you like this.
 
-[button type="bd_button btn_large" url="https://github.com/Maddyzone/create-dynamic-button-and-text-box-using-javascript" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ]Code[/button]
+<a href="https://github.com/Maddyzone/create-dynamic-button-and-text-box-using-javascript" target="_blank"> Code</a>
