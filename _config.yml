@@ -10,7 +10,7 @@ github_username:  riturajratan
 exclude: ['node_modules']
 paginate: 10
 paginate_path: "/page:num/"
-permalink: /:title
+permalink: /:categories/:title
 sass:
   compressed: true
 
