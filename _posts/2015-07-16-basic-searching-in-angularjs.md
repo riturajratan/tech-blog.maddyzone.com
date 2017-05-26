@@ -15,6 +15,8 @@ tags:
 - searching
 ---
 
+[![Basic searching in AngularJS]({{ site.url }}/uploads/2015/07/Basic-search-in-angularjs.jpg)]({{ site.url }}/uploads/2015/07/Basic-search-in-angularjs.jpg)
+
 Today I will describe that How we will do basic searching in AngularJS.For this we need Following File structure.
 
     

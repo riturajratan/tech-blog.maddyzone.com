@@ -4,7 +4,9 @@ layout: page
 class: speaking
 ---
 
-I regularly speak at conferences in Europe and America, if you'd like me to join yours, please email me through <a href="//voux.io/contact" target="_blank">Voux's contact form</a> and we can discuss further.
+I regularly speak at conferences in Europe and America, if you'd like me to join yours, please email me, todd@toddmotto.com and we can discuss further.
+
+_Please note:_ I prefer to speak at Angular-specific conferences. Thank you :)
 
 <div class="speaking__grid">
   <ul>
@@ -35,34 +37,14 @@ I regularly speak at conferences in Europe and America, if you'd like me to join
   </ul>
 </div>
 
-I'm available for keynote and regular speaking slots, and to maximise exposure and impact of the talk do prefer if sessions are recorded.
-
 ### Upcoming events
 
-I'm a Developer Advocate at Telerik, which means some of the below events may be that I'm manning the sponsorship forts for Kendo or NativeScript to talk to developers about our Angular 1/2 and React integrations. However, the majority of the below will be speaking slots so check out the speaker pages if you're thinking of saying hi!
+Upcoming events I'll be speaking at.
 
 <div class="speaking__list">
   <ul>
     <li>
-      Not available <span>29-31.08.2016</span>
-    </li>
-    <li>
-      Not available <span>07-12.09.2016</span>
-    </li>
-    <li>
-      <a href="http://conference2016.twf.community">TWF (TBC)</a>, Krakow (Poland), <span>22-24.09.2016</span>
-    </li>
-    <li>
-      <a href="http://angularconnect.com/2016">AngularConnect</a>, London (England, UK), <span>27.09.2016</span>
-    </li>
-    <li>
-      <a href="#">Frontend Titans</a>, Cluj (Romania), <span>07-11.10.2016</span>
-    </li>
-    <li>
-      <a href="https://voxxeddays.com/thessaloniki/">Voxxed Thessaloniki</a>, Thessaloniki (Greece), <span>21.10.2016</span>
-    </li>
-    <li>
-      Not available <span>09.12.2016</span>
+      <a href="https://angularcamp.org">AngularCamp</a>, Barcelona (Spain), <span>06-07.07.2017</span>
     </li>
   </ul>
 </div>
@@ -73,6 +55,30 @@ Events I've spoken at. Check my [YouTube Channel](https://www.youtube.com/channe
 
 <div class="speaking__list">
   <ul>
+    <li>
+      <a href="https://www.ng-conf.org/workshops/">ng-conf</a> (workshop), Salt Lake City (Utah, USA), <span>03.04.2017</span>
+    </li>
+    <li>
+      <a href="https://ng-nl.org">NG-NL</a> (keynote), Amsterdam (Netherlands), <span>15-16.03.2017</span>
+    </li>
+    <li>
+      <a href="https://conf.crater.io">Crater Remote Conf</a>, Online, <span>08.02.2017</span>
+    </li>
+    <li>
+      <a href="https://ng-be.org">NG-BE</a>, Ghent (Belgium), <span>09.12.2016</span>
+    </li>
+    <li>
+      <a href="https://voxxeddays.com/thessaloniki/">Voxxed Thessaloniki</a>, Thessaloniki (Greece), <span>21.10.2016</span>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/events/1105119229569591/">We Speak JS</a>, Cluj (Romania), <span>07-11.10.2016</span>
+    </li>
+    <li>
+      <a href="http://angularconnect.com/2016">AngularConnect</a>, London (England, UK), <span>27.09.2016</span>
+    </li>
+    <li>
+      <a href="http://conference2016.twf.community">TWF Conf</a>, Kraków (Poland), <span>22-24.09.2016</span>
+    </li>
     <li>
       <a href="http://angularcamp.org/">AngularCamp</a>, Barcelona (Spain), <span>01-03.07.2016</span>
     </li>
