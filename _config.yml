@@ -4,7 +4,7 @@ email: info@maddyzone.com
 description: > # this means to ignore newlines until "baseurl:"
   Articles on Node.js ,JavaScript, Angular, React and HTML5
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tech-blog.maddyzone.com" # the base hostname & protocol for your site
+url: "http://tech-blog.maddyzone.com" # the base hostname & protocol for your site
 twitter_username: riturajratan
 github_username:  riturajratan
 exclude: ['node_modules']
