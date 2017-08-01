@@ -1,4 +1,4 @@
-# Source code for toddmotto.com
+# Source code for tech-blog.maddyzone.com
 
 ## Build this project
 
@@ -12,7 +12,7 @@ gem install jekyll
 
 If you need XCode dependencies, follow the [Jekyll installation guide](https://jekyllrb.com/docs/installation/). For Windows, follow the [Windows installation guide](https://jekyllrb.com/docs/windows/#installation).
 
-Uncompiled [Jekyll](//jekyllrb.com) source code for [toddmotto.com](//toddmotto.com).
+Uncompiled [Jekyll](//jekyllrb.com) source code for [tech-blog.maddyzone.com](//tech-blog.maddyzone.com).
 
 ### Installing dependencies
 
@@ -23,10 +23,10 @@ npm install --g gulp
 npm install --g yarn
 ```
 
-Next, you'll need to `yarn install` the other dev-dependencies, run this from the `toddmotto.github.io` root folder:
+Next, you'll need to `yarn install` the other dev-dependencies, run this from the `tech-blog.maddyzone.com` root folder:
 
 ```
-cd toddmotto.github.io
+cd tech-blog.maddyzone.com
 yarn install
 ```
 
@@ -42,4 +42,4 @@ This will start serving the project from `localhost:4000`, with livereload funct
 
 ### Notes
 
-Despite being open sourced, all code and content remain copyright of Todd Motto. Please don't steal!
+Despite being open sourced, all code and content remain copyright of Rituraj Ratan. Please don't steal!
