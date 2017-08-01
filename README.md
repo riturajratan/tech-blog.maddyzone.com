@@ -12,7 +12,7 @@ gem install jekyll
 
 If you need XCode dependencies, follow the [Jekyll installation guide](https://jekyllrb.com/docs/installation/). For Windows, follow the [Windows installation guide](https://jekyllrb.com/docs/windows/#installation).
 
-Uncompiled [Jekyll](//jekyllrb.com) source code for [tech-blog.maddyzone.com](//tech-blog.maddyzone.com).
+Uncompiled [Jekyll](//jekyllrb.com) source code for [tech-blog.maddyzone.com](http://tech-blog.maddyzone.com).
 
 ### Installing dependencies
 
