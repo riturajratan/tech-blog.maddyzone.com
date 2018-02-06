@@ -43,7 +43,7 @@ So if your all work start from `init` method then that would be easy to call aga
 
 <blockquote>
 Pros: You call init method and things are done.
-
+<br/>
 Cons: if your route using `Reslover` then how will `Resolver` data update? For this we are using next below trick :).
 </blockquote>
     
