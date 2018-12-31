@@ -9,7 +9,6 @@ title: $(document).ready vs $(window).load vs window.onload
 wordpress_id: 1145
 categories:
 - JavaScript
-- jQuery
 tags:
 - .ready()
 - onload
