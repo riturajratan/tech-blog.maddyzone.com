@@ -15,7 +15,7 @@ tags:
 - hooks
 ---
 
-[![so when you commit its look like below]({{ site.url }}/uploads/lint.gif)
+[![Linting before commit]({{ site.url }}/uploads/2019/09/lint.gif)]({{ site.url }}/uploads/2019/09/lint.gif)
 
 Ya so after a long long time I am back :)
 
@@ -103,4 +103,6 @@ so for this we need to install additionally `eslint` package as it mention below
 {% endhighlight %}
 
 
-SRC: demo video taken from https://www.npmjs.com/package/lint-staged
+Please give your comments and suggestion below.
+
+Thanks .
