@@ -20,7 +20,7 @@ const jekyllLogger = buffer => {
 };
 
 const banner = (
-  `/*! toddmotto.com | Todd Motto (c) ${new Date().getFullYear()} */\n`
+  `/*! tech-blog.maddyzone.com | maddyzone (c) ${new Date().getFullYear()} */\n`
 );
 
 const paths = {
