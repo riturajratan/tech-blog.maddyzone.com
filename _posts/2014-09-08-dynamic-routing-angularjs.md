@@ -105,7 +105,7 @@ Now as per [previous article](http://maddyzone.com/angularjs/javascript/learn-co
 
     
     <!-- content set for contact page -->
-    <div style="font-size: 32px" >
+    <div style="font-size: 32px">
     	<h1>Contact </h1>
     	<h2 class="label label-danger">{{message}}</h2>
     </div>
@@ -120,9 +120,9 @@ But now we don't need these above template files we will set a single file with 
          in this template by $routeParam set in script then scope value set dynamic
          in our case we are using two variable $scope.page and $scope.message
     -->
-    <div style="font-size: 32px" >
-    <h1>{{page}}</h1>
-    <div class="alert bg-success"><b>{{message}}</b></div>
+    <div style="font-size: 32px">
+      <h1>{{page}}</h1>
+      <div class="alert bg-success"><b>{{message}}</b></div>
     </div>
 
 
@@ -216,39 +216,17 @@ for three parameters in URL.
 **xyz.com#/firstparameter/secondparameter/thirdparameter**
 
 <table width="100%">
-<thead>
-<tr>
-<td>
-url
-</td>
-<td>
-$routeParams config
-</td>
-<td>
-$routeParams
-</td>
-<td>
-$routeParams Output
-</td>
-
-</tr>
-</thead>
-<tbody>
-<tr>
-
-<td>/javascript/angular/a javascript post
-</td>
-
-<td>/:category/:subcategory/:postname
-</td>
-
-<td>$routeParams.category
-$routeParams.subcategory
+<thead> <tr> <td> url </td> <td> $routeParams config </td> <td> $routeParams </td> <td> $routeParams Output </td> </tr> </thead>
+<tbody> 
+<tr> 
+<td>/javascript/angular/a javascript post </td>
+ <td>/:category/:subcategory/:postname </td>
+<td>$routeParams.category <br/>
+$routeParams.subcategory <br/>
 $routeParams.postname
 </td>
-
-<td>javascript
-angular
+<td>javascript <br/>
+angular <br />
 a javascript post
 </td>
 </tr>
