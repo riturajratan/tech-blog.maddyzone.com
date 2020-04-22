@@ -5,10 +5,10 @@
     {% include header.html %}
     <main class="content">
       <div class="action-bar">
-        <form class="search">
-          <input type="text" placeholder="Search posts">
-          <ul></ul>
-        </form>
+        <div class="search">
+          <input type="text" id="search-input" placeholder="Search posts">
+          <ul id="results-container"></ul>
+        </div>
       </div>
       <div class="card">
         {% if page.url != '/angular-1-x' and page.url != '/angular-2' and page.url != '/javascript'  %}
@@ -20,5 +20,14 @@
       </div>
       {% include footer.html %}
     </main>
+    <script src="/search.js" type="text/javascript"></script>
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/posts.json'
+  })
+  </script>
   </body>
 </html>
