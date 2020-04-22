@@ -20,7 +20,7 @@ tags:
 
 [![Dynamic routing with AngularJS]({{ site.url }}/uploads/2014/09/Dynamamic-routing-with-angularjs.png)]({{ site.url }}/uploads/2014/09/Dynamamic-routing-with-angularjs.png)
 
-In [My previous Article](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) we have learned about [**Routing in angular JS**](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) . But in normal routing if we have 1000 route then at that time set config  for every route is not a good choice . for this we will do Dynamic Routing. Thanks Angular you have provide `$routeParams`
+In [My previous Article](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) we have learned about [**Routing in angular JS**](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) . But in normal routing if we have 1000 route then at that time set config  for every route is not a good choice . for this we will do Dynamic Routing. Thanks Angular you have provide `$routeParams`.
 
 
 <blockquote>Dynamic routing with Angular JS is easily done by $routeParams. :)</blockquote>
@@ -82,30 +82,30 @@ First make a main file it will like our [previous article](http://maddyzone.com/
 
 Now as per [previous article](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) we set three template.
 
-<del>home.html</del>
+**home.html**
     
     <!-- content set for home page -->
-    <div style="font-size: 32px"  >
+    <div style="font-size: 32px" >
     	<h1>Home </h1>
     	<h2 class="label label-info">{{message}}</h2>
     </div>
 
 
-<del>aboutus.html</del>
+**aboutus.html**
 
     
     <!-- content set for about us page -->
-    <div style="font-size: 32px" >
+    <div style="font-size: 32px">
     	<h1>About Us </h1>
     	<h2  class="label label-info">{{message}}</h2>
     </div>
 
 
-<del>contact.html</del>
+**contact.html**
 
     
     <!-- content set for contact page -->
-    <div style="font-size: 32px"  >
+    <div style="font-size: 32px" >
     	<h1>Contact </h1>
     	<h2 class="label label-danger">{{message}}</h2>
     </div>
@@ -119,8 +119,8 @@ But now we don't need these above template files we will set a single file with 
          in main page(index.html)
          in this template by $routeParam set in script then scope value set dynamic
          in our case we are using two variable $scope.page and $scope.message
-         -->
-    <div style="font-size: 32px"  >
+    -->
+    <div style="font-size: 32px" >
     <h1>{{page}}</h1>
     <div class="alert bg-success"><b>{{message}}</b></div>
     </div>
@@ -132,7 +132,7 @@ In above `uirouter.html` we are using two `$scope` variables which value set acc
   2. `$scope.message`= by this we set description of page
 
 
-Now in our script code in which we will set _**route configuration.**_
+Now in our script code in which we will set **route configuration.**
 
 **app.js**
     
@@ -179,47 +179,12 @@ in above script we use
 
 here  `⁄:pagename` is for route configuration.
 
-<table width="100%" style="height: 76px;" >
-<tr >
-Route Name
-$routeParams
-$routeParams Ouput
-</tr>
-
-<tbody >
-<tr >
-
-<td >/home
-</td>
-
-<td >$routeParams.pagename
-</td>
-
-<td >home
-</td>
-</tr>
-<tr >
-
-<td >/aboutus
-</td>
-
-<td >$routeParams.pagename
-</td>
-
-<td >aboutus
-</td>
-</tr>
-<tr >
-
-<td >/contactus
-</td>
-
-<td >$routeParams.pagename
-</td>
-
-<td >contactus
-</td>
-</tr>
+<table width="100%" style="height: 76px;">
+<thead><tr> <td> Route Name </td> <td> $routeParams </td> <td> $routeParams Ouput </td> </tr></thead>
+<tbody> 
+<tr> <td>/home </td> <td>$routeParams.pagename </td> <td>home </td> </tr> 
+<tr> <td>/aboutus </td> <td>$routeParams.pagename </td> <td>aboutus </td> </tr>
+<tr> <td>/contactus </td> <td>$routeParams.pagename </td> <td>contactus </td> </tr>
 </tbody>
 </table>
 
@@ -231,31 +196,14 @@ for two parameters in URL.
 
 **xyz.com#/firstparameter/secondparameter**
 
-<table width="100%" >
+<table width="100%">
+<thead>
+<tr><td> url </td><td> $routeParams config</td><td> $routeParams</td><td> $routeParams Output</td> </tr>
+</thead>
+<tbody>
+<tr> <td>/javascript/a javascript post </td> <td>/:category/:postname </td> <td> $routeParams.category $routeParams.postname </td>
 
-<tr >
-url
-$routeParams config
-$routeParams
-$routeParams Output
-</tr>
-
-<tbody >
-<tr >
-
-<td >/javascript/a javascript post
-</td>
-
-<td >/:category/:postname
-</td>
-
-<td >
-$routeParams.category
-
-$routeParams.postname
-</td>
-
-<td >javascript
+<td>javascript
 
 a javascript post
 </td>
@@ -267,9 +215,9 @@ for three parameters in URL.
 
 **xyz.com#/firstparameter/secondparameter/thirdparameter**
 
-<table width="100%" >
-
-<tr >
+<table width="100%">
+<thead>
+<tr>
 <td>
 url
 </td>
@@ -284,22 +232,22 @@ $routeParams Output
 </td>
 
 </tr>
+</thead>
+<tbody>
+<tr>
 
-<tbody >
-<tr >
-
-<td >/javascript/angular/a javascript post
+<td>/javascript/angular/a javascript post
 </td>
 
-<td >/:category/:subcategory/:postname
+<td>/:category/:subcategory/:postname
 </td>
 
-<td >$routeParams.category
+<td>$routeParams.category
 $routeParams.subcategory
 $routeParams.postname
 </td>
 
-<td >javascript
+<td>javascript
 angular
 a javascript post
 </td>
