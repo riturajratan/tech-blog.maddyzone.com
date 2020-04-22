@@ -270,10 +270,19 @@ for three parameters in URL.
 <table width="100%" >
 
 <tr >
+<td>
 url
+</td>
+<td>
 $routeParams config
+</td>
+<td>
 $routeParams
+</td>
+<td>
 $routeParams Output
+</td>
+
 </tr>
 
 <tbody >
