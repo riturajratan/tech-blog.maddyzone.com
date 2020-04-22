@@ -225,8 +225,6 @@ $routeParams Ouput
 
 Here you can see in this all route we use `$routeParams.pagename` and output come different which will shown in our `uirouter.html` template file `$scope` variables.
 
-**Demo**
-
 we can set any no of attributes in dynamic route like
 
 for two parameters in URL.
@@ -251,11 +249,14 @@ $routeParams Output
 <td >/:category/:postname
 </td>
 
-<td >$routeParams.category
+<td >
+$routeParams.category
+
 $routeParams.postname
 </td>
 
 <td >javascript
+
 a javascript post
 </td>
 </tr>
@@ -306,4 +307,3 @@ Happy Dynamic Routing :)
 **[Demo](http://embed.plnkr.co/nmPKATTaPf9YdfXsRYv5/preview)**
 
 Please give your comment and your suggestion Thanks.
-
