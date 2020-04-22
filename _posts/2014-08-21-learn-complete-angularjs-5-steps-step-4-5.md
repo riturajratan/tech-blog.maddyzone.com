@@ -91,7 +91,7 @@ So now how we access vehicle methods **car**, **bus**, **bike**
 
 In AngularJS there are many built-in service they all are start with `$` sign. Like `$http`, `$timeout`, `$log`, `$filter` and many more.
 
-<blockquote>All built-in Services start with a **$ **sign</blockquote>
+<blockquote>All built-in Services start with a $ sign</blockquote>
 
 Ok  for an example we will look in **$http** service.
 
@@ -137,7 +137,7 @@ we are taking a example of **$http**  service.so we use service in angular like 
 
 **How to make Custom Service ?**
 
-In Angular we can service very easy and when it is made it is registered in angular  then angular compiler can reference it and we can use it as a dependency at the run time .a common way to make service using [highlight] $factory [/highlight]  this is very basic example to create a service .
+In Angular we can service very easy and when it is made it is registered in angular  then angular compiler can reference it and we can use it as a dependency at the run time .a common way to make service using `$factory` this is very basic example to create a service .
 
     
     //create a module
