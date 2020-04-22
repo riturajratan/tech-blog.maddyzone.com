@@ -16,14 +16,9 @@ tags:
 - SPA
 ---
 
-As per my [**Previous article** ](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-4-5) you know Angular Service.if you not don’t know then please first read my previous article then come on this article by this you can easily understand this article.
+As per my [**Previous article** ](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-4-5) you know Angular Service.if you not don’t know then please first read my previous article then come on this article by this you can easily understand this article.
 
 **So** **what have you done** **?**
-
-[yes_list]
-
-
-
 	
   * [You know that how to apply AngularJS on pages](http://maddyzone.com/javascript/learn-complete-angularjs-in-5-steps-part-1).
 
@@ -37,19 +32,12 @@ As per my [**Previous article** ](http://maddyzone.com/javascript/learn-comple
   * [What is Service in AngularJS ?](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-4-5)
 
 
-[/yes_list]
 
 **What you will know after read this article ?**
 
-[star_list]
 
-
-
-	
   * What is Routing in AngularJS ?
 
-
-[/star_list]
 
 Ok lets start
 
@@ -88,21 +76,11 @@ Today SPA(Single Page Application) are much use in web development. due to
 
 So By Angular Routing and template we make Single Page Application in this we use three route
 
-[yes_list]
-
-
-
-	
   * home
 
-	
   * aboutus
 
-	
   * contact
-
-
-[/yes_list]
 
 Lets Create a main file `index.html`in which we set all layout and linked all files(`css` and `js`) and add navigation menu (to change  the route) and create a space by which content set according to the route
 
@@ -210,21 +188,11 @@ now we create three template which will inject in above `ng-view **div** `
 
 Now create our Angular Application **app.js **in this we will create `module` ,`controller` and config routing by which template will inject in `ng-view` section . to configure routes and views we will use `$routeProvider` to handle routing.By `$routeProvider` we set our route configuration in this we decide below things
 
-[yes_list]
-
-
-
 	
   * Route
-
-	
   * Template that will load according to the Route
-
-	
   * Controller that will apply on template according to Route
 
-
-[/yes_list]
 
 **we set it like below **
 
@@ -316,10 +284,11 @@ Now make our full application script
 
 So this is all about Routing and it is our last step to learn Angular and start working with Angular.There are many more things but to start with angular it is enough. So keep enjoying magic of Angular.
 
-_**Update 9-September-2014
-**[divider] [/divider]** **_But by this  routing if we have 1000 or more then 1000 routes then it is not good choice to add configuration  for each routes So How will we handle that ?
+**Update 9-September-2014**
 
-for this we need to Dynamic Routing. to know more about Dynamic routing see my next article about **[Dynamic routing with AngularJS](http://maddyzone.com/javascript/dynamic-routing-angularjs)**. [divider] [/divider]
+_But by this  routing if we have 1000 or more then 1000 routes then it is not good choice to add configuration  for each routes So How will we handle that ?
+
+for this we need to Dynamic Routing. to know more about Dynamic routing see my next article about **[Dynamic routing with AngularJS](http://maddyzone.com/javascript/dynamic-routing-angularjs)**. 
 
 
 The Demo repository is available on Git [https://github.com/riturajratan/learn-complete-angularjs-in-5-steps](https://github.com/riturajratan/learn-complete-angularjs-in-5-steps)
@@ -330,12 +299,12 @@ The Demo repository is available on Git [https://github.com/riturajratan/learn
 form here download source code for demo or clone it like below
 
 
-
-
     
     git clone https://github.com/riturajratan/learn-complete-angularjs-in-5-steps.git
 
 
 Please give your comments and your suggestion Thanks .
 
-[button type="bd_button btn_large" url="https://github.com/riturajratan/learn-complete-angularjs-in-5-steps" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ]Download Code[/button] [button type="bd_button btn_large" url="http://embed.plnkr.co/RhmO72alz9jNzq2hMRAe/preview" target="on" button_color_fon="#ff8000" button_text_color="#ffffff" ]Demo[/button]
+**[Download Code](https://github.com/riturajratan/learn-complete-angularjs-in-5-steps)**   
+
+**[Demo](http://embed.plnkr.co/RhmO72alz9jNzq2hMRAe/preview)**
