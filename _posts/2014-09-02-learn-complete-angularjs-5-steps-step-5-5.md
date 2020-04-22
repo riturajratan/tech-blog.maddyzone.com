@@ -16,20 +16,20 @@ tags:
 - SPA
 ---
 
+
+[![Learn Complete AngularJS in 5 Steps]({{ site.url }}/uploads/2014/08/Learn-Complete-AngularJS-in-5-Steps.png)]({{ site.url }}/uploads/2014/08/Learn-Complete-AngularJS-in-5-Steps.png)
+
 As per my [**Previous article** ](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-4-5) you know Angular Service.if you not don’t know then please first read my previous article then come on this article by this you can easily understand this article.
 
 **So** **what have you done** **?**
 	
-  * [You know that how to apply AngularJS on pages](http://maddyzone.com/javascript/learn-complete-angularjs-in-5-steps-part-1).
-
+  * [You know that how to apply AngularJS on pages](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-in-5-steps-part-1).
 	
-  * [Understanding of Angular Module,$scope and  Controller](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-2-5).
-
+  * [Understanding of Angular Module,$scope and  Controller](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-2-5).
 	
-  * [What is Directive](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-3-5) ? 
+  * [What is Directive](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-3-5) ? 
 
-	
-  * [What is Service in AngularJS ?](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-4-5)
+  * [What is Service in AngularJS ?](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-4-5)
 
 
 
@@ -56,51 +56,29 @@ Routing is a way by which we  can set different URL  related to content  so u
 then first it  see `http://mydemoapp.com/index.html` then it see the route(route is the part which come after `#` in URL) then decide  the content which will show according to the route. Here we are creating a single page application by which we can understand it very easy.
 
 Today SPA(Single Page Application) are much use in web development. due to
-
-
-
 	
   1. Load very fast
-
-	
   2. full page not load every time only related content come
-
-	
   3. No page refresh
 
-
-
-
 <blockquote>**By Angular  we make_ Single Page Application_ very easy** .</blockquote>
-
 
 So By Angular Routing and template we make Single Page Application in this we use three route
 
   * home
-
   * aboutus
-
   * contact
 
 Lets Create a main file `index.html`in which we set all layout and linked all files(`css` and `js`) and add navigation menu (to change  the route) and create a space by which content set according to the route
 
-
-<blockquote>**Note- Routing related code _in angular 1.1.6  already exists but after this __version we need to add ngRoute module sepratily .For Routing  we need angular-route.js file for new version(above 1.1.6)_**</blockquote>
-
+<blockquote>Note- Routing related code _in angular 1.1.6  already exists but after this __version we need to add ngRoute module sepratily .For Routing  we need angular-route.js file for new version(above 1.1.6)</blockquote>
 
 **_So in HTMl file we add two angular file_**
 
-
-
-	
   1. Main angular js file
-
-	
   2. angular-route.min.js file to for routing and in JS we include ngRoute Module to use angular Routing
 
-
-** index.html**
-
+**index.html**
     
     <!DOCTYPE html>
     <html>
@@ -149,15 +127,11 @@ Lets Create a main file `index.html`in which we set all layout and linked all fi
     </body>
     
 
-
 in above html we see a new directive `ng-view `
-
-**ng-view  **by this directive angular know that ,this is the place where template will inject
-
-now we create three template which will inject in above `ng-view **div** `
+**ng-view** by this directive angular know that ,this is the place where template will inject
+now we create three template which will inject in above `ng-view div`
 
 **home.html**
-
     
     <!-- content set for home page -->
     <div style="font-size: 32px"  >
@@ -167,7 +141,6 @@ now we create three template which will inject in above `ng-view **div** `
 
 
 **aboutus.html**
-
     
     <!-- content set for about us page -->
     <div style="font-size: 32px" >
@@ -177,7 +150,6 @@ now we create three template which will inject in above `ng-view **div** `
 
 
 **contact.html**
-
     
     <!-- content set for contact page -->
     <div style="font-size: 32px"  >
@@ -186,17 +158,15 @@ now we create three template which will inject in above `ng-view **div** `
     </div>
 
 
-Now create our Angular Application **app.js **in this we will create `module` ,`controller` and config routing by which template will inject in `ng-view` section . to configure routes and views we will use `$routeProvider` to handle routing.By `$routeProvider` we set our route configuration in this we decide below things
+Now create our Angular Application **app.js** in this we will create `module` ,`controller` and config routing by which template will inject in `ng-view` section . to configure routes and views we will use `$routeProvider` to handle routing.By `$routeProvider` we set our route configuration in this we decide below things
 
-	
   * Route
   * Template that will load according to the Route
   * Controller that will apply on template according to Route
 
 
-**we set it like below **
+**we set it like below**
 
-    
      $routeProvider
         // here we set different different route  
         .when('/our route name',
@@ -215,7 +185,6 @@ Now create our Angular Application **app.js **in this we will create `module` ,`
 Now make our full application script
 
 **app.js**
-
     
     //create a module myApp
     var myApp = angular.module('myApp', ['ngRoute']);
@@ -276,19 +245,16 @@ Now make our full application script
 
 **See below For Live Action**
 
-
-
-
-<blockquote>Note-- Angular Routing will only work if we have set environment.like we need `http://localhost or many type environment. if we run without environment then it will give **_Cross origin requests are only supported for HTTP _**message and not work`</blockquote>
+<blockquote>Note-- Angular Routing will only work if we have set environment.like we need `http://localhost` or many type environment. if we run without environment then it will give `_Cross origin requests` are only supported for `HTTP _message` and not work`</blockquote>
 
 
 So this is all about Routing and it is our last step to learn Angular and start working with Angular.There are many more things but to start with angular it is enough. So keep enjoying magic of Angular.
 
 **Update 9-September-2014**
 
-_But by this  routing if we have 1000 or more then 1000 routes then it is not good choice to add configuration  for each routes So How will we handle that ?
+But by this  routing if we have 1000 or more then 1000 routes then it is not good choice to add configuration  for each routes So How will we handle that ?
 
-for this we need to Dynamic Routing. to know more about Dynamic routing see my next article about **[Dynamic routing with AngularJS](http://maddyzone.com/javascript/dynamic-routing-angularjs)**. 
+for this we need to Dynamic Routing. to know more about Dynamic routing see my next article about **[Dynamic routing with AngularJS](http://maddyzone.com/angularjs/javascript/dynamic-routing-angularjs)**. 
 
 
 The Demo repository is available on Git [https://github.com/riturajratan/learn-complete-angularjs-in-5-steps](https://github.com/riturajratan/learn-complete-angularjs-in-5-steps)
@@ -297,8 +263,6 @@ The Demo repository is available on Git [https://github.com/riturajratan/learn
 
 
 form here download source code for demo or clone it like below
-
-
     
     git clone https://github.com/riturajratan/learn-complete-angularjs-in-5-steps.git
 
