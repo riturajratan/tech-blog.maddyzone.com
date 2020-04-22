@@ -20,6 +20,8 @@ tags:
 ---
 
 
+[![Learn Complete AngularJS in 5 Steps]({{ site.url }}/uploads/2014/08/Learn-Complete-AngularJS-in-5-Steps.png)]({{ site.url }}/uploads/2014/08/Learn-Complete-AngularJS-in-5-Steps.png)
+
 Hi Here i am sharing my experience  that how i learn **[Angular JS](https://angularjs.org/).**This is a all about that how to learn AngularJS.  So First...**What is angularJS ?**
 
 It is a JavaScript framework which provide interactivity with HTML.
@@ -116,27 +118,15 @@ First in your html like below
 
 
 
-
-
-
 **Type In Below input Box and See Angular Magic **
 
-
-
 Hello Test, {{ myName }}!
-
-
 
 
 Here we see **two way data binding**( bi-directional data binding )without any work this is the feature of AngularJS .When you will change in back-end changes are shown on view . this is the magic of AngularJS .
 
 Here we see three things
 
-[star_list]
-
-
-
-	
   * ng-app= here we say to start Angular js on our page
 
 	
@@ -146,18 +136,12 @@ Here we see three things
   * {{ testName}} =here angular show changes on testName model on this directive
 
 
-[/star_list]
-
 Module is a collection of function which is initiate when this module is called.
 
 Now we make a module in AngularJS.
 
     
     var TestModule=angular.module("myModule",[]);
-
-
-
-
 
 	
   *  myModule= is the name of module by which module is made
@@ -200,7 +184,7 @@ in below this is active on a specific **div**.
     </html>
 
 
-After initialize module we will need to write our all logic by which we play with angular for this we need** $scope**, **ng-controller**,**directive** ,**service**,**routing.**
+After initialize module we will need to write our all logic by which we play with angular for this we need **$scope**, **ng-controller**, **directive** , **service**, **routing.**
 
 we will come it one by one.
 
