@@ -73,7 +73,7 @@ Lets Create a main file `index.html`in which we set all layout and linked all fi
 
 <blockquote>Note- Routing related code _in angular 1.1.6  already exists but after this __version we need to add ngRoute module sepratily .For Routing  we need angular-route.js file for new version(above 1.1.6)</blockquote>
 
-**_So in HTMl file we add two angular file_**
+**So in HTMl file we add two angular file**
 
   1. Main angular js file
   2. angular-route.min.js file to for routing and in JS we include ngRoute Module to use angular Routing

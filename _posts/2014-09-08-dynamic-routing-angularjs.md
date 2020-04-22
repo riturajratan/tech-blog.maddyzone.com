@@ -18,23 +18,18 @@ tags:
 - template
 ---
 
-In [My previous Article](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-5-5) we have learned about [**Routing in angular JS**](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-5-5) . But in normal routing if we have 1000 route then at that time set config  for every route is not a good choice . for this we will do Dynamic Routing. Thanks Angular you have provide `$routeParams`
+[![Dynamic routing with AngularJS]({{ site.url }}/uploads/2014/09/Dynamamic-routing-with-angularjs.png)]({{ site.url }}/uploads/2014/09/Dynamamic-routing-with-angularjs.png)
+
+In [My previous Article](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) we have learned about [**Routing in angular JS**](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) . But in normal routing if we have 1000 route then at that time set config  for every route is not a good choice . for this we will do Dynamic Routing. Thanks Angular you have provide `$routeParams`
 
 
-<blockquote>Dynamic routing with Angular JS is easily done by **$routeParams**. :)</blockquote>
+<blockquote>Dynamic routing with Angular JS is easily done by $routeParams. :)</blockquote>
 
 
 In previous article example you can see that for every page we set routing configuration for below route
-
-
-
 	
   1. home
-
-	
   2. aboutus
-
-	
   3. contactus
 
 
@@ -44,10 +39,9 @@ Now we will set it by Dynamic routing.
 
 Lets Start One by One.
 
-First make a main file it will like our [previous article](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-5-5) in which we set all layout and linked all files like below.
+First make a main file it will like our [previous article](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) in which we set all layout and linked all files like below.
 
 **index.html**
-
     
     <!DOCTYPE html>
     <html>
@@ -78,7 +72,7 @@ First make a main file it will like our [previous article](http://maddyzone.com/
             <!-- by ng-view we create a space in this dynamic content come according to route by ng-view angular know that on which area content will set-->
             <div ng-view="">in this area by $routeparam content will change</div>
             <br />
-            <a href="http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-5-5" target="_blank">View Post on Maddyzone </a>
+            <a href="http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5" target="_blank">View Post on Maddyzone </a>
           </div>
         </div>
       </body>
@@ -86,11 +80,9 @@ First make a main file it will like our [previous article](http://maddyzone.com/
     </html>
     
 
+Now as per [previous article](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5) we set three template.
 
-Now as per [previous article](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-5-5) we set three template.
-
-<del>**home.html**</del>
-
+<del>home.html</del>
     
     <!-- content set for home page -->
     <div style="font-size: 32px"  >
@@ -99,7 +91,7 @@ Now as per [previous article](http://maddyzone.com/javascript/learn-complete-ang
     </div>
 
 
-<del>**aboutus.html**</del>
+<del>aboutus.html</del>
 
     
     <!-- content set for about us page -->
@@ -109,7 +101,7 @@ Now as per [previous article](http://maddyzone.com/javascript/learn-complete-ang
     </div>
 
 
-<del>**contact.html**</del>
+<del>contact.html</del>
 
     
     <!-- content set for contact page -->
@@ -119,11 +111,10 @@ Now as per [previous article](http://maddyzone.com/javascript/learn-complete-ang
     </div>
 
 
-[dropcap] B [/dropcap] ut now we don't need these above template files we will set a single file with name **uirouter.html**  in which all above template file html set.
+But now we don't need these above template files we will set a single file with name **uirouter.html**  in which all above template file html set.
 
 **uirouter.html**
-
-    
+  
     <!-- this is our template which will set in ng-view section
          in main page(index.html)
          in this template by $routeParam set in script then scope value set dynamic
@@ -137,19 +128,13 @@ Now as per [previous article](http://maddyzone.com/javascript/learn-complete-ang
 
 In above `uirouter.html` we are using two `$scope` variables which value set according to route
 
-
-
-	
-  1. `$scope.page` = by this we set title of page
-
-	
+  1. `$scope.page` = by this we set title of page	
   2. `$scope.message`= by this we set description of page
 
 
 Now in our script code in which we will set _**route configuration.**_
 
 **app.js**
-
     
     //create a module myApp
     var myApp = angular.module('myApp', ['ngRoute']);
@@ -177,9 +162,7 @@ Now in our script code in which we will set _**route configuration.**_
       });
     
 
-
 in above script we use
-
     
     $routeProvider
         // set route for the dynamic page
@@ -196,9 +179,7 @@ in above script we use
 
 here  `⁄:pagename` is for route configuration.
 
-[bd_table]
 <table width="100%" style="height: 76px;" >
-
 <tr >
 Route Name
 $routeParams
@@ -241,13 +222,10 @@ $routeParams Ouput
 </tr>
 </tbody>
 </table>
-[/bd_table]
 
 Here you can see in this all route we use `$routeParams.pagename` and output come different which will shown in our `uirouter.html` template file `$scope` variables.
 
 **Demo**
-
-
 
 we can set any no of attributes in dynamic route like
 
@@ -255,7 +233,6 @@ for two parameters in URL.
 
 **xyz.com#/firstparameter/secondparameter**
 
-[bd_table]
 <table width="100%" >
 
 <tr >
@@ -274,21 +251,21 @@ $routeParams Output
 <td >/:category/:postname
 </td>
 
-<td >$routeParams.category[divider] [/divider]$routeParams.postname
+<td >$routeParams.category
+$routeParams.postname
 </td>
 
-<td >javascript[divider] [/divider]a javascript post
+<td >javascript
+a javascript post
 </td>
 </tr>
 </tbody>
 </table>
-[/bd_table]
 
 for three parameters in URL.
 
 **xyz.com#/firstparameter/secondparameter/thirdparameter**
 
-[bd_table]
 <table width="100%" >
 
 <tr >
@@ -307,20 +284,26 @@ $routeParams Output
 <td >/:category/:subcategory/:postname
 </td>
 
-<td >$routeParams.category[divider] [/divider]$routeParams.subcategory[divider] [/divider]$routeParams.postname
+<td >$routeParams.category
+$routeParams.subcategory
+$routeParams.postname
 </td>
 
-<td >javascript[divider] [/divider]angular[divider] [/divider]a javascript post
+<td >javascript
+angular
+a javascript post
 </td>
 </tr>
 </tbody>
 </table>
-[/bd_table]
 
 So you can set any no of route parameters and get easily and do Dynamic Routing.
 
 Happy Dynamic Routing :)
 
+**[Code](http://plnkr.co/edit/nmPKATTaPf9YdfXsRYv5)**
+
+**[Demo](http://embed.plnkr.co/nmPKATTaPf9YdfXsRYv5/preview)**
+
 Please give your comment and your suggestion Thanks.
 
-[button type="bd_button btn_large" url="http://plnkr.co/edit/nmPKATTaPf9YdfXsRYv5" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ]Code[/button] [button type="bd_button btn_large" url="http://embed.plnkr.co/nmPKATTaPf9YdfXsRYv5/preview" target="on" button_color_fon="#ff8000" button_text_color="#ffffff" ]Demo[/button]
