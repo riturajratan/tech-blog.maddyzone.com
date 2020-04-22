@@ -206,12 +206,14 @@ we will come it one by one.
 
 So first start with $scope
 
-so see  my next article **[Role of $scope in AngularJS](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-2-5).**
+so see  my next article **[Role of $scope in AngularJS](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-2-5).**
 
 The Demo repository is available on Git [https://github.com/riturajratan/learn-complete-angularjs-in-5-steps](https://github.com/riturajratan/learn-complete-angularjs-in-5-steps).
 
 form here download source code for demo or clone it like below
 
 git clone https://github.com/riturajratan/learn-complete-angularjs-in-5-steps.git
+
+**[How To Hire A Great AngularJS Developer](https://www.toptal.com/angular-js#hiring-guide)**
 
 Please give your comments for your suggestion Thanks .

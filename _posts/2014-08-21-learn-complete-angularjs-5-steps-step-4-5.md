@@ -245,10 +245,7 @@ In general we use get and set method so here we are making a service by which we
 
 So it is all About Service
 
-
-Soon i will write my next article **Routing in AngularJS.**
-
-
+so see  my next article **[Routing in AngularJS..](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-5-5).**
 
 
 The Demo repository is available on Git [https://github.com/riturajratan/learn-complete-angularjs-in-5-steps](https://github.com/riturajratan/learn-complete-angularjs-in-5-steps)
