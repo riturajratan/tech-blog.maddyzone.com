@@ -256,7 +256,7 @@ There are many properties to set directive lets go to one by one
 
 So it is all About Directives.
 
-so see  my next article **[Role of Services and Factory in AngularJS.](http://maddyzone.com/angularjs/angularjs/javascript/learn-complete-angularjs-5-steps-step-4-5).**
+so see  my next article **[Role of Services and Factory in AngularJS.](http://maddyzone.com/angularjs/javascript/learn-complete-angularjs-5-steps-step-4-5).**
 
 The Demo repository is available on Git [https://github.com/riturajratan/learn-complete-angularjs-in-5-steps](https://github.com/riturajratan/learn-complete-angularjs-in-5-steps)
 
