@@ -82,7 +82,7 @@ remembering the past step you performed in part-1 of this example.
 - so, if you got it here, we will move to next if you don't please check the link below for  part-1 of same blog .
 
     
-    http://tech-blog.maddyzone.com/angularjs/perform-addeditdeleteview-php-using-angular-js.
+    http://tech-blog.maddyzone.com/javascript/perform-addeditdeleteview-php-using-angular-js.
 
 
 - Now as we say, we have to initialize some variable in this function to implement paging so for you  please check below variables with comment (specify the use of these variables).

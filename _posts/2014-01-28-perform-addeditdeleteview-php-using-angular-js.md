@@ -7,8 +7,7 @@ link: http://dlurratan37846/wordpress/?p=247
 slug: perform-addeditdeleteview-php-using-angular-js
 title: How to Implement Add/Edit/Delete/View with PHP using Angular JS (Part-1)
 wordpress_id: 247
-categories:
-- AngularJS
+categories: 
 - JavaScript
 tags:
 - $http
@@ -22,6 +21,9 @@ tags:
 - Php
 - status
 ---
+
+
+![How to Implement Add/Edit/Delete/View with PHP using Angular JS](http://tech-blog.maddyzone.com/uploads/2014/01/Crud.png)
 
 **How to use CRUD(create read update delete)  in angular With PHP** ?
 
@@ -51,16 +53,10 @@ Snapshot showing a table name as "product", having fields like :
 
 
 	
-  *  id (Unique and Auto increment ID field for a product)
-
-	
-  *  prod_name (Field having value of Name of Product)
-
-	
-  *  prod_price (Field having value of Price of Product)
-
-	
-  *  prod_quantity (Field having value of Total Quantity of Product)
+  > *  id (Unique and Auto increment ID field for a product)
+  > *  prod_name (Field having value of Name of Product)
+  > *  prod_price (Field having value of Price of Product)
+  > *  prod_quantity (Field having value of Total Quantity of Product)
 
 
 after creating this table in phpmyadmin we completed database for our example.
@@ -117,8 +113,7 @@ Now the next step is how we will use this database structure in our most require
 - To Performing Angular Action we will use controller.js, we will discuss more about controller.js, later in next step.
 
 - By using the below code , we created an html structure of form to add product.
-
-    
+```
     <!doctype html>
     <html lang="en">
     <head>
@@ -140,9 +135,10 @@ Now the next step is how we will use this database structure in our most require
     	</form>
     </body>
     </html>
+  ```  
 
 
-- Now the question arises , how angular js will work here, Dear if you know basis of angular js than it so easier to use angular js with html to perform submit form and get field values using property "ng-controller" to specify controller for html page we have created where angular will call for first stage. If you are stuck here then please follow this link to learn angular js basis fundamentals:
+- Now the question arises , how angular js will work here, Dear if you know basis of angular js than it so easier to use angular js with html to perform submit form and get field values using property `ng-controller` to specify controller for html page we have created where angular will call for first stage. If you are stuck here then please follow this link to learn angular js basis fundamentals:
 
 [http://maddyzone.com/javascript/learn-complete-angularjs-in-5-steps-part-1](http://maddyzone.com/javascript/learn-complete-angularjs-in-5-steps-part-1)
 
@@ -153,16 +149,14 @@ If you are familier with angular js then we now move to our next step:
 - Here we create a new file named as "controller.js" in the same folder.
 
 - controller.js file have name of controller "PhoneListCtrl" using "listapp" module, which controlles the viewing of data on html and get data from html for form elements.
-
-    
+```
     var listApp = angular.module('listpp', []);    
-    
         listApp.controller('PhoneListCtrl', function ($scope) {
-    
     });
+```    
 
 
-- Controller "PhoneListCtrl" will have scope function to add/edit/delete/product data to database table we created in first step and to show data on html in grid form.
+- **Controller** "PhoneListCtrl" will have scope function to add/edit/delete/product data to database table we created in first step and to show data on html in grid form.
 
 Now the question will arise in your mind how client side controller will interact to server side database?
 
@@ -175,14 +169,14 @@ My dear , to do this, we pass an attribute $http with scope variable in contolle
     
 
 
-- $http is most important or key of this precious example, used to get and post data from database and to send data to database respectively using php (Server side scripting language) and an interface has been created between client side and server side for interaction.
+- `$http` is most important or key of this precious example, used to get and post data from database and to send data to database respectively using php (Server side scripting language) and an interface has been created between client side and server side for interaction.
 
 Now Our Next Step will come which shows you how $http is used for interaction, so now next step is ....
 **Fifth Step:**
 
 - In this step , we create a php file name as "db.php" in same folder.
 
-- "db.php" file at first interact with database connection establishment, so for this we include our config.php file , which we created in step-2 by below code :
+- `db.php` file at first interact with database connection establishment, so for this we include our config.php file , which we created in step-2 by below code :
 
     
     include('config.php');
@@ -194,7 +188,7 @@ Now Our Next Step will come which shows you how $http is used for interaction, s
 
 - So now we will send form submit action to controller by below code which will later retrive on db.php
 
-    
+    ```
      $scope.product_submit = function() {
             $http.post('db.php?action=add_product', 
                 {
@@ -214,6 +208,7 @@ Now Our Next Step will come which shows you how $http is used for interaction, s
                
             });
         }
+    ```    
 
 
 - After seeing this code you got stuck ohh!
@@ -226,7 +221,7 @@ Now Our Next Step will come which shows you how $http is used for interaction, s
 
 - Now you can check how html for form is for this so you can check below the code :
 
-    
+  ``` 
     <form name="add_product" class="wrapper">
     			<input type="hidden" name="prod_id" ng-model="prod_id">
     			<input type="text" name="prod_name" ng-model="prod_name" placeholder="Enter Product Name">
@@ -235,11 +230,12 @@ Now Our Next Step will come which shows you how $http is used for interaction, s
     			<input type="text" name="prod_quantity" ng-model="prod_quantity" placeholder="Enter Product Quantity">
     			<input type="button" name="submit_product" ng-show='add_prod' value="Submit" ng-click="product_submit()">
     </form>
+   ``` 
 
 
-- $scope.prod_name showing the ng-model attribute of angular js to get field value by calling "product_submit" function mention by code above in html for button.
+- `$scope.prod_name` showing the ng-model attribute of angular js to get field value by calling `product_submit` function mention by code above in html for button.
 
-= By using this function we will get the values of form fields in db.php by reteriving the action name from the url and using below code:
+`=` By using this function we will get the values of form fields in db.php by reteriving the action name from the url and using below code:
 
     
     switch($_GET['action']) {
@@ -258,36 +254,38 @@ Now Our Next Step will come which shows you how $http is used for interaction, s
 - To decode the json we will use the below code:
 
     
-    $data = json_decode(file_get_contents("php://input"));
+    ```$data = json_decode(file_get_contents("php://input"));```
 
 
 - Now all form fields value are in $data object by key name as we specify in product_submit function in controller.js if you remind?
 
 - To remeber you we are pasting the snippet below :
 
-    
+    ```
     'prod_name'     : $scope.prod_name, 
     'prod_desc'     : $scope.prod_desc, 
     'prod_price'    : $scope.prod_price,
     'prod_quantity' : $scope.prod_quantity
+    ```
 
 
 word written in ''(single quote) representing the keys.
 
 So, now it easier for you here to get the values in php variables by using below code :
 
-    
+   ``` 
     $prod_name = $data->prod_name; 
     $prod_desc = $data->prod_desc;
     $prod_price = $data->prod_price;
     $prod_quantity = $data->prod_quantity;
+   ``` 
 
 
 yeah !! here you get success to getting data from html to php using angular js.
 
 - To add this fields values in our product table of shopping database so easier for you using the below code
 
-    
+   ``` 
     $qry = 'INSERT INTO product (prod_name,prod_desc,prod_price,prod_quantity) values ("' . $prod_name . '","' . $prod_desc . '",' .$prod_price . ','.$prod_quantity.')';
      
     $qry_res = mysql_query($qry);
@@ -301,6 +299,7 @@ yeah !! here you get success to getting data from html to php using angular js.
     $jsn = json_encode($arr);
     // print_r($jsn);
     }
+   ``` 
 
 
 So complete add product function now is as :
@@ -341,23 +340,24 @@ so for this we are on final step of this precious example as with next step:
 
 - To view or show data on html what we have save using product_submit method of controller.js file and add_product method of db.php file in fifth step we create a function by name get_product in db.php using below code :
 
-    
+    ```
     function get_product() { 
-    $qry = mysql_query('SELECT * from product');
-    $data = array();
-    while($rows = mysql_fetch_array($qry))
-    {
-    $data[] = array(
-    "id" => $rows['id'],
-    "prod_name" => $rows['prod_name'],
-    "prod_desc" => $rows['prod_desc'],
-    "prod_price" => $rows['prod_price'],
-    "prod_quantity" => $rows['prod_quantity']
-    );
+      $qry = mysql_query('SELECT * from product');
+      $data = array();
+      while($rows = mysql_fetch_array($qry))
+      {
+        $data[] = array(
+        "id" => $rows['id'],
+        "prod_name" => $rows['prod_name'],
+        "prod_desc" => $rows['prod_desc'],
+        "prod_price" => $rows['prod_price'],
+        "prod_quantity" => $rows['prod_quantity']
+        );
+      }
+      print_r(json_encode($data));
+      return json_encode($data); 
     }
-    print_r(json_encode($data));
-    return json_encode($data); 
-    }
+    ```
 
 
 - get_product() function get data from db using php in array form but we need this data in json form to show on html using angular js, so first we convert array of data of all records or product we added using add_product and after performing other action like edit/delete.
@@ -365,7 +365,7 @@ so for this we are on final step of this precious example as with next step:
 - As we get json data we return json data by return statement of this function as code below :
 
     
-    return json_encode($data);
+    `return json_encode($data);`
 
 
 - Now you can get the complete db.php file here.
@@ -507,28 +507,25 @@ so for this we are on final step of this precious example as with next step:
 
 
 - Now we get all data from database and we have to show this data on our html in grid form using angular js, so to do this, we create a function using below code in controller.js file.
-
-    
+```
     $scope.get_product = function() {
-            $http.get("db.php?action=get_product").success(function(data)
-            {
-                //$scope.product_detail = data;   
-                $scope.pagedItems = data;    
-    
-            });
+      $http.get("db.php?action=get_product").success(function(data)
+      {
+          //$scope.product_detail = data;   
+          $scope.pagedItems = data;    
+      });
     }
+```    
 
 
 -  get_product function in controller.js call the get_product function of db.php file using get method of $http variable passed with $scope in controller function if you remind, if not we are here to remind you, check the below snippet.
-
     
-    istApp.controller('PhoneListCtrl', function ($scope , $http) {
+    `istApp.controller('PhoneListCtrl', function ($scope , $http) {`
 
 
 - If we get success in getting data from database using db.php , here we use below code to present data on html mentioned in above function if you can see.
-
     
-    $scope.pagedItems = data;
+    `$scope.pagedItems = data;`
 
 
 So as we got all success in add/edit/delete/view using function's in controller.js , you can get the complete code for controller.js here.
@@ -646,22 +643,23 @@ So as we got all success in add/edit/delete/view using function's in controller.
 
 - As we know from above the data comes in json form using get_product function what we use in db.php and return, so to represent this multiple row data on html we follow the loop to present every row data with their respective columns and present in table format as in below code:
 
-    
+  ```  
     <tbody ng-init="get_product()">
-    <tr ng-repeat="product in pagedItems">
-    <td>{{ product.id }}</td>
-    <td>{{ product.prod_name | uppercase }}</td>
-    <td>{{ product.prod_desc }}</td>
-    <td>{{ product.prod_price }}</td>
-    <td>{{ product.prod_quantity }}</td> 
-    <td><a href="" ng-click="prod_edit(product.id)">Edit</a> | <a href="" ng-click="prod_delete(product.id)">Delete</a></td>
-    </tr> 
+      <tr ng-repeat="product in pagedItems">
+        <td>{{ product.id }}</td>
+        <td>{{ product.prod_name | uppercase }}</td>
+        <td>{{ product.prod_desc }}</td>
+        <td>{{ product.prod_price }}</td>
+        <td>{{ product.prod_quantity }}</td> 
+        <td><a href="" ng-click="prod_edit(product.id)">Edit</a> | <a href="" ng-click="prod_delete(product.id)">Delete</a></td>
+      </tr> 
     </tbody>
+  ```  
 
 
-- ng-init property call get_product function of controller.js and get all json data, now for each row data
+- `ng-init` property call get_product function of **controller.js** and get all json data, now for each row data
 
-reterival use ng-repeat property in same way as foreach loop of php. and by using the product object get
+reterival use `ng-repeat` property in same way as foreach loop of php. and by using the product object get
 the fields value by their key name and show as table column.
 
 - Here we also create link for edit and delete of a product, by which on click of these link respective function first called controller.js and their respective function call edit/delete function specify in db.php.
@@ -669,7 +667,6 @@ the fields value by their key name and show as table column.
 - so, as you complete this tutorial very much you get here the complete html of this precious example.
 
 **HTML file**
-
     
     <!doctype html>
     
@@ -773,5 +770,4 @@ You can check the Edit and Delete function in action by below snapshots:
 
 ## For paging see next post [**Paging with PHP in AngularJS**](http://maddyzone.com/javascript/implement-addeditdeleteview-php-using-angular-js-part-2)
 
-
-[button type="bd_button btn_large" url="https://github.com/Maddyzone/CRUD-In-AngularJS-with-Php" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ] Download Code [/button]
+**[Download Code](https://github.com/Maddyzone/CRUD-In-AngularJS-with-Php)** 
