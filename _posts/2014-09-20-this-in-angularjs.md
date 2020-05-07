@@ -3,7 +3,6 @@ author: riturajratan
 comments: true
 date: 2014-09-20 05:19:11+00:00
 layout: post
-link: http://dlurratan37846/wordpress/?p=1358
 slug: this-in-angularjs
 title: this in angularjs
 wordpress_id: 1358
@@ -15,15 +14,15 @@ tags:
 - angular service
 ---
 
+
+[![This is Angular JS]({{ site.url }}/uploads/2014/09/this-in-angular-js.pn)]({{ site.url }}/uploads/2014/09/this-in-angular-js.pn)
+
 Most of the time we use `this` in [_**JavaScript**_](http://maddyzone.com/category/javascript) or `$(this)` in [_**jQuery**_](http://maddyzone.com/category/javascript/jquery) .
 
 Now How to use `this` in **AngularJS ?**
 
 
-<blockquote>In Angular by `$event`  we can get this by event object, from which we can get the_** event target** _and use it with _**JavaScript**_ or _**jQuery**_`.`</blockquote>
-
-
-
+>In Angular by `$event`  we can get this by event object, from which we can get the `event target` and use it with **JavaScript** or **jQuery**.
     
     //use in core JavaScript ( as this )
     $event.target
@@ -33,14 +32,13 @@ Now How to use `this` in **AngularJS ?**
 
 **Lets Create a demo**
 
-**IN HTML-- **In this we set our layout and call function on click(for anchor tag) and on keyup(for input)
+**IN HTML--** In this we set our layout and call function on click(for anchor tag) and on keyup(for input)
 
-by _**ng-click**_  at the time of click `getText` method call
+by **ng-click**  at the time of click `getText` method call
 
-by _**ng-keyup **_at the time of keyup `getVal` method call
+by **ng-keyup** at the time of keyup `getVal` method call
 
 in both of the method we pass `$event` and use in our controller see JS file code for more.
-
     
     <body ng-app="maddyzone">
       <!--Now it Tells to AngularJS to be active in this portion of the page. In this case the entire document.(due to we apply on body tag ) -->
@@ -70,7 +68,7 @@ in both of the method we pass `$event` and use in our controller see JS file cod
     </body>
 
 
-**IN JS-- **in this we define our methods and use `event.target` as `this`
+**IN JS** in this we define our methods and use `event.target` as `this`
 
     
     //create a module maddyzone
@@ -92,7 +90,7 @@ in both of the method we pass `$event` and use in our controller see JS file cod
     });
 
 
-**SEE LIVE DEMO**
+<!-- **SEE LIVE DEMO** -->
 
 
 
