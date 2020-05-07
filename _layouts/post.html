@@ -21,15 +21,25 @@ layout: default
   </header>
   <section class="post__content">
     <div class="post__ad">
-      <div id="carbonads-container">
-        <div class="carbonad">
-          <div id="azcarbon"></div>
-        </div>
-      </div>
       <script data-ad-client="ca-pub-8791576499923818" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <!-- Tech blog maddyzone -->
-    </div> {{ content }}
+    </div>
+    {{ content }}
+     <!--Show all Tags-->
+     <div class="post-tags">
+      {% if post %}
+        {% assign tags = post.tags %}
+      {% else %}
+        {% assign tags = page.tags %}
+      {% endif %}
+      Tags:
+      {% for tag in tags %}
+      <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+<br/>
+
     </section>
 
   <div class="share">
