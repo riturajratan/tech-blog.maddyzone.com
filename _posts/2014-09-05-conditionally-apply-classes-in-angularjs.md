@@ -15,7 +15,9 @@ tags:
 - ng-class
 ---
 
-In [Angular ](https://angularjs.org/)we can add ,remove classes with the pre-build directive  **[ng-class](https://docs.angularjs.org/api/ng/directive/ngClass). **`ng-class` take value in `boolean type`
+[![conditionally apply classes in angularjs]({{ site.url }}/uploads/2014/09/conditionally-apply-classes-in-angularjs.png)]({{ site.url }}/uploads/2014/09/conditionally-apply-classes-in-angularjs.png)
+
+In [Angular ](https://angularjs.org/)we can add ,remove classes with the pre-build directive  [ng-class](https://docs.angularjs.org/api/ng/directive/ngClass). `ng-class` take value in `boolean type`
 
 when it get true it add class else it remove class.we can use `ng-class` in two way.
 
@@ -127,7 +129,7 @@ then we want to apply class
 
 
 
-<blockquote>you can set any type condition in ng-class but finally value must be boolean type  like _**o,1** _or _**true,false**_ etc..</blockquote>
+>you can set any type condition in ng-class but finally value must be boolean type  like **o,1** or **true,false** etc..
 
 
 Now Lets create a demo in which we add ,remove and toggle class in angular for single  and multiple class lets create a file
@@ -236,7 +238,7 @@ Now Lets create a demo in which we add ,remove and toggle class in angular for s
     });
 
 
-Now lets see Demo below
+<!-- Now lets see Demo below -->
 
 
 
