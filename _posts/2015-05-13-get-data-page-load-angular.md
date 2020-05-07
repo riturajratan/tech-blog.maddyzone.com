@@ -20,7 +20,7 @@ tags:
 
 Normally in AngularJS we set routing so every URL is behaving like a route .So when we go from one route to  another `route ` then sometime we need to get data first before its load .Let's take a example where we will discuss that how we get data before page load in angular?.So here  we need to show article list on article-list page(just assume :) ) then normal we send ajax request like that way in angular using `$http.`
 
-[$http](https://docs.angularjs.org/api/ng/service/$http) is same like[ $.ajax](http://api.jquery.com/jquery.ajax/) in jQuery
+[$http](https://docs.angularjs.org/api/ng/service/$http) is same like[$.ajax](http://api.jquery.com/jquery.ajax/) in jQuery
 
     
     angular.module('Myapp')
@@ -43,15 +43,11 @@ Normally in AngularJS we set routing so every URL is behaving like a route .So 
 
 ##  So in above code what we are doing actually
 
-
-
-
-
 	
   1. First we create the Angular module `Myapp`.
 
 	
-  2. Then make a controller `ArticleCtrl` in this we are using two angular service `$scope` and ` $http `.
+  2. Then make a controller `ArticleCtrl` in this we are using two angular service `$scope` and `$http`.
 
 	
   3. Then by send request we get data and set our $scope variable `$scope.articles` and in respective template its reflect.
@@ -61,49 +57,32 @@ But in all scenario  problem is When request is send and its come then $scope w
 
 In local you will not se any problem but when you host your site then at production it will take some time and it creates some flickering.So first its will show like that
 
-
-<blockquote>
-
-> 
-> --------------------------------------------------
+```
+--------------------------------------------------
 HEADER
 --------------------------------------------------
-> 
-> 
 
-> 
-> Articles right now empty :(
-> 
-> 
 
-> 
-> --------------------------------------------------
+Articles right now empty :( 
+
+
+--------------------------------------------------
 FOOTER
----------------------------------------------------
-> 
-> 
-</blockquote>
+--------------------------------------------------- 
+```
 
 
 
 
 **and when your data is  come its look like that**
 
-
-
-
-
-<blockquote>
-
-> 
-> --------------------------------------------------
+```
+--------------------------------------------------
 HEADER
 --------------------------------------------------
-> 
-> 
+ 
+Articles
 
-> 
-> Articles
 --------------------------------------------------
 Article1
 --------------------------------------------------
@@ -114,22 +93,19 @@ Article3
 ..
 ..
 etc
-> 
-> 
 
-> 
-> --------------------------------------------------
+
+
+--------------------------------------------------
 FOOTER
 ---------------------------------------------------
-> 
-> 
-</blockquote>
+```
 
 
 so here we see page flickering happen.For this kind  of problem we can use `resolve` property in angular JS.So how we will do it.? Lets check it
 
 
-<blockquote>`resolve`  is a property which we can attach to a route in both** [ngRoute](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)** and the  **[UI router](https://github.com/angular-ui/ui-router)**.</blockquote>
+> `resolve`  is a property which we can attach to a route in both **[ngRoute](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)** and the  **[UI router](https://github.com/angular-ui/ui-router)**.
 
 
 Assume you are using Routing then when we set route like  this and attach `resolve`  property like below
@@ -173,12 +149,8 @@ So we will write like that
 
 ### **Now when route is change and come to `/articles` (as we assume this route)**
 
-
-
-
-
 	
-  1. First it get the data in the routing configuration in `resolve `property (you can use any** [ngRoute](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)** and the  **[UI router](https://github.com/angular-ui/ui-router) **).
+  1. First it get the data in the routing configuration in `resolve `property (you can use any **[ngRoute](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider)** and the  **[UI router](https://github.com/angular-ui/ui-router)**).
 
 	
   2. Then set  `Articles` parameter in the resolve property.
@@ -193,10 +165,7 @@ So we will write like that
   5. And finally when `$scope.articles` is changes then it will reflect in our template (as angular done  its magic with two way data-binding ;) )
 
 
-
-
 ### **Summery**
-
 
 you can set any type value in `resolve` like a `JSON` format.
 
