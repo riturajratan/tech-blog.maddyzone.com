@@ -9,7 +9,6 @@ title: How to use multiple ng-view in a single page
 wordpress_id: 1210
 categories:
 - AngularJS
-- JavaScript
 tags:
 - Angular Js
 - ng-app
@@ -19,21 +18,24 @@ tags:
 - Routing
 ---
 
+
+[![How to use multiple ng-view in a single page]({{ site.url }}/uploads/2014/09/How-to-use-multipe-ng-view-in-angular.png)]({{ site.url }}/uploads/2014/09/How-to-use-multipe-ng-view-in-angular.png)
+
 we can use only one ng-view in single template but if we want to use multiple ng-view then we can use it by the ng-include, ng-switch or mapping different controllers and templates through the routeProvider.
 
 
-<blockquote>we want to use multiple ng-view then we can use it by the **ng-include**, **ng-switch** or **mapping different controllers** and templates through the **routeProvider**.</blockquote>
+>we want to use multiple ng-view then we can use it by the **ng-include**, **ng-switch** or **mapping different controllers** and templates through the **routeProvider**.
 
 
-**[ng-view](https://docs.angularjs.org/api/ngRoute/directive/ngView) **
+**[ng-view](https://docs.angularjs.org/api/ngRoute/directive/ngView)**
 
 `ng-view` by this directive angular know that ,this is the place where template will inject.for more details see in [angular doc](https://docs.angularjs.org/api/ngRoute/directive/ngView)
 
-[**ng-include**](https://docs.angularjs.org/api/ng/directive/ngInclude)
+**[ng-include](https://docs.angularjs.org/api/ng/directive/ngInclude)**
 
 by `ngInclude` we load template with given path . It Fetches, compiles and includes an external HTML fragment for more details see in [angular.doc](https://docs.angularjs.org/api/ng/directive/ngInclude)
 
-[**ng-switch**](https://docs.angularjs.org/api/ng/directive/ngSwitch)
+**[ng-switch](https://docs.angularjs.org/api/ng/directive/ngSwitch)**
 
 By ng-switch we load template conditionally  rest of them same as `ngInclude` its syntax is like below
 
@@ -84,7 +86,7 @@ First create our main file in which all structure set
           <i class="badge">load uirouter.html file in this all html file loaded </i>
            <div ng-view="">
           </div>
-          <a href="http://maddyzone.com/javascript/how-use-multiple-ng-view-in-a-single-page" target="_blank">View Post on Maddyzone </a>
+          <a href="http://maddyzone.com/angularjs/how-use-multiple-ng-view-in-a-single-page" target="_blank">View Post on Maddyzone </a>
     
         </div>
       </div>
@@ -166,7 +168,7 @@ Now make our three template files which we want to load
     </div>
 
 
-Now make our script file in which all [**module and controller** ](http://maddyzone.com/javascript/learn-complete-angularjs-5-steps-step-2-5)setting exist and here we are mapping our controller with `index.html` and set routing of template `uirouter.html`
+Now make our script file in which all [**module and controller** ](http://maddyzone.com/angularjs/learn-complete-angularjs-5-steps-step-2-5)setting exist and here we are mapping our controller with `index.html` and set routing of template `uirouter.html`
 
 **script.js**
 
@@ -221,26 +223,15 @@ Now make our script file in which all [**module and controller** ](http://maddyz
 
 	
   2. make a uirouter file in this three `ngInclude `div call they load below template file
-
-	
-    * home.html
-
-	
-    * aboutus.html
-
-	
-    * contactus.html
-
-
-
+  * home.html
+  * aboutus.html
+  * contactus.html
 
 	
   3.  In JS by routing we set uirouter.html in index.html `ng-view `section
 
 	
   4. after load uirouter.html in ng-view it see three things
-
-
 
 	
   *  **ng-include="template.home" **
@@ -255,8 +246,7 @@ then it check `$scope.template.about` value which is aboutus.html and it is load
 then it check `$scope.template.contact` value which is contact.html and it load by  `ngInclude `
 
 
-**See Live Demo Below**
-
+<!-- **See Live Demo Below** -->
 
 
 Please give your comments and suggestion Thanks.

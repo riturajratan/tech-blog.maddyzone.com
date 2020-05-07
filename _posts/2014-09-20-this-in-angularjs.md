@@ -15,7 +15,7 @@ tags:
 ---
 
 
-[![This is Angular JS]({{ site.url }}/uploads/2014/09/this-in-angular-js.pn)]({{ site.url }}/uploads/2014/09/this-in-angular-js.pn)
+[![This is Angular JS]({{ site.url }}/uploads/2014/09/this-in-angular-js.png)]({{ site.url }}/uploads/2014/09/this-in-angular-js.png)
 
 Most of the time we use `this` in [_**JavaScript**_](http://maddyzone.com/category/javascript) or `$(this)` in [_**jQuery**_](http://maddyzone.com/category/javascript/jquery) .
 
