@@ -8,14 +8,16 @@ slug: implement-addeditdeleteview-php-using-angular-js-part-2
 title: How to Implement Add/Edit/Delete/View with PHP using Angular JS (Part-2)
 wordpress_id: 1530
 categories:
-- AngularJS
 - JavaScript
 tags:
 - Angular Js
 - angular paging
+- php
 ---
 
-In our previous Post we have learn**  [How to use CRUD(create read update delete)  in angular With PHP](http://maddyzone.com/javascript/perform-addeditdeleteview-php-using-angular-js)** ? Now in this post we will learn How to do Paging with Php using AngularJS or can say paging with AngularJS using Php.
+![How to Implement Add/Edit/Delete/View with PHP using Angular JS](http://tech-blog.maddyzone.com/uploads/2014/01/Crud.png)
+
+In our previous Post we have learn **[How to use CRUD(create read update delete)  in angular With PHP](http://maddyzone.com/javascript/perform-addeditdeleteview-php-using-angular-js)** ? Now in this post we will learn How to do Paging with Php using AngularJS or can say paging with AngularJS using Php.
 
 Our Blog Regarding Iteration Angular JS with PHP teaches you :
 
@@ -34,13 +36,13 @@ Now we move to next part of this topic to achive filteration and paging on grid 
 
 - First , we create a html for filter box in the same html file used in part-1 of this example name "angular_example.html" using below code:
 
-    
-    <input type="text" ng-model="search" ng-change="filter()" placeholder="Filter" class="form-control" />
+   ``` 
+      <input type="text" ng-model="search" ng-change="filter()" placeholder="Filter" class="form-control" />
+    ```
 
 
 - ng-change property of angular js will call function filter defined in contoller.js file as used same in part-1 of this example using below code:
-
-    
+  ```
     listApp.filter('startFrom', function() {
         return function(input, start) {
             if(input) {
@@ -50,8 +52,7 @@ Now we move to next part of this topic to achive filteration and paging on grid 
             return [];
         }
         });
-
-
+    ```
 
 
 - This filter function get the value of text we place in search box or filter box for filteration and slice
@@ -66,7 +67,7 @@ by their start index to end index to filter info on text change very frequently.
 - if you forgot this don't bother , we are sohowing below the snippet of the function which will helps you in
 remembering the past step you performed in part-1 of this example.
 
-    
+  ```  
     $scope.get_product = function(){
         $http.get("db.php?action=get_product").success(function(data)
         {
@@ -75,21 +76,23 @@ remembering the past step you performed in part-1 of this example.
     
         });
         }
+  ```      
 
 
 - so, if you got it here, we will move to next if you don't please check the link below for  part-1 of same blog .
 
     
-    http://maddyzone.com/javascript/perform-addeditdeleteview-php-using-angular-js.
+    http://tech-blog.maddyzone.com/angularjs/perform-addeditdeleteview-php-using-angular-js.
 
 
 - Now as we say, we have to initialize some variable in this function to implement paging so for you  please check below variables with comment (specify the use of these variables).
 
-    
+  ``` 
     $scope.currentPage = 1; //current page
     $scope.entryLimit = 5; //max no of items to display in a page
     $scope.filteredItems = $scope.pagedItems.length; //Initially for no filter  
     $scope.totalItems = $scope.pagedItems.length;
+  ```  
 
 
 so now complete code for this function is as below :
@@ -113,14 +116,14 @@ so now complete code for this function is as below :
 - Including this we have to define 2 new function to check the current page and filter value during paging so, we are creating here 2 new function in the same file controller.js with below code:
 
     
-     // function to set current page
-    
+        // function to set current page
+
         $scope.setPage = function(pageNo) {
             $scope.currentPage = pageNo;
         };
     
-     // function to get filtered data 
-    
+        // function to get filtered data 
+
         $scope.filter = function() {
             $timeout(function() { 
                 $scope.filteredItems = $scope.filtered.length;
@@ -335,9 +338,7 @@ so now complete code for this function is as below :
                        
                     });
         }
-    
-       
-    });
+      });
 
 
 
@@ -350,15 +351,14 @@ so now complete code for this function is as below :
 
 - To show or implement paged data we use following snippet code :
 
-    
-    <tr ng-repeat="product in filtered = (pagedItems | filter:search | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
-                        <td>{{ product.id }}</td>
-                        <td>{{ product.prod_name | uppercase }}</td>
-                        <td>{{ product.prod_desc }}</td>
-                        <td>{{ product.prod_price }}</td>
-                        <td>{{ product.prod_quantity }}</td>    
-                        <td><a href="" ng-click="prod_edit(product.id)">Edit</a> | <a href="" ng-click="prod_delete(product.id)">Delete</a></td>
-    </tr>
+      <tr ng-repeat="product in filtered = (pagedItems | filter:search | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+        <td>{{ product.id }}</td>
+        <td>{{ product.prod_name | uppercase }}</td>
+        <td>{{ product.prod_desc }}</td>
+        <td>{{ product.prod_price }}</td>
+        <td>{{ product.prod_quantity }}</td>    
+        <td><a href="" ng-click="prod_edit(product.id)">Edit</a> | <a href="" ng-click="prod_delete(product.id)">Delete</a></td>
+      </tr>
 
 
 - If you can see this is the same snippet with updated code of paging which we used to show all items from database in part-1 of same blog.
@@ -566,6 +566,4 @@ please check the below snapshot with required output .
 
 [![Angular With PHP Filter Paging]({{ site.url }}/uploads/2014/10/Angular-With-PHP-Filter-Paging.png)]({{ site.url }}/uploads/2014/10/Angular-With-PHP-Filter-Paging.png)
 
-
-
-[button type="bd_button btn_large" url="https://github.com/Maddyzone/CRUD-In-AngularJS-with-Php" target="on" button_color_fon="#3fc2da" button_text_color="#ffffff" ] Download Code [/button]
+**[Download Code](https://github.com/Maddyzone/CRUD-In-AngularJS-with-Php)** 
