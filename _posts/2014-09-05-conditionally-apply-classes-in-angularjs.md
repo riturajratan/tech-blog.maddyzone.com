@@ -238,8 +238,9 @@ Now Lets create a demo in which we add ,remove and toggle class in angular for s
     });
 
 
-<!-- Now lets see Demo below -->
 
+**SEE LIVE DEMO**
 
+**[Demo](http://embed.plnkr.co/YLolETGbvKjX4pNJUZ4m/preview)**
 
 Please give your comments and your suggestion Thanks
