@@ -263,7 +263,9 @@ So our final code will be for search by `category` is
 
 
 
-<!-- ## See Working Demo for filter in specific attribute -->
+## See Working Demo for filter in specific attribute
+**[Demo](http://embed.plnkr.co/oDsM22dGJWDbNCEs1dmU/preview)**
+
 
 Please give your comments and suggestion below.
 

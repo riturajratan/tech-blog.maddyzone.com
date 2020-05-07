@@ -8,7 +8,6 @@ title: this in angularjs
 wordpress_id: 1358
 categories:
 - AngularJS
-- JavaScript
 tags:
 - Angular Js
 - angular service
@@ -90,8 +89,9 @@ in both of the method we pass `$event` and use in our controller see JS file cod
     });
 
 
-<!-- **SEE LIVE DEMO** -->
+**SEE LIVE DEMO**
 
+**[Demo](http://embed.plnkr.co/uXuSUcinjNIfneq0MIqg/preview)**
 
 
 Please give your comments and suggestion Thanks.
