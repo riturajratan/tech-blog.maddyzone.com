@@ -220,6 +220,7 @@ So our full code for not result found is below
 
 Now  how to do search on some specific attribute like in this case  if want to search base on only `category` then how we do .So we will see that how we do it.
 
+**[Demo](http://embed.plnkr.co/vcjStDRmBKk6hfjOxm1e/preview)**
 
 ## Search with category name
 
