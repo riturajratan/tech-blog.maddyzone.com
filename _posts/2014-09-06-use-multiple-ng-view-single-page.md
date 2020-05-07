@@ -245,8 +245,7 @@ then it check `$scope.template.about` value which is aboutus.html and it is load
   *  **ng-include="template.contact"**
 then it check `$scope.template.contact` value which is contact.html and it load by  `ngInclude `
 
-
-<!-- **See Live Demo Below** -->
+**[Demo](http://embed.plnkr.co/N35iu6lvmNvytX1262E8/preview)**
 
 
 Please give your comments and suggestion Thanks.
