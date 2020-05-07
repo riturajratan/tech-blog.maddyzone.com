@@ -34,7 +34,7 @@ For a Basic Searching in AngularJS first we make a module in Angular to activate
 
 Then we make a controller to do our all things. In our case we are making an array of article  `articleList` with title , link and category like below. So
 
-`**script.js**`
+**script.js**
 
     
     // Code goes here
@@ -73,7 +73,7 @@ Then we make a controller to do our all things. In our case we are making an arr
 
 Now talk about our HTML file `index.html`
 
-`**index.html**`
+**index.html**
 
     
     <!DOCTYPE html>
@@ -155,9 +155,6 @@ Now i am explaining above `index.html.`
 
 
 ## Set a Search Box
-
-
-
     
     <form>
           <label>Search </label>
@@ -166,18 +163,11 @@ Now i am explaining above `index.html.`
 
 
 
-
 First we set a input box and set `ng-model="search" ` then we will use this in below section.
-
-
-
 
 ## Show Article List
 
-
 Show Article List With `$scope.articleList` with `ng-repeat` in a `table `here just ignore `filter:search` in `ng-repeat` we will discuss in next .Now you will see all article come in list in a table.
-
-
 
 
 ## Filter Data in Show Article List
@@ -199,13 +189,6 @@ Now when we apply `filter:search` in `ng-repeat` then it first take the input 
                 <label class="label label-info">{{value.category }}</label>
               </td>
             </tr>
-
-
-
-
-## 
-
-
 
 
 ## When No Result Found
@@ -235,12 +218,7 @@ So our full code for not result found is below
 ## See Working Demo Below
 
 
-
-
 Now  how to do search on some specific attribute like in this case  if want to search base on only `category` then how we do .So we will see that how we do it.
-
-
-
 
 
 ## Search with category name
@@ -251,16 +229,11 @@ If we want to search with `category`  name then we need to `ng-repeat :filter 
 
 Then we need to apply `ng-repeat` with below logic.
 
-
-
-
     
     ng-repeat="(key,value) in anydata | filter:{attribute-name:search-parameter}"
 
 
 So here
-
-
 
 	
   1. `anydata` in our case is  `articleList`
@@ -274,7 +247,6 @@ So here
 
 So our final code will be for search by `category` is
 
-    
             <tr ng-repeat="(key,value) in articleList | filter:{category:search}">
               <td>
                 {{$index + 1}}
@@ -291,15 +263,7 @@ So our final code will be for search by `category` is
 
 
 
-
-
-## See Working Demo for filter in specific attribute
-
-
-
-
-
-
+<!-- ## See Working Demo for filter in specific attribute -->
 
 Please give your comments and suggestion below.
 
