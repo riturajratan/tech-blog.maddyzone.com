@@ -14,10 +14,12 @@ tags:
 - Angular Js
 ---
 
+[![Code organization in angularjs]({{ site.url }}/uploads/2014/09/Angular-JS-Folder-structure.png)]({{ site.url }}/uploads/2014/09/Angular-JS-Folder-structure.png)
+
 When we work with any programming language the main thing is our **code structure and code organization**. Because when new person work with us then at that time if our code structure is good then he will understand all code very easily else it will take time same as writing new code.
 
 
-<blockquote>_Unstructure and unorganize code understanding take time >= creating new code for that _</blockquote>
+<blockquote> Unstructure and unorganize code understanding take time > creating new code for that </blockquote>
 
 
 In **angular** there is no standard to organize the code its depends on us that how we organize the code but there are some suggestion by which we can organize our code according to the project level.
@@ -43,7 +45,7 @@ Here we are using following terms you can assign name as per your choice.
   4. **styles(folder)** in this all css files are handle.
 
 	
-  5. **app.js **main file which we are using for angular setup in our project.
+  5. **app.js** main file which we are using for angular setup in our project.
 
 	
   6. **Lib(folder)** library(js files) which we are using in your project.
@@ -54,7 +56,8 @@ Here we are using following terms you can assign name as per your choice.
 In small project i mean where only 1 directive or may be not using and 1 or 2 controller max and 1 module which we use in our main **index.html** file then it will be good that we make a single file **app.js **in which all angular code is written. Then our structure look like that
 
 
-<blockquote>**main-directory**
+```
+**main-directory**
 ├── index.html
 ├── **js**
 │ └── app.js
@@ -65,7 +68,8 @@ In small project i mean where only 1 directive or may be not using and 1 or 2 co
 ├── **styles**
 │ └── ...
 └── **views**
-├── template.html</blockquote>
+├── template.html
+```
 
 
 **2) When project is medium(between small and large)**
@@ -73,7 +77,8 @@ In small project i mean where only 1 directive or may be not using and 1 or 2 co
 In medium project where only some directive ,controller , service and filter are using and 1 module which we use in our main **index.html** file then it will be good that we make a seprate files for each(filter , controller, directive,service). Then our structure look like that
 
 
-<blockquote>**main-directory**
+```
+**main-directory**
 ├── index.html
 ├── **js**
 │ └── filter.js
@@ -90,7 +95,8 @@ In medium project where only some directive ,controller , service and filter are
 └── **views**
 ├── template1.html
 ├── template2.html
-├── .....</blockquote>
+├── .....
+```
 
 
 **3) When project is large(huge app)**
@@ -98,7 +104,8 @@ In medium project where only some directive ,controller , service and filter are
 when project is large and many modules ,filters, directive,service, controller are using in our project. Then it will be good that we organize our code like below.In this all controllers, filters, directives, services ,models are in their respective folders.Then our structure look like that
 
 
-<blockquote>**main-directory**
+```
+**main-directory**
 ├── index.html
 ├── **js**
 │ ├── **controllers**
@@ -138,7 +145,8 @@ when project is large and many modules ,filters, directive,service, controller a
 ├── template2.html
 ├── template3.html
 ├── template4.html
-├── .....</blockquote>
+├── .....
+```
 
 
 So these all above are code organize structure in angular it depends on your project requirement that which one you use. Mostly developers follow last code structure because in future if project may become a huge project then there is no chance to worry about code management.
