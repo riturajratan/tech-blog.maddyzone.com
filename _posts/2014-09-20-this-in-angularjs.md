@@ -5,6 +5,7 @@ date: 2014-09-20 05:19:11+00:00
 layout: post
 slug: this-in-angularjs
 title: this in angularjs
+image: uploads/2014/09/this-in-angular-js.png
 wordpress_id: 1358
 categories:
 - AngularJS
