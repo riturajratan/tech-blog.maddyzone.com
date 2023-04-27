@@ -3,11 +3,11 @@ author: maddyzonetech
 comments: true
 date: 2023-05-01 08:00:00+00:00
 layout: post
-link: http://dlurratan37846/wordpress/?p=31
+link: https://tech-blog.maddyzone.com/svelte-framework-introduction
 slug: svelte-framework-introduction
-title: An Introduction to Svelte: A Modern and Performant Front-End Framework
+title: An Introduction to Svelte, A Modern and Performant Front-End Framework
 categories:
- - Svelte
+  - Svelte
 tags:
   - Svelte
   - Front-End Framework
