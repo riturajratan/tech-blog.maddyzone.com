@@ -8,7 +8,7 @@ class: javascript
   <h2 class="category-banner__title">Javascript</h2>
 </div>
 
-{% assign javascript_posts = site.posts | where_exp:"post", "post.categories contains 'JavaScript' or post.categories contains 'Javascript' or post.tags contains 'JavaScript' or post.tags contains 'Javascript' or post.tags contains 'JS'" %}
+{% assign javascript_posts = site.posts | where: "categories", "JavaScript" %}
 
 <div class="posts-grid">
 {% for post in javascript_posts %}

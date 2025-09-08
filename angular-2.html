@@ -8,7 +8,7 @@ class: angular-2
 	<h2 class="category-banner__title">Angular 2</h2>
 </div>
 
-{% assign angular_posts = site.posts | where_exp:"post", "post.categories contains 'AngularJS' or post.categories contains 'Angular' or post.tags contains 'Angular' or post.tags contains 'AngularJS'" %}
+{% assign angular_posts = site.posts | where: "categories", "AngularJS" %}
 
 <div class="posts-grid">
 {% for post in angular_posts %}
