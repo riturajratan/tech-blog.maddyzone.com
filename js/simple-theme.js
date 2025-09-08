@@ -28,12 +28,14 @@
       button = document.createElement('button');
       button.className = 'theme-toggle';
       button.title = 'Toggle dark/light theme';
-      const header = document.querySelector('header') || document.body;
-      header.appendChild(button);
+      button.onclick = toggleTheme;
+      const body = document.body;
+      body.appendChild(button);
+    } else {
+      // If button exists, ensure it has the click handler
+      button.onclick = toggleTheme;
     }
     
-    button.innerHTML = '🌓';
-    button.addEventListener('click', toggleTheme);
     updateToggleIcon(document.documentElement.getAttribute('data-theme'));
   }
 
@@ -41,6 +43,7 @@
     const button = document.querySelector('.theme-toggle');
     if (button) {
       button.innerHTML = theme === 'dark' ? '☀️' : '🌙';
+      button.title = theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
     }
   }
 
