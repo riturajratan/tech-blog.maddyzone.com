@@ -124,7 +124,7 @@ Now talk about our HTML file `index.html`
     
             <tr ng-repeat="(key,value) in articleList | filter:search">
               <td>
-                {{$index + 1}}
+                {%raw%}{{$index + 1}}{%endraw%}
               </td>
     
               <td>
@@ -178,7 +178,7 @@ Now when we apply `filter:search` in `ng-repeat` then it first take the input 
     
     <tr ng-repeat="(key,value) in articleList | filter:search">
               <td>
-                {{$index + 1}}
+                {%raw%}{{$index + 1}}{%endraw%}
               </td>
     
               <td>
@@ -250,7 +250,7 @@ So our final code will be for search by `category` is
 
             <tr ng-repeat="(key,value) in articleList | filter:{category:search}">
               <td>
-                {{$index + 1}}
+                {%raw%}{{$index + 1}}{%endraw%}
               </td>
     
               <td>

@@ -447,7 +447,7 @@ As you have implemented the paging and filteration successfully, you are now abl
     				    
     				    <!-- Remove function used to remove an item from an array defined in controller,with their index value in list repeat by ng-repeat, if order by reverse set to be true, than function remove value in order from bottom to top as per index, else remove value from top to bottom Remove function also defined in controller -->
     
-    					<td><button ng-click='remove($index)'>Remove</button></td>
+    					<td><button ng-click='remove({%raw%}$index{%endraw%})'>Remove</button></td>
                       
                        <!-- table showing the array values defined in controller by key attribute -->
     
