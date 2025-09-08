@@ -1588,6 +1588,13 @@ img {
   max-width: 1200px;
   margin: 0 auto 2rem;
   padding: 0 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: var(--bg-primary);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* 🔍 Advanced Search for Articles Website with Keyboard Navigation */

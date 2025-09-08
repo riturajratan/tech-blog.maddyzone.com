@@ -2,46 +2,8 @@
 layout: default
 ---
 
-<!-- Enhanced Modern Homepage -->
-<div class="homepage-container">
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Welcome to My Tech Blog</h1>
-        <p class="hero-subtitle">
-          Exploring the latest in web development, JavaScript frameworks, and modern technologies. 
-          Join me on this journey of continuous learning and innovation.
-        </p>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">{{ site.posts.size }}</span>
-            <span class="stat-label">Articles</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">50K+</span>
-            <span class="stat-label">Readers</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Years</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Posts Grid -->
-  <section class="posts-section">
-    <div class="container">
-      <header class="section-header">
-        <h2 class="section-title">Latest Articles</h2>
-        <p class="section-description">
-          Deep dives into JavaScript, Angular, React, Node.js, and cutting-edge web technologies
-        </p>
-      </header>
-
-      <div class="posts-grid">
+<!-- Posts Grid -->
+<div class="posts-grid">
         {% for post in paginator.posts %}
         <article class="post-card">
           <div class="card-header">

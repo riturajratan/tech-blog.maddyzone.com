@@ -5,12 +5,15 @@
   // Theme management
   function initTheme() {
     const theme = localStorage.getItem('theme') || 'light';
+    console.log('Initializing theme:', theme); // Debug log
     applyTheme(theme);
     createThemeToggle();
   }
 
   function applyTheme(theme) {
+    console.log('Applying theme:', theme); // Debug log
     document.documentElement.setAttribute('data-theme', theme);
+    document.body.setAttribute('data-theme', theme); // Also set on body
     localStorage.setItem('theme', theme);
   }
 
@@ -47,13 +50,53 @@
     }
   }
 
-  // Make toggleTheme globally available
+  // Header scroll behavior
+  function initHeaderScroll() {
+    const header = document.querySelector('.site-header');
+    const actionBar = document.querySelector('.action-bar');
+    let lastScrollY = window.scrollY;
+
+    if (header) {
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        // Add scrolled class when scrolling down
+        if (currentScrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+
+        // Hide/show action bar (search) based on scroll direction
+        if (actionBar) {
+          if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Scrolling down - hide search bar
+            actionBar.style.transform = 'translateY(-100%)';
+            actionBar.style.opacity = '0';
+          } else {
+            // Scrolling up - show search bar
+            actionBar.style.transform = 'translateY(0)';
+            actionBar.style.opacity = '1';
+          }
+        }
+
+        lastScrollY = currentScrollY;
+      });
+    }
+  }
+
+  // Make functions globally available
   window.toggleTheme = toggleTheme;
 
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTheme);
-  } else {
+  // Initialize everything when DOM is ready
+  function initAll() {
     initTheme();
+    initHeaderScroll();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
   }
 })();
