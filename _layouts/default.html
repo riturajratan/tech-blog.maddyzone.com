@@ -3,6 +3,9 @@
   {% include head.html %}
   <body>
     {% include header.html %}
+    <!-- Theme toggle button -->
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light theme">🌓</button>
+
     <main class="content">
       <div class="action-bar">
         <div class="search">
@@ -10,15 +13,27 @@
           <ul id="results-container"></ul>
         </div>
       </div>
-      <div class="card">
-        {% if page.url != '/angular-1-x' and page.url != '/angular-2' and page.url != '/javascript'  %}
-        <!--{% include courses.html position="top" %}-->
-        {% endif %}
-        <div class="card__content">
-          {{ content }}
+      
+      <!-- Main Blog Layout with Sidebar -->
+      <div class="blog-layout">
+        <div class="main-content">
+          <div class="card">
+            {% if page.url != '/angular-1-x' and page.url != '/angular-2' and page.url != '/javascript'  %}
+            <!--{% include courses.html position="top" %}-->
+            {% endif %}
+            <div class="card__content">
+              {{ content }}
+            </div>
+          </div>
         </div>
+        
+        <!-- Author Sidebar -->
+        <aside class="author-sidebar">
+          {% include author-sidebar.html %}
+        </aside>
       </div>
-      {% include footer.html %}
+      
+      {% include modern-footer.html %}
     </main>
     <script src="/search.js" type="text/javascript"></script>
     <script src="/js/simple-theme.js" type="text/javascript"></script>

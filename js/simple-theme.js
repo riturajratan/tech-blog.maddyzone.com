@@ -22,14 +22,18 @@
   }
 
   function createThemeToggle() {
-    const button = document.createElement('button');
-    button.className = 'theme-toggle';
-    button.innerHTML = '🌙';
+    // Check if toggle button already exists in HTML
+    let button = document.querySelector('.theme-toggle');
+    if (!button) {
+      button = document.createElement('button');
+      button.className = 'theme-toggle';
+      button.title = 'Toggle dark/light theme';
+      const header = document.querySelector('header') || document.body;
+      header.appendChild(button);
+    }
+    
+    button.innerHTML = '🌓';
     button.addEventListener('click', toggleTheme);
-    
-    const header = document.querySelector('header') || document.body;
-    header.appendChild(button);
-    
     updateToggleIcon(document.documentElement.getAttribute('data-theme'));
   }
 
@@ -39,6 +43,9 @@
       button.innerHTML = theme === 'dark' ? '☀️' : '🌙';
     }
   }
+
+  // Make toggleTheme globally available
+  window.toggleTheme = toggleTheme;
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
