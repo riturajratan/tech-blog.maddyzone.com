@@ -67,20 +67,20 @@ const App = () => {
   return (
     <View>
       <Header
-        centerComponent={{
+        centerComponent={%raw%}{{
           text: 'Profile Photo',
           style: styles.headerText,
-        }}
-        rightComponent={{
+        }}{%endraw%}
+        rightComponent={%raw%}{{
           text: 'Edit',
           style: styles.headerText,
-        }}
+        }}{%endraw%}
       />
       <View style={styles.imageContainer}>
         <Image
           source={defaultAvatar}
           PlaceholderContent={<ActivityIndicator />}
-          style={{width: 400, height: 400}}
+          style={%raw%}{{width: 400, height: 400}}{%endraw%}
         />
       </View>
     </View>
@@ -204,21 +204,21 @@ const App = () => {
   return (
     <View>
       <Header
-        centerComponent={{
+        centerComponent={%raw%}{{
           text: 'Profile Photo',
           style: styles.headerText,
-        }}
-        rightComponent={{
+        }}{%endraw%}
+        rightComponent={%raw%}{{
           text: 'Edit',
           style: styles.headerText,
           onPress: () => handlePicker(),
-        }}
+        }}{%endraw%}
       />
       <View style={styles.imageContainer}>
         <Image
           source={avatar}
           PlaceholderContent={<ActivityIndicator />}
-          style={{width: 500, height: 500}}
+          style={%raw%}{{width: 500, height: 500}}{%endraw%}
         />
       </View>
     </View>
@@ -392,21 +392,21 @@ const App = () => {
   return (
     <View>
       <Header
-        centerComponent={{
+        centerComponent={%raw%}{{
           text: title,
           style: styles.headerText,
-        }}
-        rightComponent={{
+        }}{%endraw%}
+        rightComponent={%raw%}{{
           text: 'Edit',
           style: styles.headerText,
           onPress: () => handlePicker(),
-        }}
+        }}{%endraw%}
       />
       <View style={styles.imageContainer}>
         <Image
           source={avatar}
           PlaceholderContent={<ActivityIndicator />}
-          style={{width: 500, height: 500}}
+          style={%raw%}{{width: 500, height: 500}}{%endraw%}
         />
       </View>
     </View>
