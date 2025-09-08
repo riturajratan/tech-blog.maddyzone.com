@@ -1,57 +1,22 @@
-<!-- Modern Header with Navigation -->
-<header class="modern-header">
-  <div class="modern-header__container">
-    <!-- Logo -->
-    <a href="/" class="modern-header__logo">
-      <img src="{{ site.baseurl }}/img/rrr.jpg" alt="Maddyzone">
-      <span>Maddyzone</span>
-    </a>
-    
-    <!-- Desktop Navigation -->
-    <nav class="modern-nav">
-      <ul class="modern-nav__list">
-        <li><a href="/" class="modern-nav__link">Posts</a></li>
-        <li><a href="/categories/angularjs/" class="modern-nav__link">Angular JS</a></li>
-        <li><a href="/categories/javascript/" class="modern-nav__link">JavaScript</a></li>
-        <li><a href="http://www.riturajratan.com" target="_blank" class="modern-nav__link">About</a></li>
-      </ul>
-      
-      <!-- Navigation Actions -->
-      <div class="modern-nav__actions">
-        <!-- Search Icon -->
-        <button class="theme-toggle" aria-label="Search" style="display: none;">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </button>
-        
-        <!-- Theme toggle and mobile menu button will be added by JavaScript -->
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <nav class="site-nav">
+      <div class="trigger">
+        <a class="page-link" href="{{ site.baseurl }}/">Posts</a>
+        <a class="page-link" href="{{ site.baseurl }}/javascript">JavaScript</a>
+        <a class="page-link" href="{{ site.baseurl }}/angular-2">Angular</a>
+        <a class="page-link" href="{{ site.baseurl }}/about">About</a>
       </div>
     </nav>
   </div>
-</header>
-
-<!-- Original header content preserved for bio section -->
-<div class="header-bio" style="background: var(--bg-secondary); padding: var(--space-8) var(--space-4); margin-top: 4rem;">
-  <div class="modern-container" style="max-width: 800px; margin: 0 auto; text-align: center;">
-    <div class="header__bio">
-      <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: var(--space-6);">
-        I'm <a href="http://www.riturajratan.com/" style="color: var(--brand-primary); text-decoration: none; font-weight: 500;">Rituraj</a>, a Developer <a href="http://www.nagarro.com/" style="color: var(--brand-primary); text-decoration: none; font-weight: 500;">@Nagarro</a>.
-        founder of <a href="http://tech-blog.maddyzone.com" style="color: var(--brand-primary); text-decoration: none; font-weight: 500;">Maddyzone</a>. JavaScript, Angular, Node.
-      </p>
-
-      <div style="display: flex; justify-content: center; align-items: center; gap: var(--space-4); flex-wrap: wrap;">
-        <a href='https://ko-fi.com/O5O31LWOX' target='_blank'>
-          <img height='36' style='border:0px;height:36px;border-radius:var(--radius-md);transition:transform var(--transition-fast);' 
-               src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' 
-               onmouseover="this.style.transform='translateY(-2px)'" 
-               onmouseout="this.style.transform='translateY(0)'" />
-        </a>
-        <a href="https://twitter.com/maddyzonenews" class="twitter-follow-button" data-show-count="true"></a>
-        <script>
-          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
-        </script>
-      </div>
-    </div>
+  <div class="header__bio">
+    <p>I'm <a href="http://www.riturajratan.com/">Rituraj</a>, a Developer <a href="http://www.nagarro.com/">@Nagarro</a>.
+      founder of <a href="http://tech-blog.maddyzone.com">Maddyzone</a>. JavaScript, Angular, Node.</p>
+    <a href='https://ko-fi.com/O5O31LWOX' target='_blank'>
+      <img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' alt='Buy Me a Coffee at ko-fi.com' />
+    </a>
+    <a href="https://twitter.com/maddyzonenews" class="twitter-follow-button" data-show-count="true"></a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
-</div>
+</header>
