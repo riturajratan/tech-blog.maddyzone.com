@@ -53,7 +53,6 @@
   // Header scroll behavior
   function initHeaderScroll() {
     const header = document.querySelector('.site-header');
-    const actionBar = document.querySelector('.action-bar');
     let lastScrollY = window.scrollY;
 
     if (header) {
@@ -65,19 +64,6 @@
           header.classList.add('scrolled');
         } else {
           header.classList.remove('scrolled');
-        }
-
-        // Hide/show action bar (search) based on scroll direction
-        if (actionBar) {
-          if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            // Scrolling down - hide search bar
-            actionBar.style.transform = 'translateY(-100%)';
-            actionBar.style.opacity = '0';
-          } else {
-            // Scrolling up - show search bar
-            actionBar.style.transform = 'translateY(0)';
-            actionBar.style.opacity = '1';
-          }
         }
 
         lastScrollY = currentScrollY;

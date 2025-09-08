@@ -1486,6 +1486,114 @@ img {
   gap: 1rem;
 }
 
+/* Header Search Integration */
+.header-search {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  margin: 0 2rem;
+}
+
+.header-search input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.header-search input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.header-search input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.header-search #results-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 0.5rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+  display: none;
+}
+
+.header-search #results-container.show {
+  display: block;
+}
+
+.header-search #results-container li {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s ease;
+}
+
+.header-search #results-container li:hover,
+.header-search #results-container li.highlighted {
+  background: var(--hover-bg);
+}
+
+.header-search #results-container li:last-child {
+  border-bottom: none;
+}
+
+.header-search .result-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.header-search .result-excerpt {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.header-search .result-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+/* Dark theme adjustments for header search */
+[data-theme="dark"] .header-search input {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .header-search input::placeholder {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .header-search input:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #8b5cf6;
+}
+
 .site-title {
   font-size: 1.75rem;
   font-weight: 800;
@@ -2095,6 +2203,12 @@ img {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+  }
+  
+  .header-search {
+    order: 2;
+    margin: 0;
+    max-width: 100%;
   }
   
   .site-title {
