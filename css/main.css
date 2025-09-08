@@ -685,6 +685,22 @@ img {
   padding: 0;
 }
 
+/* Force homepage layout to respect grid - debugging */
+.blog-layout {
+  display: grid !important;
+  grid-template-columns: 1fr 400px !important;
+}
+
+.main-content-area {
+  overflow: hidden; /* Prevent content from breaking out */
+}
+
+/* Ensure posts-grid doesn't break layout */
+.blog-layout .posts-grid {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 /* 👤 Ultra-Modern Author Sidebar */
 .author-sidebar {
   position: sticky;
@@ -2710,6 +2726,113 @@ img {
 
 [data-theme="light"] .footer-bottom-links a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== LIGHT THEME SUPPORT FOR AUTHOR SIDEBAR ===== */
+
+/* Light theme author card */
+[data-theme="light"] .author-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a202c;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .author-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(139, 92, 246, 0.05);
+}
+
+/* Light theme author text */
+[data-theme="light"] .author-name {
+  color: #1a202c;
+}
+
+[data-theme="light"] .author-title {
+  color: #4a5568;
+}
+
+[data-theme="light"] .author-company {
+  color: #718096;
+}
+
+[data-theme="light"] .author-company a {
+  color: #8b5cf6;
+}
+
+[data-theme="light"] .author-bio {
+  color: #4a5568;
+}
+
+[data-theme="light"] .author-status {
+  color: #718096;
+}
+
+/* Light theme author stats */
+[data-theme="light"] .stat-number {
+  color: #8b5cf6;
+}
+
+[data-theme="light"] .stat-label {
+  color: #718096;
+}
+
+/* Light theme author social links */
+[data-theme="light"] .social-link {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #4a5568;
+}
+
+[data-theme="light"] .social-link:hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+
+[data-theme="light"] .social-text {
+  color: #4a5568;
+}
+
+[data-theme="light"] .social-link:hover .social-text {
+  color: #8b5cf6;
+}
+
+/* Light theme sidebar widgets */
+[data-theme="light"] .sidebar-widget {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .widget-title {
+  color: #1a202c;
+}
+
+[data-theme="light"] .newsletter-widget-desc {
+  color: #4a5568;
+}
+
+[data-theme="light"] .newsletter-input {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #1a202c;
+}
+
+[data-theme="light"] .newsletter-input::placeholder {
+  color: #a0aec0;
+}
+
+[data-theme="light"] .newsletter-input:focus {
+  border-color: #8b5cf6;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="light"] .newsletter-submit {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+[data-theme="light"] .newsletter-widget-note {
+  color: #718096;
 }
 
 /* Footer responsive adjustments */
