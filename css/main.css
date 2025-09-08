@@ -678,6 +678,13 @@ img {
   min-width: 0; /* Prevents grid overflow */
 }
 
+/* Constrain containers within blog layout */
+.blog-layout .container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* 👤 Ultra-Modern Author Sidebar */
 .author-sidebar {
   position: sticky;
