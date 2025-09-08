@@ -3,38 +3,62 @@
   {% include head.html %}
   <body>
     {% include header.html %}
+    
     <!-- Theme toggle button -->
     <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark/light theme">🌓</button>
 
     <main class="content">
       <div class="action-bar">
         <div class="search">
-          <input type="text" id="search-input" placeholder="Search posts">
+          <input type="text" id="search-input" placeholder="Search articles, tutorials, and guides...">
           <ul id="results-container"></ul>
         </div>
       </div>
       
-      <!-- Main Blog Layout with Sidebar -->
+      <!-- Modern Blog Layout with Sidebar -->
       <div class="blog-layout">
-        <div class="main-content">
-          <div class="card">
-            {% if page.url != '/angular-1-x' and page.url != '/angular-2' and page.url != '/javascript'  %}
-            <!--{% include courses.html position="top" %}-->
-            {% endif %}
-            <div class="card__content">
+        <!-- Main Content Area -->
+        <div class="main-content-area">
+          {% if page.layout == "default" and page.url == "/" %}
+            <!-- Hero Section for Homepage -->
+            {% include hero-section.html %}
+          {% endif %}
+          
+          <!-- Posts/Content Section -->
+          <section class="posts-section">
+            <div class="container">
+              {% if page.url == "/" %}
+                <header class="section-header">
+                  <h2 class="section-title">Latest Articles</h2>
+                  <p class="section-description">
+                    Deep dives into JavaScript, Angular, React, Node.js, and cutting-edge web technologies
+                  </p>
+                </header>
+              {% endif %}
+              
+              {% if page.url != '/angular-1-x' and page.url != '/angular-2' and page.url != '/javascript'  %}
+              <!--{% include courses.html position="top" %}-->
+              {% endif %}
+              
               {{ content }}
             </div>
-          </div>
+          </section>
+          
+          {% if page.url == "/" %}
+            <!-- Newsletter Section for Homepage -->
+            {% include newsletter-section.html %}
+          {% endif %}
         </div>
         
-        <!-- Author Sidebar -->
+        <!-- Modern Author Sidebar -->
         <aside class="author-sidebar">
-          {% include author-sidebar.html %}
+          {% include author-sidebar-enhanced.html %}
         </aside>
       </div>
       
       {% include modern-footer.html %}
     </main>
+    
     <script src="/search.js" type="text/javascript"></script>
     <script src="/js/simple-theme.js" type="text/javascript"></script>
     <!-- Configuration -->
