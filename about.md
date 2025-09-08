@@ -4,80 +4,98 @@ layout: page
 class: about
 ---
 
-I'm Todd, a 26 year old front-end engineer from England, UK. I run [Ultimate Angular](//ultimateangular.com) (which just won "Best Angular product for Education" award!), teaching developers and teams how to become Angular experts through online courses.
+I'm Rituraj Ratan, a passionate developer and technology enthusiast with over 5 years of experience in modern web development. I currently work as a Developer at [Nagarro](https://www.nagarro.com) and am the founder of [Maddyzone](https://maddyzone.com), a platform dedicated to sharing knowledge about cutting-edge web technologies.
 
-Ultimate Angular focuses on the Angular 1.x and Angular 2 ecosystem, to get you from zero to hero in a few lunch breaks. I'm also a [Developer Expert](//developers.google.com/experts/people/todd-motto) at Google, [conference speaker](//speakerdeck.com/toddmotto) and [open source](//github.com/toddmotto) lover.
-
-I've been fortunate enough to travel the world speaking and teaching Angular and JavaScript. I've taught workshops for Google, Virgin Media, Salesforce, General Assembly employees and many more.
+My journey in technology focuses on building amazing web experiences using JavaScript, Angular, React, Node.js, and other modern frameworks. I believe in the power of continuous learning and love sharing my knowledge with the developer community through articles, tutorials, and open-source contributions.
 
 <div class="about__talk">
-  <img src="img/about.jpg">
+  <img src="img/rrr.jpg" alt="Rituraj Ratan">
 </div>
 
-Co-created [Conditionizr](http://conditionizr.com) (.NET Magazine's Open Source Project of the Year finalist), partnered with Intel and Rolling Stone to bring an HTML5 experience to life. Many other brands have recognised and used/shared my ideas/code: Rolling Stone, Intel, Adobe, NASA, HTML5 Hub, AppendTo, Google, Esquire, Microsoft/MSDN, Wired, Huffington Post, KitKat, Smashing Magazine, Net Magazine, TechPro.
+## What I Do
 
-### Timeline
+- **Frontend Development**: Specializing in Angular, React, and modern JavaScript (ES6+)
+- **Backend Development**: Building robust APIs with Node.js and various databases
+- **Technical Writing**: Sharing knowledge through detailed tutorials and articles
+- **Community Building**: Helping developers grow through Maddyzone and social media
 
-| Date | Comments |
+## Technologies & Skills
+
+### Frontend
+- **Languages**: JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS
+- **Frameworks**: Angular 2+, React, Vue.js
+- **Tools**: Webpack, Vite, Gulp, npm/yarn
+- **UI Libraries**: Angular Material, Bootstrap, Tailwind CSS
+
+### Backend
+- **Runtime**: Node.js, Express.js
+- **Databases**: MongoDB, MySQL, PostgreSQL
+- **APIs**: REST, GraphQL
+- **Cloud**: AWS, Azure, Google Cloud Platform
+
+### Development Tools
+- **Version Control**: Git, GitHub, GitLab
+- **IDEs**: Visual Studio Code, WebStorm
+- **Design**: Figma, Adobe Creative Suite
+- **DevOps**: Docker, CI/CD pipelines
+
+## Recent Projects
+
+### ResumeTailorAI
+Built an AI-powered resume optimization platform using modern web technologies. The project showcases full-stack development skills with a focus on user experience and AI integration. [Visit ResumeTailorAI](https://www.resumetailorai.net/)
+
+### Maddyzone Tech Blog
+Created and maintain a comprehensive tech blog focusing on JavaScript frameworks, modern web development practices, and industry insights. The platform serves thousands of developers monthly.
+
+## Philosophy
+
+I believe that technology should be accessible and that knowledge sharing is the key to collective growth. Through my work at Nagarro and my personal projects, I strive to:
+
+- Write clean, maintainable, and scalable code
+- Stay updated with the latest industry trends and best practices
+- Contribute to open-source projects and community initiatives
+- Mentor and help fellow developers in their growth journey
+
+## Timeline
+
+| Date | Achievement |
 | ---- | ---- |
-| 18.03.2017 | Drove a Ferrari 458, Audi R8 V10+, Lamborghini Aventador around Topgear's circuit |
-| 16.03.2017 | Opening keynote at NG-NL |
-| 13.01.2017 | Visited Thailand for the first time |
-| 24.12.2016 | Got engaged to [Rachael](https://twitter.com/RachaellPurser)! |
-| 08.12.2016 | Visited Ghent, Belgium for the first time |
-| 22.11.2016 | Ultimate Angular wins "Best Angular Product for Education" |
-| 28.09.2016 | First AngularConnect talk |
-| 07.08.2016 | Visited Sofia, Bulgaria for the first time |
-| 01.08.2016 | Opening keynote presentation at AngularCamp |
-| 01.07.2016 | Visited Barcelona, Spain for the first time |
-| 25.05.2016 | Visited Copenhagen, Denmark for the first time |
-| 30.04.2016 | First opening keynote presentation at Voxxed Ticino |
-| 29.04.2016 | Visited Lugano, Switzerland for the first time |
-| 04.04.2016 | Launched [Ultimate Angular](https://ultimateangular.com) training courses |
-| 13.03.2016 | 15,000ft sky dive ([video](https://www.youtube.com/watch?v=iFYYkTlJDWg)) |
-| 23.02.2016 | Visited Austin, TX for the first time |
-| 22.02.2016 | Joined [Telerik](http://telerik.com) as Developer Advocate |
-| 18.02.2016 | First ever keynote presentation at [ng-nl](http://ng-nl.org) (Amsterdam, Holland) |
-| 29.12.2015 | Visited Brussels, Belgium for the first time |
-| 13.10.2015 | Angular workshop, Falsy Values (Warsaw, Poland) |
-| 12.10.2015 | Angular: The Performance Parts (Warsaw, Poland) [slides](https://speakerdeck.com/toddmotto/angularjs-the-performance-parts) |
-| 12.10.2015 | Visited Poland for the first time |
-| 07.10.2015 | Angular: The Performance Parts (London, UK) [slides](https://speakerdeck.com/toddmotto/angularjs-the-performance-parts) |
-| 04.08.2015 | Visited Amsterdam, The Netherlands for the first time |
-| 06.04.2015 | New York Public Library use my Angular style-guide in [v1.3 app migration](http://www.nypl.org/blog/2015/04/06/upgrading-angularjs-1-3) |
-| 16.02.2015 | Director of Web Development role at [Mozio, Inc.](//mozio.com) |
-| 14.11.2014 | Created and launched [AngularAir](http://angularair.com), a hangout/podcast |
-| 28.10.2014 | Visited Boston, USA for the first time |
-| 28.10.2014 | Angular, the bridge between today and tomorrow's web (Boston, USA): [video](https://www.youtube.com/watch?v=Po2JDV6Iebc) |
-| 27.10.2014 | Angular workshop, Future of Web Apps (Boston, USA) |
-| 22.10.2014 | Name-dropped in ngEurope's keynote by the Google team |
-| 30.11.2014 | Angular, the bridge between today and tomorrow's web (London, UK) [slides](https://speakerdeck.com/toddmotto/angularjs-the-bridge-between-today-and-tomorrows-web) |
-| 29.11.2014 | Angular workshop, Future of Web Apps (London, UK) |
-| 25.06.2014 | Attended [Google I/O](https://www.google.com/events/io) San Francisco |
-| 07.05.2014 | [Intel XDK interview](//www.youtube.com/watch?v=5L_gW1K7vqg) at HTML5 Dev Conf |
-| 15.04.2014 | Future of Web Design conference talk, [Demystifying JavaScript: you don't need jQuery](/talks/fowd-2014) |
-| 03.04.2014 | Accepted by Google as a Google Developer Expert ([GDE](//developers.google.com/experts)) |
-| 25.10.2013 | Taught half-day Angular workshop at Google HQ: [slides](//speakerdeck.com/toddmotto/angularjs-in-one-day) |
-| 22.10.2013 | Toured Googleplex HQ campus |
-| 22.10.2013 | Represented Intel at HTML5 Dev Conf in San Francisco evangelising the [HTML5 Hub](http://html5hub.com) |
-| 21.10.2013 | Visited San Francisco, USA for the first time |
-| 23.09.2013 | Re-engineered [Conditionizr 4](http://conditionizr.com) with 5 public APIs and architecture rewrite |
-| 15.09.2013 | Launched [FireShell](http://getfireshell.com) to promote full end to end Sass/SCSS and Grunt workflow |
-| 09.09.2013 | Developed [Rolling Stone's](//rollingstone.com/feature/the-geeks-on-the-frontlines) HTML5 experience as part of Intel's HTML5 Hub |
-| 30.08.2013 | [KitKat.com](http://kitkat.com) Android launch used my JavaScript SVG script |
-| 08.07.2013 | Partnered with [Intel](http://intel.com) and [HTML5 Hub](//html5hub.com), joined as [founding contributor](http://html5hub.com/developers) |
-| 06.03.2013 | Finalist for .NET Magazine's [Open Source Project of the Year](//www.creativebloq.com/design/net-awards-2013-open-source-project-year-4132975) |
-| 17.12.2012 | Launched [Conditionizr](http://conditionizr.com) with [Mark Goodyear](//markgoodyear.com) |
-| 17.11.2012 | Pushed [SVG](/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script) usage on the web to raise awareness, led to great adoption and [refinement](/revisiting-svg-workflow-for-performance-and-progressive-development-with-transparent-data-uris) |
-| 16.09.2012 | Launched [HTML5 Blank](http://html5blank.com) for WordPress, recognised by Adobe |
+| 2025 | Built ResumeTailorAI using Claude Code and modern AI integration |
+| 2024 | Expanded Maddyzone to reach 50K+ monthly readers |
+| 2023 | Joined Nagarro as a Senior Developer |
+| 2022 | Launched several successful Angular and React projects |
+| 2021 | Started Maddyzone tech blog and community |
+| 2020 | Began focusing on modern JavaScript frameworks |
+| 2019 | Started professional web development career |
 
-### Contact
+## Let's Connect
 
-Want to ask a general question? Either [tweet me](//twitter.com/toddmotto) or use my [GitHub AMA](//github.com/toddmotto/ama) for anything longer.
+I'm always excited to connect with fellow developers, discuss technology trends, or collaborate on interesting projects.
 
-I most likely will not respond to individual code queries due to the volume and time constraints, please defer to StackOverflow for your help (sorry)!
+- **Twitter**: [@maddyzonenews](https://twitter.com/maddyzonenews) - Follow for tech updates and insights
+- **LinkedIn**: [riturajratan](https://linkedin.com/in/riturajratan) - Connect for professional networking
+- **GitHub**: [riturajratan](https://github.com/riturajratan) - Check out my open-source contributions
+- **Email**: For speaking engagements, collaboration opportunities, or technical discussions
 
-To chat to me about something else such as a JavaScript/Angular training, speaking or workshop event, please email me: todd[at]toddmotto[dotcom].
+## Speaking & Teaching
 
-### Licensing
-All code you see here is free to use however you see fit, however corresponding GitHub projects articles may mention usually have an MIT license.
+I'm passionate about sharing knowledge and am available for:
+- Technical workshops on JavaScript frameworks
+- Conference presentations on modern web development
+- Mentoring and code reviews
+- Corporate training sessions
+
+## Blog & Content
+
+This blog features in-depth articles about:
+- JavaScript and TypeScript best practices
+- Angular and React development techniques
+- Modern web development workflows
+- Industry trends and emerging technologies
+- Career advice for developers
+
+Feel free to reach out if you have questions, want to collaborate, or just want to chat about technology!
+
+---
+
+*"Building the future of web development, one line of code at a time."*

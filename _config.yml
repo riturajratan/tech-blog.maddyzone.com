@@ -9,7 +9,7 @@ twitter_username: riturajratan
 github_username:  riturajratan
 exclude: ['node_modules']
 paginate: 10
-paginate_path: "/page:num/"
+paginate_path: "/page/:num/"
 permalink: /:categories/:title
 sass:
   compressed: true

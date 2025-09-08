@@ -1,3 +1,22 @@
 User-agent: *
-Sitemap: http://tech-blog.maddyzone.com/sitemap.xml
-Disallow:
+Allow: /
+
+# Block access to development and config files
+Disallow: /vendor/
+Disallow: /_site/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.jekyll-cache/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /_config.yml
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://tech-blog.maddyzone.com/sitemap.xml

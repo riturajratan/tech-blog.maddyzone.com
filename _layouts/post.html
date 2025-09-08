@@ -1,45 +1,86 @@
 ---
 layout: default
 ---
-<article class="post single">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.excerpt | strip_html | truncatewords: 25 | escape }}",
+  "author": {
+    "@type": "Person",
+    "name": "Rituraj Ratan",
+    "url": "https://www.riturajratan.com/",
+    "sameAs": [
+      "https://twitter.com/maddyzonenews",
+      "https://github.com/riturajratan"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Maddyzone Tech Blog",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/img/rrr.jpg"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+  },
+  "keywords": [{% for tag in page.tags %}"{{ tag }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "articleSection": "{{ page.categories.first | default: 'Technology' }}"
+}
+</script>
+
+<article class="post single" itemscope itemtype="https://schema.org/BlogPosting">
   <header class="post__header">
     <h1 class="alpha post__title" itemprop="name headline">
       {{ page.title }}
     </h1>
-    <span class="post__meta">
+    <div class="post__meta">
     	<time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
     		{{ page.date | date: "%b %-d, %Y" }}
     	</time>
     	{% if page.path %}
-      -
+      <span class="meta-separator">•</span>
       <a class="post__edit" href="//github.com/riturajratan/tech-blog.maddyzone.com/blob/gh-pages/{{ page.path }}">
         Edit this page on GitHub
       </a>
       {% endif %}
-    </span>
+    </div>
     <div class="post__meta__divider"></div>
   </header>
-  <section class="post__content">
+  <section class="post__content" itemprop="articleBody">
     <div class="post__ad">
       <script data-ad-client="ca-pub-8791576499923818" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Tech blog maddyzone -->
     </div>
     {{ content }}
-     <!--Show all Tags-->
-     <div class="post-tags">
-      {% if post %}
-        {% assign tags = post.tags %}
-      {% else %}
-        {% assign tags = page.tags %}
-      {% endif %}
-      Tags:
-      {% for tag in tags %}
-      <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
-      {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
-<br/>
-
+    
+    <footer class="post__footer">
+      <div class="post-tags" itemprop="keywords">
+        {% if post %}
+          {% assign tags = post.tags %}
+        {% else %}
+          {% assign tags = page.tags %}
+        {% endif %}
+        {% if tags.size > 0 %}
+        <h3 class="visually-hidden">Tags</h3>
+        <ul class="tag-list">
+          {% for tag in tags %}
+          <li class="tag-item">
+            <a href="{{site.baseurl}}/tags/#{{tag|slugize}}" class="tag-link" rel="tag">{{tag}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </footer>
     </section>
 
   <div class="share">
@@ -56,20 +97,23 @@ layout: default
   </div>
 </article>
 
-<div class="author">
+<aside class="author" itemscope itemtype="https://schema.org/Person">
   <div class="author__content">
     <div class="author__pic">
-      <img src="{{ site.baseurl }}/img/rrr.jpg" alt="Rituraj Ratan">
+      <img src="{{ site.baseurl }}/img/rrr.jpg" alt="Rituraj Ratan" itemprop="image">
     </div>
     <div class="author__bio">
-      <p>
-         I'm <a href="http://www.riturajratan.com/">Rituraj</a>, a Developer <a href="http://www.nagarro.com">@Nagarro</a>.
-        Founder of <a href="http://tech-blog.maddyzone.com">Maddyzone</a> .
+      <h3 class="author__name" itemprop="name">About the Author</h3>
+      <p itemprop="description">
+         I'm <a href="https://www.riturajratan.com/" itemprop="url">Rituraj</a>, a Developer <a href="http://www.nagarro.com" rel="nofollow">@Nagarro</a>.
+        Founder of <a href="https://tech-blog.maddyzone.com" itemprop="url">Maddyzone</a>.
       </p>
-      <a href="https://twitter.com/maddyzonenews" class="twitter-follow-button" data-show-count="true"></a>
+      <div class="author__social">
+        <a href="https://twitter.com/maddyzonenews" class="twitter-follow-button" data-show-count="true" itemprop="sameAs">Follow @maddyzonenews</a>
+      </div>
     </div>
   </div>
-</div>
+</aside>
 
 <!--{% include courses.html position="bottom" %}-->
 
@@ -92,7 +136,7 @@ layout: default
         <div class="clear">
         <button type="submit" name="subscribe" id="mc-embedded-subscribe">
           Sign up
-          <img src="{{ site.baseurl }}/img/icons/next.svg" alt="">
+          <img src="{{ site.baseurl }}/img/icons/next.svg" alt="Sign up for newsletter">
         </button>
         </div>
       </div>

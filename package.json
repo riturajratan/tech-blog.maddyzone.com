@@ -1,10 +1,11 @@
 {
-  "name": "toddmotto.github.io",
-  "version": "1.0.0",
-  "description": "Todd Motto website",
-  "main": "gulpfile.babel.js",
+  "name": "tech-blog.maddyzone.com",
+  "version": "2.0.0",
+  "description": "Tech Blog by Rituraj Ratan - Modern Jekyll Blog",
   "scripts": {
-    "start": "gulp",
+    "start": "bundle exec jekyll serve --livereload --open-url",
+    "build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "clean": "bundle exec jekyll clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,27 +17,6 @@
     "url": "https://github.com/riturajratan/tech-blog.maddyzone.com/issues"
   },
   "homepage": "https://tech-blog.maddyzone.com",
-  "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.22.1",
-    "babel-preset-es2015": "^6.22.0",
-    "browser-sync": "^2.26.7",
-    "del": "^2.2.2",
-    "fs": "0.0.2",
-    "gulp": "^3.9.1",
-    "gulp-add-src": "^0.2.0",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-header": "^1.8.8",
-    "gulp-if": "^2.0.2",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^2.0.1",
-    "gulp-util": "^3.0.8",
-    "hygienist-middleware": "^0.1.3"
-  },
-  "dependencies": {
-    "linkjuice": "^1.0.1"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
