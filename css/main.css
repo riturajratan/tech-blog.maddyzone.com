@@ -2066,7 +2066,10 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
   }
-  
+}
+
+/* Blog layout - keep sidebar on right until smaller screens */
+@media (max-width: 900px) {
   /* Responsive Blog Layout */
   .blog-layout {
     grid-template-columns: 1fr;

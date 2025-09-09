@@ -46,7 +46,11 @@
         
         <!-- Modern Author Sidebar -->
         <aside class="author-sidebar">
-          {% include author-sidebar-enhanced.html %}
+          {% if page.url == "/" %}
+            {% include author-sidebar-homepage.html %}
+          {% else %}
+            {% include author-sidebar-enhanced.html %}
+          {% endif %}
         </aside>
       </div>
       
