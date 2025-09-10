@@ -328,9 +328,10 @@ img {
 /* Posts Grid */
 .posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 /* 🎪 Ultra Creative Post Cards with Advanced 3D Effects */
@@ -667,15 +668,17 @@ img {
 /* 📱 Modern WordPress-style Blog Layout */
 .blog-layout {
   display: grid;
-  grid-template-columns: 1fr 400px;
-  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 3rem;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .main-content-area {
   min-width: 0; /* Prevents grid overflow */
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Constrain containers within blog layout */
@@ -688,27 +691,32 @@ img {
 /* Force homepage layout to respect grid - debugging */
 .blog-layout {
   display: grid !important;
-  grid-template-columns: 1fr 400px !important;
+  grid-template-columns: minmax(0, 1fr) 380px !important;
+  gap: 3rem !important;
 }
 
 .main-content-area {
-  overflow: hidden; /* Prevent content from breaking out */
+  overflow: visible; /* Allow content to be visible */
+  width: 100%;
 }
 
 /* Ensure posts-grid doesn't break layout */
 .blog-layout .posts-grid {
   max-width: 100%;
   box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 /* 👤 Ultra-Modern Author Sidebar */
 .author-sidebar {
   position: sticky;
-  top: 7rem;
+  top: 6rem;
   height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  max-width: 380px;
 }
 
 /* Author Card - Professional WordPress Style */
@@ -716,13 +724,14 @@ img {
   background: var(--card-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--border-color);
   border-radius: 24px;
-  padding: 2.5rem;
-  box-shadow: var(--shadow-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
   position: relative;
   overflow: hidden;
   transition: all 0.3s var(--animation-smooth);
+  display: block;
 }
 
 .author-card:hover {
@@ -1706,8 +1715,9 @@ img {
 /* Content and Action Bar - Account for Fixed Header */
 .content {
   min-height: calc(100vh - 200px);
-  padding: 6rem 0 2rem 0; /* Top padding for fixed header */
+  padding: 5rem 0 2rem 0; /* Top padding for fixed header */
   transition: padding 0.3s ease;
+  width: 100%;
 }
 
 /* Adjust content when header is scrolled (smaller) */
