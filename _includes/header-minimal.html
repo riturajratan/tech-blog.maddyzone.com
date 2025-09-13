@@ -1,0 +1,26 @@
+<!-- Minimal Header -->
+<header class="site-header" role="banner">
+  <div class="header-container">
+    <div class="site-branding">
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        <span class="site-logo">Maddyzone</span>
+        <span class="site-tagline">Tech Blog</span>
+      </a>
+    </div>
+
+    <nav class="main-navigation" role="navigation">
+      <ul class="nav-menu">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/javascript' | relative_url }}">JavaScript</a></li>
+        <li><a href="{{ '/angular-2' | relative_url }}">Angular</a></li>
+        <li><a href="{{ '/about' | relative_url }}">About</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

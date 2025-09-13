@@ -1,3 +1,86 @@
 ---
-layout: homepage
+layout: modern-blog
 ---
+
+<div class="container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1 class="hero-title">Welcome to Maddyzone</h1>
+    <p class="hero-subtitle">
+      A modern tech blog sharing practical insights on JavaScript, Angular, React, and Node.js from 11+ years of development experience.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">{{ site.posts.size }}</span>
+        <span class="stat-label">Articles</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">11+</span>
+        <span class="stat-label">Years</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">Quality</span>
+        <span class="stat-label">Content</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Posts Section -->
+  <section class="posts-section">
+    <header class="section-header">
+      <h2 class="section-title">Latest Articles</h2>
+      <p class="section-subtitle">
+        Deep dives into modern web technologies, best practices, and real-world solutions.
+      </p>
+    </header>
+
+    <div class="posts-grid">
+      {% for post in paginator.posts %}
+      <article class="post-card">
+        <div class="post-meta">
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%b %d, %Y" }}
+          </time>
+          {% if post.categories.first %}
+          <span class="post-category">{{ post.categories.first }}</span>
+          {% endif %}
+        </div>
+
+        <h3 class="post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+
+        <div class="post-excerpt">
+          {{ post.content | strip_html | truncatewords: 25 }}
+        </div>
+
+        <footer class="post-footer">
+          <a href="{{ post.url | relative_url }}" class="read-more">
+            Read More →
+          </a>
+          <div class="reading-time">
+            <span>{{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+          </div>
+        </footer>
+      </article>
+      {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">← Previous</a>
+      {% endif %}
+
+      <span class="page-info">
+        Page {{ paginator.page }} of {{ paginator.total_pages }}
+      </span>
+
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Next →</a>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </section>
+</div>
