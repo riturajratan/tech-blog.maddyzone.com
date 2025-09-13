@@ -1,0 +1,75 @@
+
+/* Enhanced Social Icons Styling for Author Sidebar */
+.author-social .social-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.author-social .social-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  margin: 4px;
+}
+
+.author-social .social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.author-social .social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.author-social .social-link.github:hover {
+  background: #24292e;
+  color: white;
+  border-color: #24292e;
+}
+
+.author-social .social-link.twitter:hover {
+  background: #1da1f2;
+  color: white;
+  border-color: #1da1f2;
+}
+
+.author-social .social-link.website:hover {
+  background: var(--gradient-primary);
+  color: white;
+  border-color: transparent;
+}
+
+.author-social .social-link.email:hover {
+  background: #ea4335;
+  color: white;
+  border-color: #ea4335;
+}
+
+.author-social .social-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .author-social .social-link {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .author-social .social-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--brand-primary);
+}
+
