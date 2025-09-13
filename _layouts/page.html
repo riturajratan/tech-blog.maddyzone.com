@@ -1,13 +1,102 @@
 ---
-layout: default
+layout: modern-blog
 ---
-<article class="post single">
-  <header class="post__header">
-    <h1 class="alpha post__title" itemprop="name headline">
-      {{ page.title }}
-    </h1>
-  </header>
-  <div class="page__content">
-    {{ content }}
-  </div>
-</article>
+
+<div class="container">
+  <article class="page-content">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="page-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </header>
+
+    <div class="page-body">
+      {{ content }}
+    </div>
+  </article>
+</div>
+
+<style>
+.page-header {
+  text-align: center;
+  padding: var(--space-8) 0 var(--space-12);
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--space-12);
+}
+
+.page-title {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.025em;
+}
+
+.page-subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.page-body {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.page-body h1,
+.page-body h2,
+.page-body h3,
+.page-body h4,
+.page-body h5,
+.page-body h6 {
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: var(--space-8) 0 var(--space-4);
+  letter-spacing: -0.025em;
+}
+
+.page-body h1 { font-size: var(--text-3xl); }
+.page-body h2 { font-size: var(--text-2xl); }
+.page-body h3 { font-size: var(--text-xl); }
+.page-body h4 { font-size: var(--text-lg); }
+
+.page-body p {
+  margin-bottom: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.page-body ul,
+.page-body ol {
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-6);
+}
+
+.page-body li {
+  margin-bottom: var(--space-2);
+  color: var(--color-text-secondary);
+}
+
+.page-body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.page-body a:hover {
+  color: var(--color-accent-hover);
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: var(--text-3xl);
+  }
+}
+</style>
