@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-10-13 14:15:14+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1563
 slug: responsive-fontsize-jquery-plugin
 title: Responsive FontSize jQuery Plugin

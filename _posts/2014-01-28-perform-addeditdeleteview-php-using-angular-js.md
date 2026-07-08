@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2014-01-28 06:17:03+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=247
 slug: perform-addeditdeleteview-php-using-angular-js
 title: How to Implement Add/Edit/Delete/View with PHP using Angular JS (Part-1)

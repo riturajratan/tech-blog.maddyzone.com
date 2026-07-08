@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2015-05-11 10:53:35+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2028
 slug: mongodb-management-tool-admin-interface
 title: MongoDB management tool and admin interface

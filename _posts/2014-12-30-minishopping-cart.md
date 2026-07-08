@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-12-30 13:10:48+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1932
 slug: minishopping-cart
 title: MiniShopping Cart

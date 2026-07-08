@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-01 18:17:20+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1145
 slug: document-ready-vs-window-load-vs-window-onload
 title: $(document).ready vs $(window).load vs window.onload

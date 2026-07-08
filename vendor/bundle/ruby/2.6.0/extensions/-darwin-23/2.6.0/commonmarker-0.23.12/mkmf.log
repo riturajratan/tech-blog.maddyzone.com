@@ -1,0 +1,26 @@
+block in append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+"clang -o conftest -I/Users/riturajratan/.rbenv/versions/2.6.1/include/ruby-2.6.0/-darwin23 -I/Users/riturajratan/.rbenv/versions/2.6.1/include/ruby-2.6.0/ruby/backward -I/Users/riturajratan/.rbenv/versions/2.6.1/include/ruby-2.6.0 -I. -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/openssl@1.1/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/openssl@1.1/include -Wno-error=implicit-function-declaration -fno-common -pipe conftest.c  -L. -L/Users/riturajratan/.rbenv/versions/2.6.1/lib -L. -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong     -lruby.2.6   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -I/Users/riturajratan/.rbenv/versions/2.6.1/include/ruby-2.6.0/-darwin23 -I/Users/riturajratan/.rbenv/versions/2.6.1/include/ruby-2.6.0/ruby/backward -I/Users/riturajratan/.rbenv/versions/2.6.1/include/ruby-2.6.0 -I. -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/openssl@1.1/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/openssl@1.1/include -Wno-error=implicit-function-declaration -fno-common -pipe  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+--------------------
+

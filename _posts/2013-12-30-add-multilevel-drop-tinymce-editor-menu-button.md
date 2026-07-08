@@ -2,7 +2,7 @@
 author: jkhatri6
 comments: true
 date: 2013-12-30 13:23:00+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=172
 slug: add-multilevel-drop-tinymce-editor-menu-button
 title: How to add multilevel drop down in a TinyMCE Editor Menu Button.

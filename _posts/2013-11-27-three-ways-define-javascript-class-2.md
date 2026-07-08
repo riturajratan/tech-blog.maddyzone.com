@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2013-11-27 16:44:44+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=55
 slug: three-ways-define-javascript-class-2
 title: Three ways to define a JavaScript class

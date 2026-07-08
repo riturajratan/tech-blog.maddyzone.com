@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-20 05:19:11+00:00
-layout: post
+layout: modern-blog
 slug: this-in-angularjs
 title: this in angularjs
 image: uploads/2014/09/this-in-angular-js.png

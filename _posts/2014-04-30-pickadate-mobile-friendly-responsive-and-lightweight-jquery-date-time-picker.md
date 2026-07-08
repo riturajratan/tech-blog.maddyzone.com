@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-04-30 18:00:32+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=379
 slug: pickadate-mobile-friendly-responsive-and-lightweight-jquery-date-time-picker
 title: Pickadate mobile-friendly, responsive, and lightweight jQuery date & time  picker

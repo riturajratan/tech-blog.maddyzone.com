@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-10-28 17:45:18+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1709
 slug: how-to-generate-pdf-in-javascript
 title: How to Generate PDF in JavaScript

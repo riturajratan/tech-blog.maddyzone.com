@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-10-08 17:47:39+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1488
 slug: distractionfree-form-interface
 title: DistractionFree Form Interface

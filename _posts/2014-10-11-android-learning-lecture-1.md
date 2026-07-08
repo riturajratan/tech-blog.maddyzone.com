@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2014-10-11 06:02:54+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1552
 slug: android-learning-lecture-1
 title: Android Learning ( Lecture -1 )

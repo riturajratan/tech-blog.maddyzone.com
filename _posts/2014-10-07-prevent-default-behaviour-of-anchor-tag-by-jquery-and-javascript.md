@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-10-07 17:27:31+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1472
 slug: prevent-default-behaviour-of-anchor-tag-by-jquery-and-javascript
 title: Prevent default behaviour of anchor tag by jQuery and JavaScript

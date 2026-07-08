@@ -2,7 +2,7 @@
 author: jkhatri6
 comments: true
 date: 2013-12-25 11:42:44+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=148
 slug: switch-development-environment-windowsvista7-ubuntu
 title: Switch Your development Environment From Windows(Vista/7) to Ubuntu

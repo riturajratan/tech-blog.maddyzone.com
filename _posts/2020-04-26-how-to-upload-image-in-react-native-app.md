@@ -7,7 +7,7 @@ tags:
 - ImageUpload
 - reactnativeimageupload
 - react-native-image-picker
-layout: post
+layout: modern-blog
 date: '2020-04-27 13:55:35'
 author: riturajratan
 ---

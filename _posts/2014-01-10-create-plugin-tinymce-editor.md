@@ -2,7 +2,7 @@
 author: jkhatri6
 comments: true
 date: 2014-01-10 05:31:13+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=187
 slug: create-plugin-tinymce-editor
 title: Create a Plugin For TinyMCE Editor

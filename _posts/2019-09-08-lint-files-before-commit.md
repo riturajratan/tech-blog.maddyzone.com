@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2019-09-08 21:36:48+00:00
-layout: post
+layout: modern-blog
 link: http://riturajratan.com/JavaScript
 slug: lint-files-before-commit
 title: Lint files before commit

@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-10-19 17:16:29+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1672
 slug: add-google-search-website
 title: How to add Google search in our website

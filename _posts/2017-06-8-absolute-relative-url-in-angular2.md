@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2017-06-17 19:49:52+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2151
 slug: absolute-relative-url-in-angular2
 title: How to set absolute and relative url in angular2

@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2014-01-22 05:41:23+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=203
 slug: understanding-angular-js
 title: Understanding Angular JS

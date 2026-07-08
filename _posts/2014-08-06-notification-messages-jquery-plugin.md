@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-08-06 13:49:55+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=902
 slug: notification-messages-jquery-plugin
 title: Notification Messages jQuery Plugin

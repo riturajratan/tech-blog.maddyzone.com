@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2015-05-13 10:47:00+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2035
 slug: get-data-page-load-angular
 title: Get data before page load in angular

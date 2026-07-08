@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-08-05 20:09:07+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=887
 slug: learn-complete-angularjs-5-steps-step-2-5
 title: Learn Complete AngularJS in 5 Steps (Step 2 of 5)

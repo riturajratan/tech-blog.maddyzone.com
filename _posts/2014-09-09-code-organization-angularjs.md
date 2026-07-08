@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-09 10:05:16+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1271
 slug: code-organization-angularjs
 title: Code organization in angularjs

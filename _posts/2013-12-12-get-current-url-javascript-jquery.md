@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2013-12-12 11:31:06+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=103
 slug: get-current-url-javascript-jquery
 title: How to get current url in JavaScript and jQuery ?

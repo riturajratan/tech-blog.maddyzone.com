@@ -2,7 +2,7 @@
 author: ravin
 comments: true
 date: 2013-12-22 10:53:56+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=112
 slug: sublime-text-make-editing-interesting
 title: Sublime text to make editing interesting

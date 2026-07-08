@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-07-20 07:41:52+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=742
 slug: javascript-like-potato
 title: JavaScript is like a potato

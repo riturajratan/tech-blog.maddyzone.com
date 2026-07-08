@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2015-07-16 15:09:19+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2109
 slug: basic-searching-in-angularjs
 title: Basic searching in AngularJS

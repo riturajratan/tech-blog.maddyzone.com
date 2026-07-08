@@ -2,7 +2,7 @@
 author: Rakesh
 comments: true
 date: 2013-12-25 04:42:36+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=139
 slug: translating-wordpress-plugin-languages
 title: Translating wordpress plugin in your languages

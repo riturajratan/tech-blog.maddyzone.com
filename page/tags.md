@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: modern-blog
 permalink: /tags/
 title: Tags
 ---

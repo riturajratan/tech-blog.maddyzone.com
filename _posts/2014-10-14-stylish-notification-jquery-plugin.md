@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-10-14 14:40:48+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1599
 slug: stylish-notification-jquery-plugin
 title: Stylish Notification jQuery Plugin

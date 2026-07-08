@@ -1,7 +1,7 @@
 ---
 title: Enable and disable code indentation in vim
 author: Rituraj Ratan
-layout: post
+layout: modern-blog
 permalink: /enable-and-disable-code-indentation-in-vim
 disqus: http://tech-blog.maddyzone.com/enable-and-disable-code-indentation-in-vim.md
 path: 2014-10-14-enable-and-disable-code-indentation-in-vim.md

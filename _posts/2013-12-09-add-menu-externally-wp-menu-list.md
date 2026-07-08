@@ -2,7 +2,7 @@
 author: Rakesh
 comments: true
 date: 2013-12-09 05:40:12+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=91
 slug: add-menu-externally-wp-menu-list
 title: Add menu externally to wp menu list

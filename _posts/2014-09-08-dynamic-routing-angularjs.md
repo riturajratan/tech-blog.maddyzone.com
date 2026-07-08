@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-08 11:09:46+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1238
 slug: dynamic-routing-angularjs
 title: Dynamic routing with AngularJS

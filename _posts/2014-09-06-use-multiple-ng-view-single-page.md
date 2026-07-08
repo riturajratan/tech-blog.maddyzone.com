@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-06 07:56:45+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1210
 slug: use-multiple-ng-view-single-page
 title: How to use multiple ng-view in a single page

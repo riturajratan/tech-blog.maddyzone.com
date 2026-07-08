@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2015-08-04 10:36:48+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2164
 slug: how-to-dynamically-get-rss-feed-by-using-javascript-from-a-url
 title: How to dynamically get rss feed by using Javascript from a URL

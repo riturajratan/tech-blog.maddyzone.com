@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-11-04 17:17:40+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1720
 slug: how-to-setup-and-host-website-with-amazon-ec2
 title: How to setup and host website with Amazon EC2

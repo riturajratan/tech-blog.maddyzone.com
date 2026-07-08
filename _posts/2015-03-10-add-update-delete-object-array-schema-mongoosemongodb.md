@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2015-03-10 14:47:14+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2002
 slug: add-update-delete-object-array-schema-mongoosemongodb
 title: How to add update and delete object in Array Schema in Mongoose/MongoDB

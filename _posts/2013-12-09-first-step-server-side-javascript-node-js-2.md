@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2013-12-09 10:16:21+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=100
 slug: first-step-server-side-javascript-node-js-2
 title: First step with server side JavaScript (Node.js)

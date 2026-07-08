@@ -1,6 +1,6 @@
 ---
 title: Speaking
-layout: page
+layout: modern-blog
 class: speaking
 ---
 

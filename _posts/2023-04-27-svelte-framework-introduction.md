@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2023-05-01 08:00:00+00:00
-layout: post
+layout: modern-blog
 link: https://tech-blog.maddyzone.com/svelte-framework-introduction
 slug: svelte-framework-introduction
 title: An Introduction to Svelte, A Modern and Performant Front-End Framework

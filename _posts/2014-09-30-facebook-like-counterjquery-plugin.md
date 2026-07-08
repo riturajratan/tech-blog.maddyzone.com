@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-30 12:00:29+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1422
 slug: facebook-like-counterjquery-plugin
 title: Facebook Like Counter jQuery Plugin

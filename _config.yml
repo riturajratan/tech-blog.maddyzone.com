@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tech-blog.maddyzone.com" # the base hostname & protocol for your site
 twitter_username: riturajratan
 github_username:  riturajratan
-exclude: ['node_modules']
+exclude: ['node_modules', 'vendor']
 paginate: 10
 paginate_path: "/page/:num/"
 permalink: /:categories/:title

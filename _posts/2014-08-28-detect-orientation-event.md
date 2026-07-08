@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-08-28 18:37:30+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1109
 slug: detect-orientation-event
 title: Detect Orientation Event

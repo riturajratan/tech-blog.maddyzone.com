@@ -2,7 +2,7 @@
 author: ravin
 comments: true
 date: 2013-12-03 09:26:31+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=65
 slug: im-using-sublime-text
 title: How I'm using sublime text

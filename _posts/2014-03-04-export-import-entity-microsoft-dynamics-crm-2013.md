@@ -2,7 +2,7 @@
 author: manoj
 comments: true
 date: 2014-03-04 15:51:20+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=283
 slug: export-import-entity-microsoft-dynamics-crm-2013
 title: Export and Import Entity in Microsoft Dynamics CRM 2013

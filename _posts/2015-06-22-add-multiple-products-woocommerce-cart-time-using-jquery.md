@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2015-06-22 05:35:39+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2095
 slug: add-multiple-products-woocommerce-cart-time-using-jquery
 title: How to Add Multiple Products into WooCommerce Cart on Same Time using jQuery

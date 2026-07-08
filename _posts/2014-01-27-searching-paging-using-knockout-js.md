@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2014-01-27 11:38:19+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=231
 slug: searching-paging-using-knockout-js
 title: Searching With Paging using Knockout JS

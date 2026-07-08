@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-07-28 14:37:34+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=801
 slug: modal-jquiery-plugin-implement-modal-boxes
 title: The Modal-A jQuiery Plugin to implement modal boxes

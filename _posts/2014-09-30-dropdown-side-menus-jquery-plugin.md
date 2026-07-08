@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-30 12:13:08+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1426
 slug: dropdown-side-menus-jquery-plugin
 title: Dropdown Side Menus jQuery Plugin

@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-11-21 02:47:27+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1780
 slug: how-to-create-facebook-app
 title: How to create facebook app

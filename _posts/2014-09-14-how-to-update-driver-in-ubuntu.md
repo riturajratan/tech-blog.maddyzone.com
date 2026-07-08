@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-14 18:30:02+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1309
 slug: how-to-update-driver-in-ubuntu
 title: How to update driver in Ubuntu

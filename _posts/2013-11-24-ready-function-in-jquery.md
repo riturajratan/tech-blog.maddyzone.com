@@ -2,7 +2,7 @@
 author: maddyzonetech
 comments: true
 date: 2013-11-24 15:29:43+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=31
 slug: ready-function-in-jquery
 title: .ready() function in jQuery

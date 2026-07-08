@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2018-02-06 12:49:52+00:00
-layout: post
+layout: modern-blog
 link: http://riturajratan.com/JavaScript/AngularJS/
 slug: how-reload-current-route-angular2
 title: How to reload current route in angular 2

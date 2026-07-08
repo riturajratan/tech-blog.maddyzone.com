@@ -2,7 +2,7 @@
 author: vishnu
 comments: true
 date: 2015-07-21 16:49:52+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2151
 slug: create-dynamic-button-and-text-box-using-javascript
 title: How to create dynamic button and text-box using JavaScript

@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-09-05 17:37:32+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1192
 slug: conditionally-apply-classes-in-angularjs
 title: conditionally apply classes in angularjs

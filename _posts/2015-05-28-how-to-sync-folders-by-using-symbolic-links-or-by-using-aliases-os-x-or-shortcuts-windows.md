@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2015-05-28 06:18:22+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=2066
 slug: how-to-sync-folders-by-using-symbolic-links-or-by-using-aliases-os-x-or-shortcuts-windows
 title: How to sync folders by using symbolic links or by using aliases (OS X) or shortcuts

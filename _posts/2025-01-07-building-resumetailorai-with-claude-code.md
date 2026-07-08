@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2025-01-07 10:00:00+00:00
-layout: post
+layout: modern-blog
 link: https://tech-blog.maddyzone.com/building-resumetailorai-with-claude-code
 slug: building-resumetailorai-with-claude-code
 title: Building ResumeTailorAI with Claude Code - A Complete AI-Powered Resume Optimization Platform

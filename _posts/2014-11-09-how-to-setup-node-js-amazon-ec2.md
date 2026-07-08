@@ -2,7 +2,7 @@
 author: riturajratan
 comments: true
 date: 2014-11-09 05:57:49+00:00
-layout: post
+layout: modern-blog
 link: http://dlurratan37846/wordpress/?p=1757
 slug: how-to-setup-node-js-amazon-ec2
 title: How to Setup Node.js on Amazon EC2
