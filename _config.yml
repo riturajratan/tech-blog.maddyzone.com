@@ -1,10 +1,10 @@
 # Site settings
-title: 'Tech Blog @Maddyone'
+title: 'MaddyZone Fieldnotes'
 email: info@maddyzone.com
 description: > # this means to ignore newlines until "baseurl:"
-  Articles on Node.js ,JavaScript, Angular, React and HTML5
+  Code that clicked, bugs that taught me something, and practical web development notes by Rituraj Singh Ratan.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tech-blog.maddyzone.com" # the base hostname & protocol for your site
+url: "https://tech-blog.maddyzone.com" # the base hostname & protocol for your site
 twitter_username: riturajratan
 github_username:  riturajratan
 exclude: ['node_modules', 'vendor']

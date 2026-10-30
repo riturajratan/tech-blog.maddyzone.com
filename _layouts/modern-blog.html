@@ -1,207 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="author" content="Rituraj Ratan">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="{{ '/css/modern-blog.css' | relative_url }}">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-
-    <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@maddyzonenews">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  </head>
-
-  <body>
-    {% include header-minimal.html %}
-
-    <main class="main-content">
-      {% if page.date and page.title and page.categories %}
-        <div class="post-header">
-          <h1 class="post-title">{{ page.title }}</h1>
-          <div class="post-meta">
-            <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
-              {{ page.date | date: "%b %d, %Y" }}
-            </time>
-            <span class="reading-time">{{ page.content | number_of_words | divided_by: 200 }} min read</span>
-            {% for cat in page.categories %}
-              <span class="post-category">{{ cat }}</span>
-            {% endfor %}
-          </div>
-        </div>
-        <article class="post-content">
-          {{ content }}
-        </article>
-      {% elsif page.class == 'about' or page.class == 'speaking' %}
-        <div class="page-content post-content">
-          <h1>{{ page.title }}</h1>
-          {{ content }}
-        </div>
-      {% else %}
-        <div class="container">
-          {{ content }}
-        </div>
-      {% endif %}
-    </main>
-
-    {% include footer-minimal.html %}
-
-    <!-- Back to Top -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
-      </svg>
-    </button>
-
-    <script>
-      // Theme toggle
-      const themeToggle = document.getElementById('theme-toggle');
-      const themeIcon = themeToggle.querySelector('.theme-icon');
-      const html = document.documentElement;
-
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      html.setAttribute('data-theme', savedTheme);
-      updateThemeIcon(savedTheme);
-
-      function updateThemeIcon(theme) {
-        themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-      }
-
-      function toggleTheme() {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
-      }
-
-      themeToggle.addEventListener('click', toggleTheme);
-
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-
-      // Mobile menu toggle
-      const mobileToggle = document.getElementById('mobile-menu-toggle');
-      const mainNav = document.getElementById('main-navigation');
-      mobileToggle.addEventListener('click', function () {
-        mainNav.classList.toggle('nav-open');
-        mobileToggle.classList.toggle('is-active');
-      });
-
-      // Back to top
-      const backToTop = document.getElementById('back-to-top');
-      window.addEventListener('scroll', function () {
-        backToTop.classList.toggle('visible', window.scrollY > 400);
-      });
-      backToTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-
-      // Search
-      const searchToggle = document.getElementById('search-toggle');
-      const searchOverlay = document.getElementById('search-overlay');
-      const searchInput = document.getElementById('search-input');
-      const searchResults = document.getElementById('search-results');
-      const searchClose = document.getElementById('search-close');
-      let searchData = null;
-
-      function openSearch() {
-        searchOverlay.classList.add('open');
-        searchInput.value = '';
-        searchResults.innerHTML = '<p class="search-hint">Type to search across all articles...</p>';
-        setTimeout(function () { searchInput.focus(); }, 100);
-        document.body.style.overflow = 'hidden';
-        if (!searchData) {
-          fetch('{{ "/search.json" | relative_url }}')
-            .then(function (r) { return r.json(); })
-            .then(function (data) { searchData = data; });
-        }
-      }
-
-      function closeSearch() {
-        searchOverlay.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-
-      searchToggle.addEventListener('click', openSearch);
-      searchClose.addEventListener('click', closeSearch);
-      searchOverlay.addEventListener('click', function (e) {
-        if (e.target === searchOverlay) closeSearch();
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-          e.preventDefault();
-          searchOverlay.classList.contains('open') ? closeSearch() : openSearch();
-        }
-        if (e.key === 'Escape') closeSearch();
-      });
-
-      searchInput.addEventListener('input', function () {
-        var query = this.value.trim().toLowerCase();
-        if (!query || !searchData) {
-          searchResults.innerHTML = '<p class="search-hint">Type to search across all articles...</p>';
-          return;
-        }
-        var matches = searchData.filter(function (post) {
-          return post.title.toLowerCase().indexOf(query) !== -1
-            || post.excerpt.toLowerCase().indexOf(query) !== -1
-            || post.categories.join(' ').toLowerCase().indexOf(query) !== -1
-            || post.tags.join(' ').toLowerCase().indexOf(query) !== -1;
-        });
-        if (matches.length === 0) {
-          searchResults.innerHTML = '<p class="search-no-results">No articles found for "<strong>' + query + '</strong>"</p>';
-          return;
-        }
-        var html = matches.slice(0, 10).map(function (post) {
-          return '<a href="' + post.url + '" class="search-result-item">'
-            + '<div class="search-result-title">' + post.title + '</div>'
-            + '<div class="search-result-meta">'
-            + '<span>' + post.date + '</span>'
-            + (post.categories.length ? '<span class="search-result-cat">' + post.categories[0] + '</span>' : '')
-            + '</div>'
-            + '<div class="search-result-excerpt">' + post.excerpt + '</div>'
-            + '</a>';
-        }).join('');
-        if (matches.length > 10) {
-          html += '<p class="search-more">and ' + (matches.length - 10) + ' more results...</p>';
-        }
-        searchResults.innerHTML = html;
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  {% assign is_article = false %}{% if page.date and page.title %}{% assign is_article = true %}{% endif %}
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}MaddyZone Fieldnotes</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}{% else %}{{ site.description | escape }}{% endif %}"><meta name="author" content="Rituraj Singh Ratan">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('maddyzone-blog-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/css/modern-blog.css' | relative_url }}"><link rel="canonical" href="{{ page.url | replace: 'index.html','' | absolute_url }}"><link rel="alternate" type="application/rss+xml" title="MaddyZone Fieldnotes" href="{{ '/feed.xml' | relative_url }}"><link rel="icon" type="image/svg+xml" href="{{ '/img/fieldnotes.svg' | relative_url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}MaddyZone Fieldnotes — Notes from the build.{% endif %}"><meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}{% else %}{{ site.description | escape }}{% endif %}"><meta property="og:url" content="{{ page.url | absolute_url }}"><meta property="og:site_name" content="MaddyZone Fieldnotes"><meta property="og:type" content="{% if is_article %}article{% else %}website{% endif %}"><meta name="twitter:card" content="summary">
+  {% if is_article %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+</head>
+<body data-baseurl="{{ site.baseurl }}">
+<a class="skip-link" href="#main">Skip to content</a>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol><symbol id="icon-theme" viewBox="0 0 24 24"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"/></symbol></svg>
+{% include header-minimal.html %}
+<main id="main">
+{% if is_article %}
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="article-header shell"><a class="back-to-notes" href="{{ '/' | relative_url }}#archive">← Back to the notebook</a><div class="article-categories">{% for category in page.categories %}<a href="{{ '/' | relative_url }}?topic={{ category | url_encode }}#archive">{{ category | escape }}</a>{% endfor %}</div><h1>{{ page.title | escape }}</h1><div class="article-byline"><img src="{{ '/img/rituraj.jpg' | relative_url }}" alt="" width="36" height="36"><span>Rituraj Singh Ratan</span><span class="meta-divider"></span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %B %Y' }}</time><span class="meta-divider"></span><span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span></div></header>
+  <div class="reading-layout shell"><article class="article-body" id="article-body">{{ content }}</article><aside class="reading-aside"><nav class="table-of-contents" id="table-of-contents" aria-labelledby="toc-title" hidden><h2 id="toc-title">IN THIS NOTE</h2><div id="toc-links"></div></nav><div class="reading-side-note"><span>FROM THE WORKING ARCHIVE</span><p>Originally shared in {{ page.date | date: '%Y' }}. A snapshot of what I was exploring at the time.</p><a href="{{ '/feed.xml' | relative_url }}">Follow the notebook ↗</a></div></aside></div>
+  <div class="article-end shell"><span>END OF NOTE / KEEP EXPLORING</span><nav aria-label="More articles">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>AN EARLIER DISCOVERY</small><strong>{{ page.previous.title | escape }}</strong><span>↙</span></a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}"><small>A NEWER DISCOVERY</small><strong>{{ page.next.title | escape }}</strong><span>↗</span></a>{% endif %}</nav></div>
+{% elsif page.class == 'about' or page.class == 'speaking' %}
+<section class="standard-page shell"><a class="back-to-notes" href="{{ '/' | relative_url }}">← The notebook</a><h1>{{ page.title | escape }}</h1><div class="article-body">{{ content }}</div></section>
+{% else %}
+{{ content }}
+{% endif %}
+</main>
+{% include footer-minimal.html %}
+<script src="{{ '/js/fieldnotes.js' | relative_url }}" defer></script>
+</body>
 </html>

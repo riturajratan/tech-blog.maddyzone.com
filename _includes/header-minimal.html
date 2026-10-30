@@ -1,61 +1,9 @@
-<!-- Minimal Header -->
-<header class="site-header" role="banner">
-  <div class="header-container">
-    <div class="site-branding">
-      <a href="{{ '/' | relative_url }}" class="site-title">
-        <span class="site-mark"></span>
-        <span class="site-logo">Maddyzone</span>
-        <span class="site-tagline">Tech Blog</span>
-      </a>
-    </div>
-
-    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
-
-    <nav class="main-navigation" id="main-navigation" role="navigation">
-      <ul class="nav-menu">
-        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-        <li><a href="{{ '/javascript' | relative_url }}" {% if page.url == '/javascript' or page.url == '/javascript/' %}class="active"{% endif %}>JavaScript</a></li>
-        <li><a href="{{ '/angular-2' | relative_url }}" {% if page.url == '/angular-2' or page.url == '/angular-2/' %}class="active"{% endif %}>Angular</a></li>
-        <li><a href="{{ '/about' | relative_url }}" {% if page.url == '/about' or page.url == '/about/' %}class="active"{% endif %}>About</a></li>
-      </ul>
-
-      <div class="header-actions">
-        <button class="search-toggle" id="search-toggle" aria-label="Search">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="8"/>
-            <path d="m21 21-4.35-4.35" stroke-linecap="round"/>
-          </svg>
-        </button>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-          <span class="theme-icon">🌙</span>
-        </button>
-        <a href="#footer-newsletter" class="subscribe-pill">Subscribe</a>
-      </div>
-    </nav>
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="MaddyZone fieldnotes home"><span class="brand-stamp" aria-hidden="true">m.</span><span>maddyzone<span class="wordmark-sub">/ fieldnotes</span></span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="main-navigation" id="main-navigation" aria-label="Main navigation"><a href="{{ '/' | relative_url }}#archive">The notebook</a><a href="{{ '/javascript.html' | relative_url }}">JavaScript</a><a href="{{ '/about.html' | relative_url }}">The author</a><a class="back-home" href="https://maddyzone.com/" target="_blank" rel="noopener noreferrer">MaddyZone <span aria-hidden="true">↗</span></a></nav>
+    <div class="header-actions"><button class="search-trigger" id="search-toggle" type="button" aria-label="Search all articles"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><span>Find a note</span><kbd>⌘ K</kbd></button><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-theme"/></svg></button></div>
   </div>
 </header>
-
-<!-- Search Overlay -->
-<div class="search-overlay" id="search-overlay">
-  <div class="search-container">
-    <div class="search-header">
-      <div class="search-input-wrap">
-        <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8"/>
-          <path d="m21 21-4.35-4.35" stroke-linecap="round"/>
-        </svg>
-        <input type="text" id="search-input" class="search-input" placeholder="Search articles..." autocomplete="off" autofocus>
-      </div>
-      <button class="search-close" id="search-close" aria-label="Close search">
-        <kbd>ESC</kbd>
-      </button>
-    </div>
-    <div class="search-results" id="search-results">
-      <p class="search-hint">Type to search across all articles...</p>
-    </div>
-  </div>
-</div>
+<dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Find your next aha.</h2><button class="close-search" id="search-close" type="button" aria-label="Close search">✕</button></div><label class="global-search-wrap"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><input id="global-search" type="search" placeholder="A topic, a framework, a stubborn bug…" aria-label="Search article titles, topics and excerpts" autocomplete="off"></label><p class="search-status" id="search-status" role="status">Search the whole notebook.</p><div class="search-results" id="search-results"></div><div class="dialog-foot"><span>Titles, topics & little discoveries.</span><span><kbd>Esc</kbd> to close</span></div></dialog>

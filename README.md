@@ -1,41 +1,54 @@
-# Maddyzone redesign — drop-in files
+# MaddyZone Fieldnotes
 
-Your `modern-blog` layout already uses a clean CSS-custom-property system
-(`--color-*`, `--text-*`, `--space-*`, `--font-*`), so this redesign is just
-new **values** for those tokens plus a few structural tweaks — no changes to
-`modern-post.html` or `page.html` needed, since they already inherit the vars.
+A creative editorial redesign of the existing Jekyll tech blog. It uses a notebook-inspired front page, a pinned build story, a searchable archive, and a reader-focused article layout. White, forest green, and soft lime connect it to MaddyZone’s independent workshop identity.
 
-## Files to replace (same paths in your repo)
+## Content and URLs
 
-1. `css/modern-blog.css` → replace entirely.
-2. `_layouts/modern-blog.html` → replace entirely (adds Google Fonts, same
-   theme-toggle script you already had).
-3. `_includes/header-minimal.html` → replace entirely (adds a small mark +
-   Subscribe pill).
-4. `_includes/footer-minimal.html` → replace entirely (visual only, same form
-   action/fields).
+All 68 existing posts, publication dates, and article URLs are preserved. The JavaScript and Angular category pages, category/tag indexes, seven archive pages, RSS feed, and about page use the shared design. The site URL now uses HTTPS for canonical, feed, and sitemap links.
 
-`index.html`, `about.md`, `_layouts/modern-post.html`, `_layouts/page.html`
-are untouched — they already use the same var names, so they pick up the new
-look automatically.
+## Features
 
-## What changed
+- Topic filtering and text search cover the entire article index, with paginated results and shareable query parameters.
+- Global search opens from the header, `Cmd/Ctrl + K`, or `/`; Escape closes it.
+- A native dialog provides keyboard focus handling. Search text is rendered with DOM text nodes.
+- Light/dark themes follow the system preference initially and remember an explicit choice.
+- Article pages have an automatic table of contents, reading progress, readable code blocks, and copy buttons.
+- Existing server-rendered posts and page links remain available without JavaScript.
+- Original publication dates stay visible, including a short archive note on article pages.
+- RSS replaces the legacy email subscription form.
 
-- Typography: Source Serif 4 for headlines, Work Sans for body, JetBrains Mono
-  for meta/dates/categories/code — loaded via Google Fonts in the layout head.
-- Palette: warm paper background + violet accent in light mode; deep violet-
-  black + lighter violet accent in dark mode. Same `data-theme` + localStorage
-  toggle you already had (`js` untouched).
-- Post cards: thinner borders, mono meta line, violet accent line on hover
-  instead of a drop shadow.
-- Header: small violet mark + serif "Maddyzone" wordmark, Subscribe pill.
-- Footer: quieter, single-column on mobile, same newsletter form action.
+## Files
 
-## To run locally
+- `_layouts/modern-blog.html`: shared document, article reader, and page structure.
+- `_includes/header-minimal.html`, `_includes/footer-minimal.html`: shared navigation, search dialog, and RSS footer.
+- `_includes/note-card.html`: article cards shared by home and topic pages.
+- `index.html`: the opening spread and article archive.
+- `css/modern-blog.css`: responsive layouts, themes, and code styles.
+- `js/fieldnotes.js`: search, filtering, theme/menu controls, table of contents, progress, and copying.
+- `search.json`: generated index of all posts, with dates and reading estimates.
 
+## Development
+
+Use the Ruby environment associated with the existing `Gemfile.lock`, then:
+
+```sh
+bundle install
+bundle exec jekyll serve --port 8090
 ```
-bundle exec jekyll serve
+
+For production:
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build
 ```
 
-(No new dependencies — this is plain CSS/HTML/Liquid, same as your current
-setup.)
+No frontend build or new JavaScript dependencies are required. The project retains its GitHub Pages/Jekyll configuration, permalink format, and `CNAME`.
+
+## Verification
+
+```sh
+node --check js/fieldnotes.js
+git diff --check
+```
+
+Build the site and verify the home page, a topic, a paginated archive, an article, and the RSS feed before deployment. The older Angular posts contain existing Liquid interpolation warnings; this redesign does not change their source.
