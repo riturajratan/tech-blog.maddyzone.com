@@ -9,7 +9,7 @@ twitter_username: riturajratan
 github_username:  riturajratan
 exclude: ['node_modules', 'vendor', 'tests']
 adsense:
-  enabled: false
+  enabled: true
   publisher: ca-pub-8791576499923818
   article_slot: '1787686684'
 paginate: 10
