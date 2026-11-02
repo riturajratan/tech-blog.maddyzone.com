@@ -2435,3 +2435,60 @@ html:not(.has-js) .theme-toggle {
     font-size: 7px;
   }
 }
+
+/* A quiet, labelled break in the writing; never a sticky or overlay placement. */
+.article-ad {
+  min-height: 160px;
+  width: 100%;
+  max-width: 728px;
+  margin: 48px auto;
+  padding: 15px 0 18px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  clear: both;
+}
+.article-ad-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--muted);
+  text-align: center;
+  font: 9px/1.5 var(--mono);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.article-ad-preview {
+  height: 100px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--line);
+  background: var(--soft);
+  color: var(--muted);
+  font: 11px/1.5 var(--mono);
+  text-align: center;
+  padding: 12px;
+}
+.footer-privacy-choice {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+}
+.footer-privacy-choice:hover { color: var(--accent); }
+.ad-preferences {
+  padding: 25px;
+  margin: 25px 0;
+  border: 1px solid var(--line);
+  background: var(--soft);
+  border-radius: 6px;
+}
+.ad-preferences p { margin-bottom: 16px; }
+.ad-preferences p:last-child { margin: 16px 0 0; font-size: 13px; }
+.ad-preference-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button-secondary { background: var(--panel); color: var(--ink); }
+@media (max-width: 680px) {
+  .article-ad { margin-block: 36px; }
+  .ad-preferences { padding: 18px; }
+}
+@media print { .article-ad, .ad-preferences, .footer-privacy-choice { display: none !important; } }

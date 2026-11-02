@@ -16,6 +16,10 @@ All 68 existing posts, publication dates, and article URLs are preserved. The Ja
 - Existing server-rendered posts and page links remain available without JavaScript.
 - Original publication dates stay visible, including a short archive note on article pages.
 - RSS replaces the legacy email subscription form.
+- AdSense uses the existing responsive Tech blog unit (`1787686684`), with a labelled end placement on articles containing at least 250 words of prose. Articles with at least 1,000 prose words may have one additional placement at a safe paragraph break; code examples and short notes stay intact. These are editorial layout thresholds, not Google eligibility rules.
+- Ad scripts run only on `tech-blog.maddyzone.com` when `adsense.enabled` is true. A local `?ad-preview=1` displays labelled layout samples without making ad requests. Unfilled units and blocked-loader spaces collapse.
+- `/privacy.html` describes advertising and offers a browser-local read-without-ads choice. Google's published European regulations message manages regional consent, with a footer entry point to revisit choices where applicable. This setting is separate from the browser-local ad opt-out.
+- AdSense Auto ads excludes the entire `tech-blog.maddyzone.com/` section, so automatic overlays and extra placements do not compete with manual article slots. The root MaddyZone site's other settings are preserved. AdSense approval is required before real ads can serve.
 
 ## Files
 
@@ -48,6 +52,8 @@ No frontend build or new JavaScript dependencies are required. The project retai
 
 ```sh
 node --check js/fieldnotes.js
+node --check js/advertising.js
+node --test tests/advertising.cjs
 git diff --check
 ```
 
